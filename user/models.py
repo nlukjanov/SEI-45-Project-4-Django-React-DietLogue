@@ -7,8 +7,8 @@ class User(AbstractUser):
         ('M', 'Male'),
         ('F', 'Female'),
     )
-    height = models.PositiveSmallIntegerField()
-    weight = models.FloatField()
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
-    dob = models.DateField(max_length=8)
-    profile_image = models.CharField(max_length=500)
+    height = models.PositiveSmallIntegerField(null=True)
+    weight = models.FloatField(null=True)
+    gender = models.CharField(max_length=1, null=True, choices=GENDER_CHOICES)
+    dob = models.DateField(null=True, max_length=8)
+    profile_image = models.CharField(max_length=500, blank=True)
