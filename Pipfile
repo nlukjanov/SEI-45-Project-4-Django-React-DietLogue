@@ -12,6 +12,7 @@ django = "==2.2.10"
 djangorestframework = "*"
 psycopg2-binary = "*"
 pyjwt = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"
