@@ -1,0 +1,314 @@
+id,Food,Measure,,Protein,Carb.,Fiber,Fat,Sat. fat
+1,"Cows' milk, whole",1,qt.,32,48,0,40,36
+2,"Cow’s milk, skim",1,qt.,36,52,0,0,0
+3,"Buttermilk, cultured",1,cup,9,13,0,5,4
+4,"Evaporated, undiluted",1,cup,16,24,0,20,18
+5,Fortified milk,6,cups,89,119,1.4,42,23
+6,"Powdered milk, whole",1,cup,27,39,0,28,24
+7,"Powdered milk, skim, instant",4/3,cups,30,42,0,0,0
+8,"Goats' milk, fresh",1,cup,8,11,0,10,8
+9,Malted milk Cocoa,1,cup,8,26,0,11,10
+10,"Yogurt, of partially skim. milk",1,cup,18,13,1,4,3
+11,Milk pudding (cornstarch),1,cup,9,40,0,10,9
+12,"Milk pudding Custard, baked",1,cup,13,28,0,14,11
+13,"Ice cream, commercial",1,cup,6,29,0,18,16
+14,"Ice milk, commercial",1,cup,9,32,0,10,9
+15,"Cream, light, or half-and-half",1/2,cup,4,5,0,15,13
+16,"Cream, heavy, or whipping",1/2,cup,2,3,1,44,27
+17,"Cheese, cottage, creamed",1,cup,30,6,0,11,10
+18,"Cheddar, or American",1-in.,cube,4,0,0,6,5
+19,"Cheddar, grated cup",1/2,cup,14,1,0,19,17
+20,Cream cheese,1,oz.,2,1,0,11,10
+21,Processed cheese,1,oz.,7,0,0,9,8
+22,Roquefort type,1,oz.,6,0,0,9,8
+23,Swiss,1,oz.,7,0,0,8,7
+24,"Eggs, boiled, poached, or raw",2,,12,0,0,12,10
+25,"Eggs, Scrambled, omelet, or fried",2,,13,1,0,16,14
+26,"Eggs, Yolks only",2,,6,0,0,10,8
+27,Butter,1T.,,0,0,0,11,10
+28,Hydrogenated cooking fat,1/2,cup,0,0,0,100,88
+29,Lard,1/2,cup,0,0,0,110,92
+30,"Margarine, 1/2 pound or",1/2,cup,0,0,0,91,76
+31,"Margarine, 2 pat or",1,T.,0,0,0,11,9
+32,Mayonnaise,1,T.,0,0,0,12,5
+33,"corn oil, peanut oil, soy oil or cottonseed",1,T.,0,0,0,14,5
+34,Olive oil,1T.,,0,0,0,14,3
+35,"Safflower, sunflower oil",1,T.,0,0,0,14,3
+36,French salad dressing,1,T.,0,2,0,6,2
+37,Thousand Island salad dressing,1,T.,0,1,0,8,3
+38,Salt pork,2,oz.,3,0,0,55,
+39,"Bacon, crisp, drained",2,slices,4,1,0,8,7
+40,"Beef, chuck, pat-roasted",3,oz.,23,0,0,16,15
+41,"Beef, Hamburger, commercial",3,oz.,21,0,0,17,15
+42,"Beef, Ground lean",3,oz.,24,0,0,10,9
+43,"Roast beef, oven-cooked",3,oz.,16,0,0,36,35
+44,"Steak, as sirloin",3,oz.,20,0,0,27,25
+45,"Steak, lean, as round",3,oz.,24,0,0,12,11
+46,Corned beef,3,oz.,22,0,0,10,9
+47,"Corned beef hash, canned",3,oz.,12,6,0,8,7
+48,"Beef, Dried or chipped",2,oz.,19,0,0,4,4
+49,"Pot-pie, 4 1/2"" diameter",1,pie,18,32,0,28,25
+50,"Stew, with vegetables",1,cup,15,15,0,10,9
+51,chicken; broiled,3,oz.,23,0,0,9,7
+52,"Chicken, Fried, breast or leg and thigh",3,oz.,25,0,0,15,11
+53,"Chicken, Roasted",3.5,oz.,25,0,0,20,16
+54,"Chicken livers, fried",3,med.,22,2.3,0,14,12
+55,"Duck, domestic",3.5,oz.,16,0,0,28,0
+56,"Lamb, chop, broiled",4,oz.,24,0,0,35,33
+57,"Lamb, Leg roasted",3,oz.,20,0,0,14,14
+58,"Lamb, Shoulder, braised",3,oz.,18,0,0,23,21
+59,"Pork, chop, 1 thick",3.5,oz.,16,0,0,21,18
+60,"Ham, cured, and pan-broiled",3,oz.,16,0,0,22,19
+61,"Ham, cured, and Ham, as luncheon meat",2,oz.,13,0,0,13,11
+62,"Ham, canned, spiced",2,oz.,8,1,0,14,12
+63,Pork roast,3,oz.,21,0,0,24,21
+64,"Pork sausage, bulk",3.5,oz.,18,0,0,44,40
+65,"Turkey, roasted",3,oz.,27,0,0,15,0
+66,"Veal, cutlet, broiled",3,oz.,23,0,0,9,8
+67,"Veal, Roast",3,oz.,13,0,0,14,13
+68,"Clams, steamed or canned",3,oz.,12,2,0,1,0
+69,"Cod, broiled",3.5,oz.,28,0,0,5,0
+70,"Crab meat, cooked",3,oz.,14,1,0,2,0
+71,"Fish, fried, breaded fish",5,,19,8,0,10,5
+72,"Flounder, baked",3.5,oz.,30,0,0,8,0
+73,"Haddock, fried",3,oz.,16,6,0,5,4
+74,"Halibut, broiled",3.5,oz.,26,0,0,8,0
+75,"Herring, kippered",1,small,22,0,0,13,0
+76,"Lobster, steamed",aver.,,18,0,0,1,0
+77,"Mackerel, canned",3,oz.,18,0,a,9,0
+78,"Oysters, raw",6-8,med.,3,0,2,0,
+79,"Oyster stew, with milk",1,cup,11,11,0,12,0
+80,"Salmon, canned",3,oz.,17,0,0,5,1
+81,"Sardines, canned",3,oz.,22,0,0,9,4
+82,"Scallops, breaded, fried",3.5,oz.,18,10,0,8,0
+83,"Shad, baked",3,oz.,20,0,0,10,0
+84,"Shrimp, steamed",3,oz.,23,0,0,1,0
+85,"Swordfish, broiled",1,steak,27,0,0,6,0
+86,"Tuna, canned, drained",3,oz.,25,0,0,7,3
+87,"Artichoke, globe",1,large,2,10,2,0,0
+88,"Asparagus, green",6,spears,1,3,0.5,0,0
+89,"Beans, green snap",1,cup,1,6,0.8,0,0
+90,"Lima, green",1,cup,8,24,3,0,0
+91,"Lima, dry, cooked",1,cup,16,48,2,0,0
+92,"Navy, baked with pork",3/4,cup,11,37,2,6,6
+93,"Red kidney, canned",1,cup,15,42,2.5,1,0
+94,"Bean sprouts, uncooked",1,cup,1,3,0.3,0,0
+95,"Beet greens, steamed",1,cup,2,6,1.4,0,0
+96,"Beetroots, boiled",1,cup,12,0.8,0,0,
+97,"Broccoli, steamed",1,cup,5,8,1.9,0,0
+98,"Brussels sprouts, steamed Cabbage, as coleslaw",1,cup,6,12,1.7,0,0
+99,"Sauerkraut, canned",1,cup,1,7,1.2,0,0
+100,Steamed cabbage,1,cup,2,9,1.3,0,0
+101,"Carrots, cooked, diced",1,cup,1,10,0.9,0,0
+102,"Raw, grated",1,cup,1,10,1.2,0,0
+103,"Strips, from raw",1,mad.,0,5,0.5,0,0
+104,"Cauliflower, steamed",1,cup,3,6,1,0,0
+105,"Celery, cooked, diced",1,cup,1,4,1,0,0
+106,Stalk raw,1,large,1,1,0.3,0,0
+107,"Chard steamed, leaves and stalks",1,cup,2,7,1.4,0,0
+108,"Collards, steamed leaves",1,cup,5,8,2,0,0
+109,"Corn, steamed,",1,ear,3,21,0.8,1,0
+110,cooked or canned,1,cup,5,41,1.6,0,0
+111,"Cucumbers, 1/8"" slices",8,,0,1,0.2,0,0
+112,"Dandelion greens, steamed",1,cup,5,16,3.2,1,0
+113,"Eggplant, steamed",1,cup,2,9,1,0,0
+114,Endive (escarole),2,oz.,1,2,0.6,0,0
+115,"Kale, steamed",1,cup,4,8,0.9,1,0
+116,"Kohlrabi, raw, sliced",1,cup,2,9,1.5,0,0
+117,"Lambs quarters, steamed",1,cup,5,7,3.2,0,0
+118,Lentils,1,cup,15,38,2.4,0,0
+119,"Lettuce, loose leaf, green",1/4,head,1,2,0.5,0,0
+120,Iceberg lettuce,1/4,head,0,3,0.5,0,0
+121,"Mushrooms, cooked or canned",4,,2,4,0,0,0
+122,"Mustard greens, steamed",1,,3,6,1.2,0,0
+123,"Okra, diced, steamed",4/3,cups,1,7,1,0,0
+124,"Onions, mature cooked",1,,2,18,1.6,0,0
+125,"Raw, green",6,small,0,5,1,0,0
+126,"Parsley, chopped, raw",2,T.,0,0,0,0,0
+127,"Parsnips, steamed",1,cup,2,22,3,1,0
+128,"Peas, green, canned",1,cup,3,13,0.1,0,0
+129,"Fresh, steamed peas",1,cup,5,12,2.2,0,0
+130,Split peas cooked,4,cups,8,21,0.4,0,0
+131,"Raw, green, sweet peppers",1,large,1,6,1.4,0,0
+132,Stuffed peppers with beef and crumbs,1,med.,19,24,1,9,8
+133,"Potatoes, baked",1,med.,2,22,0.5,0,0
+134,French-fried potatoes,10,pieces,-1,20,0.4,7,3
+135,Mashed potatoes with milk and butter,1,cup,4,28,0.7,12,11
+136,"Potatoes, pan-tried",3/4,cup,4,33,0.4,14,6
+137,Scalloped with cheese,3/4,cup,6,14,0.4,8,7
+138,Steamed before peeling,1,med.,2,19,0.4,0,0
+139,Potato chips,10,,1,10,0,7,4
+140,"Radishes, raw",5,small,0,2,0.3,0,0
+141,"Rutabagas, diced",4,cups,0,8,1.4,0,0
+142,"Soybeans, unseasoned",1,cup,22,20,3.2,11,0
+143,"Spinach, steamed",1,cup,3,3,1,0,0
+144,"Squash, summer",1,cup,1,8,0.6,0,0
+145,"Squash, Winter, mashed",1,cup,4,23,2.6,0,0
+146,"Sweet potatoes, baked",1,med.,2,36,1,1,0
+147,"Sweet potatoes, Candied",1,med.,2,80,1.5,6,5
+148,"Tomatoes, canned whole",1,cup,2,9,1,0,0
+149,"Tomatoes, Raw, 2 by 2 1/2",1,med.,1,6,0.6,0,0
+150,"Tomato juice, canned",1,cup,2,10,0.6,0,0
+151,Tomato catsup,1,T.,0,4,0,0,0
+152,"Turnip greens, steamed",1,cup,4,8,1.8,1,0
+153,"Turnips, steamed, sliced",1,cup,1,9,1.8,0,0
+154,"Watercress, leaves and stems, raw",1,cup,1,1,0.3,0,0
+155,"Apple juice, fresh or canned",1,cup,0,34,0,0,0
+156,Apple vinegar,1/3,cup,0,3,0,0,0
+157,"Apples, raw",1,med,0,18,1,0,0
+158,"Apples, stewed or canned",1,cup,0,26,2,0,0
+159,"Apricots, canned In syrup",1,cup,2,57,1,0,0
+160,"Apricots, Dried, uncooked",1/2,cup,4,50,1,0,0
+161,"Apricots, Fresh",3,med.,1,14,0.7,0,0
+162,Avocado,1/2,large,2,6,1.8,18,12
+163,Banana,1,med.,1,23,0.9,0,0
+164,"Blackberries, fresh",1,cup,2,19,6.6,1,0
+165,"Blueberries, canned",1,cup,1,65,2,0,0
+166,Cantaloupe,1/2,med.,1,9,2.2,0,0
+167,"Cherries, canned, pitted",1,cup,2,26,2,1,0
+168,"Fresh, raw",1,cup,1,15,0.8,0,0
+169,"Cranberry sauce, sweetened",1,cup,0,142,1.2,0,0
+170,"Dates, dried",1,cup,4,134,3.6,0,0
+171,"Figs, dried, large, 2"" by 1""",2,,2,30,1.9,0,0
+172,"Figs, fresh, raw",3,med.,2,22,1,0,0
+173,"Figs, stewed or canned with syrup",3,,1,32,1,0,0
+174,"Grapefruit, canned",1,cup,1,44,0.5,0,0
+175,"Grapefruit, fresh, 5"" diameter",1,,1,14,1,0,0
+176,Grapefruit juice,1,cup,1,24,1,0,0
+177,"Grapes, American, as Concord",1,cup,1,16,0.8,0,0
+178,"European, as Muscat, Tokay",1,cup,1,26,0.7,0,0
+179,"Grape juice, bottled",1,cup,1,42,0,0,0
+180,"Lemon juice, fresh",1/2,cup,0,10,0,0,0
+181,"Lemonade concentrate, frozen",6,oz.,0,112,0,0,0
+182,"Olives, green, canned, large",10,,1,3,0.8,10,9
+183,"Ripe, canned, large",10,,1,1,1,13,12
+184,"Oranges, fresh, 3"" diameter",1,med.,2,16,1,0,0
+185,"Orange juice, fresh",8,oz.,2,25,0.2,0,0
+186,"Papaya, fresh",1/2,med.,1,18,1.8,0,0
+187,"Peaches, canned, sliced",1,cup,1,52,1,0,0
+188,"Fresh, raw",1,med.,1,10,0.6,0,0
+189,"Pears, canned, sweetened",1,cup,1,50,2,0,0
+190,"Raw, 3 by 2V",1,med.,1,25,2,1,0
+191,"Persimmons, Japanese",1,med.,1,20,2,0,0
+192,"Pineapple, canned, sliced",1,large slice,0,26,0.4,0,0
+193,Crushed,1,cup,1,55,0.7,0,0
+194,"Raw, diced",1,cup,1,19,0.6,0',0
+195,"Pineapple juice, canned",1,cup,1,32,0.2,0,0
+196,"Plums, canned in syrup",1,cup,1,50,0.7,0,0
+197,"Raw, 2"" diameter",1,,0,7,0.2,0,0
+198,"Prunes, cooked",1,cup,3,81,0.8,1,0
+199,"Prune juice, canned*",1,cup,1,45,0.7,0,0
+200,"Raisins, dried",1/2,cup,2,82,0.7,0,0
+201,"Raspberries, frozen",1/2,cup,0,25,2,0,0
+202,"Raspberries, Raw, red",3/4,cup,0,14,5,0,0
+203,"Rhubarb, cooked, sweetened",1,cup,1,98,1.9,0,0
+204,"Strawberries, frozen",1,cup,1,60,1.3,0,0
+205,"Strawberries, Raw",1,cup,0,12,1.9,0,0
+206,"Tangerines, fresh",I,med.,1,10,1,0,0
+207,"Watermelon, 4 by 8""",1,wedge,2,29,3.6,1,0
+208,"Biscuits, 2 1/2"" diameters",1,,3,18,0,4,3
+209,Bran flakes,1,cup,3,32,0.1,0,0
+210,"Bread, cracked wheat",1,slice,2,12,0.1,1,1
+211,Rye,1,slice,2,12,0.1,1,1
+212,"Bread, White, 20 slices, or",1,lb,39,229,9,15,12
+213,"Bread, Whole-wheat",1,lb,48,216,67.5,14,10
+214,"Bread, Whole-wheat",1,slice,2,11,0.31,1,0
+215,Corn bread,1,serving,3,15,0.3,4,2
+216,Cornflakes,1,cup,2,25,0.1,0,0
+217,"Corn grits, cooked",1,cup,8,27,0.2,0,0
+218,"Corn meal, yellow",1,cup,9,74,1.6,4,2
+219,"Crackers, graham",2,med.,1,10,0,1,0
+220,"Soda, 2 1/2 square",2,,1,8,0,1,0
+221,Farina,1,cup,3,22,8,0,0
+222,"Flour, soy, full fat",1,cup,39,33,2.9,22,0
+223,"Flour, Wheat (all purpose)",1,cup,12,84,0.3,1,0
+224,"Flour, Wheat (whole)",1,cup,13,79,2.8,2,0
+225,"Macaroni, cooked",1,cup,5,32,0.1,1,0
+226,"Macaroni, Baked with cheese",1,cup,18,44,0,25,24
+227,Muffins of refined flour,1,,4,19,0,5,4
+228,Noodles,1,cup,7,37,0.1,2,2
+229,"Oatmeal, or rolled oats",1,cup,5,26,4.6,3,2
+230,"Pancakes, buckwheat, 4” diam.",4,,7,28,0.1,9,0
+231,"Pancakes, wheat, 4” diam.",4,,7,28,0.1,9,0
+232,"Pizza, cheese, 1/8 of 14"" diam.",1,section,8,23,0,6,5
+233,"Popcorn, with oil and salt",2,cups,3,20,0.5,7,2
+234,Puffed rice,1,cup,0,12,0,0,0
+235,"Rice, uncooked, brown",1,cup,15,154,1.2,3,0
+236,"Rice, White",1,cup,14,150,0.3,0,0
+237,Rice flakes,1,cup,2,26,0.1,0,0
+238,Rice polish,1/2,cup,6,28,1.2,6,0
+239,"Rolls, breakfast, sweet",1,large,3,23,0.1,12,11
+240,"Rolls, of refined flour",1,,3,20,0,2,2
+241,"Rolls, whole-wheat",1,,4,20,0.1,1,0
+242,Spaghetti with meat sauce,1,cup,13,35,0.5,10,6
+243,"Spaghetti, with tomatoes and cheese",1,cup,6,36,0.5,5,3
+244,Spanish rice with meat,1,cup,4,40,1.2,4,0
+245,Shredded wheat biscuit,1,,3,23,0.7,1,0
+246,"Waffles, 1/2"" x 4 1/2"" x 5 1/2""",1,,8,30,0.1,9,1
+247,Bean soups,1,cup,8,30,0.6,5,4
+248,Beef and vegetable,1,cup,6,11,0.5,4,4
+249,"Bouillon, broth, consommé",1,cup,5,0,0,0,0
+250,chicken or turkey,1,cup,4,10,0,2,2
+251,"Clam chowder, without milk",1,cup,5,12,0.5,2,8
+252,"Cream soups (asparagus, celery, etc.)",1,cup,7,18,1.2,12,11
+253,"Noodle, rice, barley",1,cup,6,13,0.2,4,3
+254,Split-pea soup (lentil),1,cup,8,25,0.5,3,3
+255,"Tomato soup, diluted w/milk",1,cup,6,22,0.5,7,6
+256,Vegetable (vegetarian),1,cup,4,14,0,2,2
+257,Apple betty,1,serving,1,29,0.5,4,0
+258,Bread pudding with raisins,3/4,cup,11,56,0.2,12,11
+259,"Cakes, angel food",1,slice,3,23,0,0,0
+260,Chocolate fudge w/ icing,1,slice,5,70,0.3,14,12
+261,Cupcake with icing,1,,3,31,0,3,2
+262,"Fruit cake, 2"" x 2"" x 4""",1,slice,2,17,0.2,4,3
+263,"Gingerbread, 2"" cube",1,slice,2,28,0,7,6
+264,"Plain, with no icing",1,slice,4,31,0,5,4
+265,"Sponge cake, no icing",1,slice,3,22,0,2,2
+266,"Candy, caramels",5,,0,19,0,3,3
+267,Chocolate creams,2,,0,24,0,4,4
+268,"Fudge, plain, 1"" x 1""",2,pieces,0,80,0.1,12,11
+269,Hard candies,1,oz.,0,28,0,0,0
+270,"Marshmallows, large",5,,1,23,0,0,0
+271,Milk chocolate,2,oz.,2,44,0.2,6,6
+272,Chocolate syrup,2,T.,0,22,0,0,0
+273,"Doughnuts, cake type",1,,2,17,0,7,4
+274,"Gelatin, made with water",1,cup,4,36,0,0,0
+275,"Honey, strained honey, strained",2,T.,0,30,0,0,0
+276,"Ices, lime, orange, etc.",1,cup,0,48,0,0,0
+277,"Jams, marmalades, preserves",1,T.,0,14,0,0,0
+278,Jellies,1,T.,0,13,0,0,0
+279,"Molasses, blackstrap",1,T.,0,11,8,0,0
+280,"Cane, refined",1,T.,0,13,0,0,0
+281,"Pie, apple, 1/2 of 9"" diam. pie",1,slice,3,53,0.1,13,11
+282,"Pie, Cherry",1,slice,3,55,0.1,13,11
+283,"Pie, Custard",1,slice,7,34,0,11,10
+284,"Pie, Lemon meringue",1,slice,4,45,0.1,12,10
+285,"Pie, Mince",1,slice,3,62,0.7,9,8
+286,"Pie, Pumpkin",1,slice,5,34,8,12,11
+287,"Sugar, beet or cane",1,cup,0,199,0,0,0
+288,"Sugar, Brown, firm-packed, dark",1,cup,0,210,0,,0
+289,"Syrup, maple",2,T.,0,25,0,0,0
+290,Tapioca cream pudding,1,cup,10,42,0,10,9
+291,"Almonds, dried",1/2,cup,13,13,1.8,38,28
+292,roasted and salted,1/2,cup,13,13,1.8,40,31
+293,Brazil nuts; unsalted,1/2,cup,10,7,2,47,31
+294,"Cashews, unsalted",1/2,cup,12,20,0.9,32,28
+295,"Coconut, shredded, sweetened",1/2,cup,1,26,2,20,19
+296,"Peanut butter, commercial",1/3,cup,12,9,0.9,25,17
+297,"Peanut butter, natural",1/3,cup,13,8,0.9,24,10
+298,"Peanuts, roasted",1/3,cup,13,9,1.2,25,16
+299,"Pecans, raw, halves",1/2,cup,5,7,1.1,35,25
+300,"Sesame seeds, dry",1/2,cup,9,10,3.1,24,13
+301,Sunflower seeds,1/2,cup,12,10,1.9,26,7
+302,"Walnuts, English, raw",1/2,cup,7,8,1,32,7
+303,Beer (4% alcohol),2,cups,0,8,0,0,0
+304,"Gin, rum, vodka, whiskey (86 proof)",1,oz.,0,0,0,0,0
+305,"Wines, dessert (I 8.8% alcohol)",1/2,cup,0,9,0,0,0
+306,Table (12.2% alcohol),1/2,cup,0,5,0,0,0
+307,Club soda,12,oz.,0,0,0,0,0
+308,"Cola drinks, sweetened",12,oz.,0,38,0,0,0
+309,Fruit-flavored soda,12,oz.,0,42,0,0,0
+310,Ginger ale,12,oz.,0,28,0,0,0
+311,Root beer,12,oz.,0,35,0,0,0
+312,"Coffee, black, unsweetened",1,cup,0,1,0,0,0
+313,"Tea, clear, unsweetened",1,cup,0,1,0,0,0
