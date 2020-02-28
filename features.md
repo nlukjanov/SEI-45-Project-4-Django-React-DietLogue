@@ -33,3 +33,10 @@ add floating plus button to add new log entry
 
 portion unit conditional on the type of food
 
+add history button to navbar and history page with just all logs listed in descending order
+for that we will need get all logs view and the get single(for edit)
+
+
+add view to food model in order to get names and id for front end selector
+when component mounts (create or edit log) run api request to get table of all foods
+user selects name and selection gives us id.
