@@ -1,5 +1,8 @@
 import React from 'react'
 import { get } from 'axios'
+
+import Register from './Register'
+
 class Index extends React.Component {
 state = {
 data : []
@@ -17,7 +20,11 @@ this.getData()
 }
 render() {
 return(
-<h1>Index</h1>
+  <>
+    <h1>Home Page</h1>
+    <Register />
+  </>
+
 )
 }
 }
