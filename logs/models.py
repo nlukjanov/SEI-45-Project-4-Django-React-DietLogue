@@ -5,6 +5,8 @@ User = get_user_model()
 
 class Food(models.Model):
     name = models.CharField(max_length=200)
+    measure = models.FloatField()
+    unit = models.CharField()
     grams = models.FloatField()
     calories = models.FloatField()
     protein = models.FloatField()
