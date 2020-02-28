@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import LogListView, LogDetailView
+from .views import LogListView, LogDetailView, FoodListView
 
 
 urlpatterns = [
-    path('', LogListView.as_view()),
-    path('<int:pk>/', LogDetailView.as_view())
+    path('logs/', LogListView.as_view()),
+    path('<int:pk>/', LogDetailView.as_view()),
+    path('foods/', FoodListView.as_view())
 ]
