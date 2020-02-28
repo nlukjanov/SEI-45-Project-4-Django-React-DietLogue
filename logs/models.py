@@ -12,6 +12,9 @@ class Food(models.Model):
     fat = models.FloatField()
     sat_fat = models.FloatField()
 
+    def __str__(self):
+        return self.name
+
 
 class Log(models.Model):
     food = models.ForeignKey(Food, related_name='food', null=True, on_delete=models.CASCADE)
