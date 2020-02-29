@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
 class Navbar extends React.Component {
-
   // handleLogout = () => {
   //   notify.show('Come back soon!', 'success', 3000)
   //   Auth.logout()
@@ -17,10 +16,11 @@ class Navbar extends React.Component {
               Home
             </Link>
           </div>
-          <div
-            className='navbar-menu'
-          >
+          <div className='navbar-menu'>
             <div className='navbar-end'>
+              <Link className='navbar-item' to='/logs/new'>
+                New Log Entry
+              </Link>
               <Link className='navbar-item' to='/register'>
                 Register
               </Link>
