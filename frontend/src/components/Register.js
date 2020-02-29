@@ -1,7 +1,12 @@
 import React from 'react'
 import axios from 'axios'
-
 import FormErrors from './FormErrors'
+
+//todo gender radio button
+//todo dob calendar
+//todo height dropdown
+//todo weight dropdown
+
 
 class Register extends React.Component {
   state = {
@@ -58,6 +63,7 @@ class Register extends React.Component {
     return (
       <section className='form'>
         <form onSubmit={this.handleSubmit}>
+          <h2>Create your account</h2>
           <div className="form-div">
             <input
               onChange={this.handleChange}
@@ -89,6 +95,10 @@ class Register extends React.Component {
               name="passwordConfirmation" 
               required/>
           </div>
+          <div>
+            <h3>Tell us a little bit about yourself</h3>
+          </div>
+
           <div className="button-div">
           <button
             className="button"
@@ -102,3 +112,4 @@ class Register extends React.Component {
 }
 
 export default Register
+
