@@ -5,7 +5,17 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <h1>Home Page</h1>
+        <div>
+          <div>
+            Logo
+          </div>
+          <div>
+            Diet Log
+          </div>
+        </div>
+        <div>
+          Slogan
+        </div>
         <Link to='/register'>Register</Link>
         <Link to='/login'>Login</Link>
       </>
