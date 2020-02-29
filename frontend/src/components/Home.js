@@ -5,19 +5,24 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <div>
-          <div>
-            Logo
+        <section className='section'>
+          <div className='container'>
+            <div className='columns is-mobile is-centered'>
+              <div className='column is-6 is-offset-3'>
+                <div className=''>Logo</div>
+                <div>Diet Log</div>
+                <div>Slogan</div>
+              </div>
+            </div>
+            <Link className='button is-primary is-fullwidth' to='/register'>
+              Register
+            </Link>
+            <br/>
+            <Link className='button is-primary is-fullwidth' to='/login'>
+              Login
+            </Link>
           </div>
-          <div>
-            Diet Log
-          </div>
-        </div>
-        <div>
-          Slogan
-        </div>
-        <Link to='/register'>Register</Link>
-        <Link to='/login'>Login</Link>
+        </section>
       </>
     )
   }
