@@ -1,52 +1,60 @@
 import React from 'react'
 import axios from 'axios'
 // import Auth from '../../lib/auth'
+import Select from 'react-select'
 
 class NewLog extends React.Component {
   state = {
-    data: {
-      name: '',
-      origin: '',
-      image: '',
-      tastingNotes: ''
+    formData: {
+      food: null,
+      portion: 1
     },
-    food: {
-
-    }
+    food: {}
   }
 
   async componentDidMount() {
     try {
-      const res = await axios.get('localhost:8000/api/foods/')
-      this.setState({ food: res.data })
+      const res = await axios.get('http://localhost:8000/api/foods/')
+      const foodOptions = []
+      res.data.map(el => {
+        const foodObject = {}
+        foodObject['value'] = el.id
+        foodObject['label'] = el.name
+        foodOptions.push(foodObject)
+      })
+      this.setState({ food: foodOptions })
     } catch (error) {
       // this.props.history.push('/notfound')
     }
   }
-  
 
   handleChange = ({ target: { name, value } }) => {
-    const data = { ...this.state.data, [name]: value }
-    this.setState({ data })
+    const formData = { ...this.state.formData, [name]: value }
+    this.setState({ formData })
   }
 
   handleSubmit = async e => {
     e.preventDefault()
-    console.log(e.target)
+    console.log(this.state.formData)
+    try {
+      const res = await axios.post(
+        'http://localhost:8000/api/logs/',
+        this.state.formData,
+        { headers: { Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjF9.ToXIHM9kzaAX264Jyc81T5vpxJG5tNKH6vvI8iFkOCQ` } }
+      )
+      // this.props.history.push(`/cheeses/${res.data._id}`)
+    } catch (error) {
+      console.log(error.res)
+    }
+  }
 
-    // try {
-    //   const res = await axios.post(
-    //     'https://cheesebored.herokuapp.com/cheeses',
-    //     this.state.data,
-    //     { headers: { Authorization: `Bearer ${Auth.getToken('token')}` } } // we include our users token in the request header to authenticate them
-    //   )
-    //   this.props.history.push(`/cheeses/${res.data._id}`) // we redirect our user to their newly created cheese show page, we ge the id of that new cheese from the successful POST request response
-    // } catch (error) {
-    //   console.log(error.res)
-    // }
+  handleMultiChange = selected => {
+    const formData = { ...this.state.formData, food: selected.value }
+    this.setState({ formData })
   }
 
   render() {
+    console.log(this.state)
     return (
       <section className='section'>
         <div className='container'>
@@ -57,15 +65,27 @@ class NewLog extends React.Component {
             >
               <h2 className='title'>New Cheese</h2>
               <div className='field'>
-                <label className='label'>Name</label>
+                <label className='label'>Food</label>
                 <div className='control'>
-                  <input
-                    className='input'
-                    placeholder='Name'
-                    name='name'
-                    onChange={this.handleChange}
-                    value={this.state.data.name}
+                  <Select
+                    onChange={this.handleMultiChange}
+                    options={this.state.food}
+                    className='basic-multi-select'
+                    classNamePrefix='select'
                   />
+                </div>
+              </div>
+              <div className='field'>
+                <label className='label'>Portion</label>
+                <div className='control'>
+                <input
+                  className='input'
+                  type='number'
+                  min='1'
+                  name='portion'
+                  value={this.state.formData.portion}
+                  onChange={this.handleChange}
+                />
                 </div>
               </div>
               <div className='field'>
