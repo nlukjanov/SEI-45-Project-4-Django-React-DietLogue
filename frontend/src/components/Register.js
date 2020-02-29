@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
-import FormErrors from './FormErrors'
+import headers from '../lib/headers'
+
 
 //todo gender radio button
 //todo dob calendar
@@ -14,48 +15,29 @@ class Register extends React.Component {
       name: '',
       email: '',
       password: '', 
-      passwordConfirmation: '',
+      password_confirmation: '',
       gender: '',
       height: 0, 
       weight: 0,
       dob: ''
-    }, 
-    emailValid: false,
-    formValid: false, 
-    passwordValid: false, 
-    formErrors: {email: '', password: ''}
+    }
   }
 
   handleChange = e => {
     const name = e.target.name
     const value = e.target.value
     const data = { ...this.state.data, [name]: value }
-    this.setState({ data },
-      // () => {
-      //   this.validateField(name.value)
-      // }
-      )
+    this.setState({ data })
   }
 
-  // validateField(fieldName, value) {
-  //   let fieldValidationErrors = this.state.formErrors
-  //   let emailValid = this.state.emailValid
-  //   let passwordValid = this.state.passwordValid
-
-  //   switch (fieldName) {
-  //     case 'email': 
-  //       emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,}$/i)
-  //       fieldValidationErrors.email = email
-  //   }
-  // }
-
+ 
   handleSubmit = async e => {
     e.preventDefault()
     try {
-      await axios.post('/api/register', this.state.data)
-      // this.props.history.push('/login')
+      await axios.post('/api/register/', this.state.data)
+      this.props.history.push('/api/login/')
     } catch (error) {
-      console.log(error)
+      console.log(error.response)
     }
   }
 
@@ -92,7 +74,7 @@ class Register extends React.Component {
               onChange={this.handleChange}
               type="password"
               placeholder="confirm password"
-              name="passwordConfirmation" 
+              name="password_confirmation" 
               required/>
           </div>
           <div>
@@ -105,6 +87,8 @@ class Register extends React.Component {
             type="submit">
               Register</button>
         </div>
+
+        
         </form>
       </section>
     )
