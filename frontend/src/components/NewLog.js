@@ -29,7 +29,7 @@ class NewLog extends React.Component {
   }
 
   handleChange = ({ target: { name, value } }) => {
-    const formData = { ...this.state.formData, [name]: value }
+    const formData = { ...this.state.formData, [name]: Number(value) }
     this.setState({ formData })
   }
 
@@ -40,7 +40,11 @@ class NewLog extends React.Component {
       const res = await axios.post(
         'http://localhost:8000/api/logs/',
         this.state.formData,
-        { headers: { Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjF9.ToXIHM9kzaAX264Jyc81T5vpxJG5tNKH6vvI8iFkOCQ` } }
+        {
+          headers: {
+            Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjF9.ToXIHM9kzaAX264Jyc81T5vpxJG5tNKH6vvI8iFkOCQ`
+          }
+        }
       )
       // this.props.history.push(`/cheeses/${res.data._id}`)
     } catch (error) {
@@ -49,8 +53,31 @@ class NewLog extends React.Component {
   }
 
   handleMultiChange = selected => {
-    const formData = { ...this.state.formData, food: selected.value }
+    const value = selected ? selected.value : null
+    const formData = { ...this.state.formData, food: value }
     this.setState({ formData })
+  }
+
+  handlePortion = e => {
+    const name = e.target.getAttribute('name')
+    
+    if (name === 'increase') {
+      console.log(this.state.formData.portion)
+      const formData = {
+        ...this.state.formData,
+        portion: this.state.formData.portion + 1
+      }
+      this.setState({formData})
+    } else if (name === 'decrease') {
+      if (this.state.formData.portion === 1) {
+        return 
+      }
+      const formData = {
+        ...this.state.formData,
+        portion: this.state.formData.portion - 1
+      }
+      this.setState({formData})
+    }
   }
 
   render() {
@@ -65,27 +92,44 @@ class NewLog extends React.Component {
             >
               <h2 className='title'>New Cheese</h2>
               <div className='field'>
-                <label className='label'>Food</label>
+                <label className='label has-text-centered'>Food</label>
                 <div className='control'>
                   <Select
                     onChange={this.handleMultiChange}
                     options={this.state.food}
+                    isClearable
                     className='basic-multi-select'
                     classNamePrefix='select'
                   />
                 </div>
               </div>
               <div className='field'>
-                <label className='label'>Portion</label>
+                <label className='label has-text-centered'>Portion</label>
                 <div className='control'>
-                <input
-                  className='input'
-                  type='number'
-                  min='1'
-                  name='portion'
-                  value={this.state.formData.portion}
-                  onChange={this.handleChange}
-                />
+                  <div className='flex-container'>
+                    <div
+                      name='decrease'
+                      className='button'
+                      onClick={this.handlePortion}
+                    >
+                      -
+                    </div>
+                    <input
+                      className='input'
+                      type='number'
+                      min={1}
+                      name='portion'
+                      value={this.state.formData.portion}
+                      onChange={this.handleChange}
+                    />
+                    <div
+                      className='button'
+                      name='increase'
+                      onClick={this.handlePortion}
+                    >
+                      +
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className='field'>
