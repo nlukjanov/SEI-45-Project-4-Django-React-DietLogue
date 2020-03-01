@@ -9,7 +9,9 @@ class NewLog extends React.Component {
       food: null,
       portion: 1
     },
-    food: {}
+    foodOption: [],
+    foodData: [],
+    helperData: null
   }
 
   async componentDidMount() {
@@ -22,7 +24,7 @@ class NewLog extends React.Component {
         foodObject['label'] = el.name
         foodOptions.push(foodObject)
       })
-      this.setState({ food: foodOptions })
+      this.setState({ foodOption: foodOptions, foodData: res.data })
     } catch (error) {
       // this.props.history.push('/notfound')
     }
@@ -55,28 +57,43 @@ class NewLog extends React.Component {
   handleMultiChange = selected => {
     const value = selected ? selected.value : null
     const formData = { ...this.state.formData, food: value }
-    this.setState({ formData })
+    this.setState({ formData }, () => {this.dataHelper()})
+  }
+
+  dataHelper = () => {
+    const measure = this.state.foodData.find(
+      x => x.id === this.state.formData.food
+    ).measure
+    const unit = this.state.foodData.find(
+      x => x.id === this.state.formData.food
+    ).unit
+    const grams = this.state.foodData.find(
+      x => x.id === this.state.formData.food
+    ).grams
+
+    const helperData = { measure, unit, grams }
+    this.setState({ helperData })
   }
 
   handlePortion = e => {
     const name = e.target.getAttribute('name')
-    
+
     if (name === 'increase') {
       console.log(this.state.formData.portion)
       const formData = {
         ...this.state.formData,
         portion: this.state.formData.portion + 1
       }
-      this.setState({formData})
+      this.setState({ formData })
     } else if (name === 'decrease') {
       if (this.state.formData.portion === 1) {
-        return 
+        return
       }
       const formData = {
         ...this.state.formData,
         portion: this.state.formData.portion - 1
       }
-      this.setState({formData})
+      this.setState({ formData })
     }
   }
 
@@ -90,13 +107,13 @@ class NewLog extends React.Component {
               onSubmit={this.handleSubmit}
               className='column is-half is-offset-one-quarter'
             >
-              <h2 className='title'>New Cheese</h2>
+              <h2 className='title'>New Log Entry</h2>
               <div className='field'>
                 <label className='label has-text-centered'>Food</label>
                 <div className='control'>
                   <Select
                     onChange={this.handleMultiChange}
-                    options={this.state.food}
+                    options={this.state.foodOption}
                     isClearable
                     className='basic-multi-select'
                     classNamePrefix='select'
@@ -131,6 +148,13 @@ class NewLog extends React.Component {
                     </div>
                   </div>
                 </div>
+                {this.state.helperData && <div className='flex-container'>
+                  <small className='help'>
+                    {this.state.formData.portion} portions = {Number(this.state.helperData.measure) * this.state.formData.portion}
+                  </small>
+                  <small className='help'>{this.state.helperData.unit }</small>
+                  <small className='help'> = {Number(this.state.helperData.grams) * this.state.formData.portion} grams</small>
+                </div>}
               </div>
               <div className='field'>
                 <button
