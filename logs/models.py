@@ -5,12 +5,15 @@ User = get_user_model()
 
 class Food(models.Model):
     name = models.CharField(max_length=200)
-    calories = models.FloatField()
-    protein = models.FloatField()
-    carbs = models.FloatField()
-    fiber = models.FloatField()
-    fat = models.FloatField()
-    sat_fat = models.FloatField()
+    measure = models.DecimalField(max_digits=8, decimal_places=2)
+    unit = models.CharField(max_length=200)
+    grams = models.DecimalField(max_digits=8, decimal_places=2)
+    calories = models.DecimalField(max_digits=8, decimal_places=2)
+    protein = models.DecimalField(max_digits=8, decimal_places=2)
+    carbs = models.DecimalField(max_digits=8, decimal_places=2)
+    fiber = models.DecimalField(max_digits=8, decimal_places=2)
+    fat = models.DecimalField(max_digits=8, decimal_places=2)
+    sat_fat = models.DecimalField(max_digits=8, decimal_places=2)
 
     def __str__(self):
         return self.name
