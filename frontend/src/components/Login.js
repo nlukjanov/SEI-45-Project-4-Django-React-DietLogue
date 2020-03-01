@@ -1,7 +1,8 @@
 import React from 'react'
 import axios from 'axios'
-import headers from '../lib/headers'
 
+import Authentication from './Authentication'
+import headers from '../lib/headers'
 
 class Login extends React.Component {
   state = {
@@ -21,6 +22,7 @@ class Login extends React.Component {
     e.preventDefault()
     try {
       const res = await axios.post('/api/login/', this.state.data, headers)
+      Authentication.setToken(res.data.token)
       console.log(res.data)
       this.props.history.push('/')
       
@@ -60,4 +62,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login
+export default Authentication
