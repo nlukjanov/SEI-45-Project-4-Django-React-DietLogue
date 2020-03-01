@@ -62,4 +62,4 @@ class Login extends React.Component {
   }
 }
 
-export default Authentication
+export default Login
