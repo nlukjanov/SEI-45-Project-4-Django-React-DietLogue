@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 // import Auth from '../../lib/auth'
 import Select from 'react-select'
+const pluralize = require('pluralize')
 
 class NewLog extends React.Component {
   state = {
@@ -57,7 +58,9 @@ class NewLog extends React.Component {
   handleMultiChange = selected => {
     const value = selected ? selected.value : null
     const formData = { ...this.state.formData, food: value }
-    this.setState({ formData }, () => {this.dataHelper()})
+    this.setState({ formData }, () => {
+      this.dataHelper()
+    })
   }
 
   dataHelper = () => {
@@ -148,13 +151,30 @@ class NewLog extends React.Component {
                     </div>
                   </div>
                 </div>
-                {this.state.helperData && <div className='flex-container'>
-                  <small className='help'>
-                    {this.state.formData.portion} portions = {Number(this.state.helperData.measure) * this.state.formData.portion}
-                  </small>
-                  <small className='help'>{this.state.helperData.unit }</small>
-                  <small className='help'> = {Number(this.state.helperData.grams) * this.state.formData.portion} grams</small>
-                </div>}
+                {this.state.helperData && (
+                  <div className='flex-container'>
+                    <small className='help'>
+                      {this.state.formData.portion}{' '}
+                      {pluralize('portion', this.state.formData.portion)} ={' '}
+                      {Number(this.state.helperData.measure) *
+                        this.state.formData.portion}
+                    </small>
+                    <small className='help'>
+                      {pluralize(
+                        this.state.helperData.unit,
+                        Number(this.state.helperData.measure) *
+                          this.state.formData.portion
+                      )}
+                    </small>
+                    <small className='help'>
+                      {' '}
+                      ={' '}
+                      {Number(this.state.helperData.grams) *
+                        this.state.formData.portion}{' '}
+                      grams
+                    </small>
+                  </div>
+                )}
               </div>
               <div className='field'>
                 <button
