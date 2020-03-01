@@ -29,11 +29,11 @@ class LogHistory extends Component {
     return (
       <section className='section'>
         <div className='container'>
-          <h1 className='title'>
+          <h1 className='title has-text-centered'>
             Your log history
           </h1>
           <div class='table-container'>
-            <table class='table'>
+            <table class='table is-fullwidth'>
               <thead>
                 <tr>
                   <th>Date</th>
@@ -55,7 +55,7 @@ class LogHistory extends Component {
                   console.log(entry.food.sat_fat)
                   return (
                     <tr key={entry.id}>
-                      <td>{moment(entry.created_at).format('DD/MM/YYYY, h:mm')}</td>
+                      <td>{moment(entry.created_at).format('DD/MM/YYYY, H:mm')}</td>
                       <td>{entry.food.name}</td>
                       <td>{entry.portion}</td>
                       <td>{entry.food.measure}</td>
