@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 // import Auth from '../../lib/auth'
 import Select from 'react-select'
+const pluralize = require('pluralize')
 
 class NewLog extends React.Component {
   state = {
@@ -9,7 +10,9 @@ class NewLog extends React.Component {
       food: null,
       portion: 1
     },
-    food: {}
+    foodOption: [],
+    foodData: [],
+    helperData: null
   }
 
   async componentDidMount() {
@@ -22,14 +25,14 @@ class NewLog extends React.Component {
         foodObject['label'] = el.name
         foodOptions.push(foodObject)
       })
-      this.setState({ food: foodOptions })
+      this.setState({ foodOption: foodOptions, foodData: res.data })
     } catch (error) {
       // this.props.history.push('/notfound')
     }
   }
 
   handleChange = ({ target: { name, value } }) => {
-    const formData = { ...this.state.formData, [name]: value }
+    const formData = { ...this.state.formData, [name]: Number(value) }
     this.setState({ formData })
   }
 
@@ -40,7 +43,11 @@ class NewLog extends React.Component {
       const res = await axios.post(
         'http://localhost:8000/api/logs/',
         this.state.formData,
-        { headers: { Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjF9.ToXIHM9kzaAX264Jyc81T5vpxJG5tNKH6vvI8iFkOCQ` } }
+        {
+          headers: {
+            Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjF9.ToXIHM9kzaAX264Jyc81T5vpxJG5tNKH6vvI8iFkOCQ`
+          }
+        }
       )
       // this.props.history.push(`/cheeses/${res.data._id}`)
     } catch (error) {
@@ -49,8 +56,48 @@ class NewLog extends React.Component {
   }
 
   handleMultiChange = selected => {
-    const formData = { ...this.state.formData, food: selected.value }
-    this.setState({ formData })
+    const value = selected ? selected.value : null
+    const formData = { ...this.state.formData, food: value }
+    this.setState({ formData }, () => {
+      this.dataHelper()
+    })
+  }
+
+  dataHelper = () => {
+    const measure = this.state.foodData.find(
+      x => x.id === this.state.formData.food
+    ).measure
+    const unit = this.state.foodData.find(
+      x => x.id === this.state.formData.food
+    ).unit
+    const grams = this.state.foodData.find(
+      x => x.id === this.state.formData.food
+    ).grams
+
+    const helperData = { measure, unit, grams }
+    this.setState({ helperData })
+  }
+
+  handlePortion = e => {
+    const name = e.target.getAttribute('name')
+
+    if (name === 'increase') {
+      console.log(this.state.formData.portion)
+      const formData = {
+        ...this.state.formData,
+        portion: this.state.formData.portion + 1
+      }
+      this.setState({ formData })
+    } else if (name === 'decrease') {
+      if (this.state.formData.portion === 1) {
+        return
+      }
+      const formData = {
+        ...this.state.formData,
+        portion: this.state.formData.portion - 1
+      }
+      this.setState({ formData })
+    }
   }
 
   render() {
@@ -63,30 +110,71 @@ class NewLog extends React.Component {
               onSubmit={this.handleSubmit}
               className='column is-half is-offset-one-quarter'
             >
-              <h2 className='title'>New Cheese</h2>
+              <h2 className='title'>New Log Entry</h2>
               <div className='field'>
-                <label className='label'>Food</label>
+                <label className='label has-text-centered'>Food</label>
                 <div className='control'>
                   <Select
                     onChange={this.handleMultiChange}
-                    options={this.state.food}
+                    options={this.state.foodOption}
+                    isClearable
                     className='basic-multi-select'
                     classNamePrefix='select'
                   />
                 </div>
               </div>
               <div className='field'>
-                <label className='label'>Portion</label>
+                <label className='label has-text-centered'>Portion</label>
                 <div className='control'>
-                <input
-                  className='input'
-                  type='number'
-                  min='1'
-                  name='portion'
-                  value={this.state.formData.portion}
-                  onChange={this.handleChange}
-                />
+                  <div className='flex-container'>
+                    <div
+                      name='decrease'
+                      className='button'
+                      onClick={this.handlePortion}
+                    >
+                      -
+                    </div>
+                    <input
+                      className='input'
+                      type='number'
+                      min={1}
+                      name='portion'
+                      value={this.state.formData.portion}
+                      onChange={this.handleChange}
+                    />
+                    <div
+                      className='button'
+                      name='increase'
+                      onClick={this.handlePortion}
+                    >
+                      +
+                    </div>
+                  </div>
                 </div>
+                {this.state.helperData && (
+                  <div className='flex-container'>
+                    <small className='help'>
+                      {this.state.formData.portion}{' '}
+                      {pluralize('portion', this.state.formData.portion)} ={' '}
+                      {Number(this.state.helperData.measure) *
+                        this.state.formData.portion}
+                    </small>
+                    <small className='help'>
+                      {pluralize(
+                        this.state.helperData.unit,
+                        Number(this.state.helperData.measure) *
+                          this.state.formData.portion
+                      )}
+                    </small>
+                    <small className='help'>
+                      {' '}
+                      ={' '}
+                      {Number(this.state.helperData.grams) *
+                        this.state.formData.portion}{' '}
+                      grams
+                    </small>
+                  </div>
+                )}
               </div>
               <div className='field'>
                 <button
