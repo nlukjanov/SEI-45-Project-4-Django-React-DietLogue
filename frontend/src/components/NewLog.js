@@ -53,6 +53,12 @@ class NewLog extends React.Component {
     } catch (error) {
       console.log(error.res)
     }
+    this.setState({
+      formData: {
+        food: '',
+        portion: 1
+      }
+    })
   }
 
   handleMultiChange = selected => {
@@ -64,6 +70,8 @@ class NewLog extends React.Component {
   }
 
   dataHelper = () => {
+    if (!this.state.formData.food) return this.setState({ helperData: null })
+    console.log(this.state)
     const measure = this.state.foodData.find(
       x => x.id === this.state.formData.food
     ).measure
