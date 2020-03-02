@@ -3,6 +3,7 @@ import axios from 'axios'
 import headers from '../lib/headers'
 
 
+
 //todo gender radio button
 //todo dob calendar
 //todo height dropdown
@@ -17,11 +18,19 @@ class Register extends React.Component {
       password: '', 
       password_confirmation: '',
       gender: '',
-      height: 0, 
-      weight: 0,
+      height: 100, 
+      weight: 30,
       dob: ''
     }
   }
+
+  numberIncrease = (start, stop, step) => {
+    return Array.from({ length: (stop - start) / step + 1}, 
+    (_, i) => start + (i * step))
+  }
+
+  heightOpitons = numberIncrease(100, 200, 1)
+  weightOptions = numberIncrease(30, 150, 1)
 
   handleChange = e => {
     const name = e.target.name
@@ -34,63 +43,107 @@ class Register extends React.Component {
   handleSubmit = async e => {
     e.preventDefault()
     try {
-      await axios.post('/api/register/', this.state.data)
+      await axios.post('/api/register/', this.state.data, headers)
       this.props.history.push('/api/login/')
     } catch (error) {
       console.log(error.response)
     }
   }
 
+  
+
   render() {
     return (
-      <section className='form'>
-        <form onSubmit={this.handleSubmit}>
-          <h2>Create your account</h2>
-          <div className="form-div">
-            <input
-              onChange={this.handleChange}
-              placeholder="username"
-              name="username" 
-              required/>
-          </div>
-          <div className="form-div">
-            <input
-              onChange={this.handleChange}
-              type="email"
-              placeholder="email"
-              name="email" 
-              required/>
-          </div>
-          <div className="form-div">
-            <input
-              onChange={this.handleChange}
-              type="password"
-              placeholder="password"
-              name="password" 
-              required/>
-          </div>
-          <div className="form-div">
-            <input
-              onChange={this.handleChange}
-              type="password"
-              placeholder="confirm password"
-              name="password_confirmation" 
-              required/>
-          </div>
-          <div>
-            <h3>Tell us a little bit about yourself</h3>
-          </div>
+      <>
+        <section className='section'>
+          <div className='container'>
+            <div className='columns is-mobile is-centered'>
+              <div className='column is-6 is-offset-3'>
+                <form onSubmit={this.handleSubmit}>
+                  <h2>Create your account</h2>
+                  <div>
+                    <input
+                      onChange={this.handleChange}
+                      placeholder="username"
+                      name="username" 
+                      required/>
+                  </div>
+                  <div>
+                    <input
+                      onChange={this.handleChange}
+                      type="email"
+                      placeholder="email"
+                      name="email" 
+                      required/>
+                  </div>
+                  <div>
+                    <input
+                      onChange={this.handleChange}
+                      type="password"
+                      placeholder="password"
+                      name="password" 
+                      required/>
+                  </div>
+                  <div>
+                    <input
+                      onChange={this.handleChange}
+                      type="password"
+                      placeholder="confirm password"
+                      name="password_confirmation" 
+                      required/>
+                  </div>
+                  <div>
+                    <h2>Tell us a little bit about yourself</h2>
+                  </div>
+                  <div className="control">
+                    <label className="label">Gender</label>
+                    <label className="radio">
+                      <input 
+                        type="radio" 
+                        name="gender"
+                        value="M"
+                        onChange={this.handleChange}
+                      />
+                      Male
+                    </label>
+                    <label className="radio">
+                      <input 
+                        type="radio" 
+                        name="gender"
+                        value="F"
+                        onChange={this.handleChange}
+                      />
+                      Female
+                    </label>
 
-          <div className="button-div">
-          <button
-            className="button"
-            type="submit">
-              Register</button>
-        </div>
+                    <div className="field">
+                      <label className="label">Height</label> 
+                      <div className="control">
 
-        
-        </form>
-      </section>
+
+                    
+                          
+
+                        
+
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div>
+                    <button
+                      className='button is-primary is-fullwidth'
+                      type="submit">
+                        Register</button>
+                  </div>
+      
+              
+              </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </>
     )
   }
 }
