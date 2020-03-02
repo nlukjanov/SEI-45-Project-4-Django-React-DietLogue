@@ -6,6 +6,8 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 
+//todo fix the height/weight dropdown error
+
 class Register extends React.Component {
   state = {
     data: {
