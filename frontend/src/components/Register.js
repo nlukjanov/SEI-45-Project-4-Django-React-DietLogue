@@ -28,15 +28,26 @@ class Register extends React.Component {
       (_, i) => start + i * step
     );
   };
+  
 
-  heightOpitons = this.numberIncrease(100, 200, 1);
-  weightOptions = this.numberIncrease(30, 150, 1);
+  
 
   handleChange = e => {
-    const name = e.target.name;
-    const value = e.target.value;
-    const data = { ...this.state.data, [name]: value };
-    this.setState({ data });
+    const heightOpitons = this.numberIncrease(100, 200, 1)
+                  .map(number => {
+                    const heightOption = {}
+                    heightOption['value'] = number
+                    heightOption['name'] = number
+                  });
+    const weightOptions = this.numberIncrease(30, 150, 1)
+                  .map(number => {
+                    const heightOption = {}
+                    heightOption['value'] = number
+                    heightOption['name'] = number
+                  });
+    const name = e.target.name
+    const value = e.target.value
+    this.setState({ ...this.state.data, [name]: value});
   };
 
   handleSubmit = async e => {
@@ -55,9 +66,9 @@ class Register extends React.Component {
         <section className="section">
           <div className="container">
             <div className="columns is-mobile is-centered">
-              <div className="column is-6 is-offset-3">
+              <div className="column is-6">
                 <form onSubmit={this.handleSubmit}>
-                  <h2>Create your account</h2>
+                  <h2 className="title is-4">Create your account</h2>
                   <div>
                     <input
                       className="input"
@@ -98,7 +109,7 @@ class Register extends React.Component {
                     />
                   </div>
                   <div>
-                    <h2>Tell us a little bit about yourself</h2>
+                    <h2 className="title is-4">Tell us a little bit about yourself</h2>
                   </div>
                   <div className="control">
                     <label className="label">Gender</label>
@@ -128,6 +139,7 @@ class Register extends React.Component {
                           options={this.heightOpitons}
                           onChange={this.handleChange}
                           name="height"
+                          value="height"
                           className="basic-multi-select"
                           classNamePrefix="select"
                         />
@@ -140,6 +152,7 @@ class Register extends React.Component {
                           options={this.heightOpitons}
                           onChange={this.handleChange}
                           name="weight"
+                          value="weight"
                           className="basic-multi-select"
                           classNamePrefix="select"
                         />
