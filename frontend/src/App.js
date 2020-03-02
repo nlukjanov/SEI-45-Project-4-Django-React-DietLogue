@@ -11,6 +11,7 @@ import LogHistory from './components/LogHistory'
 import NewLog from './components/NewLog'
 import Navbar from './components/Navbar'
 import SecureRoute from './components/SecureRoute'
+import ErrorPage from './components/ErrorPage'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <SecureRoute path='/myaccount' component={MyAccount} />
           <SecureRoute path='/loghistory' component={LogHistory} />
           <SecureRoute path='/logs/new' component={NewLog} />
+          <Route path='/*' component={ErrorPage} />
         </Switch>
       </main>
     </BrowserRouter>
