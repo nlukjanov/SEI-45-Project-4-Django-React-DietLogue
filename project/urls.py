@@ -22,3 +22,4 @@ urlpatterns = [
     path('api/', include('users.urls')),
     path('api/', include('jwt_auth.urls'))
 ]
+

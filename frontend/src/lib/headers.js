@@ -2,8 +2,14 @@ import Cookies from 'js-cookie'
 		
 const csrftoken = Cookies.get('csrftoken')
 
-export const headers = {
+
+
+const headers = {
   common: {
     'X-CSRF-TOKEN': csrftoken
   }
 }
+
+console.log(csrftoken)
+
+export default headers
