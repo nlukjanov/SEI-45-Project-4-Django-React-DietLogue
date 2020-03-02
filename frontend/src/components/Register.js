@@ -32,6 +32,7 @@ class Register extends React.Component {
     e.preventDefault()
     try {
       await axios.post('/api/register/', this.state.data)
+      notify.show('Account successfully created', 'success', 2000)
       this.props.history.push('/api/login/')
     } catch (error) {
       console.log(error.response)

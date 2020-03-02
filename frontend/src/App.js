@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Notifications from 'react-notify-toast'
 import './App.css'
 import 'bulma'
 
@@ -17,7 +18,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <main>
-        {/* <Notifications /> */}
+        <Notifications />
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />

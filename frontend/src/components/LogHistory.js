@@ -21,7 +21,7 @@ class LogHistory extends Component {
       const sortedLogs = res.data.logs.sort((a, b) => b.id - a.id)
       this.setState({ logData: sortedLogs })
     } catch (error) {
-      // this.props.history.push('/notfound')
+      this.props.history.push('/notfound')
     }
   }
 

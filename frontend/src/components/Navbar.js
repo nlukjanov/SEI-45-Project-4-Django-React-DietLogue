@@ -19,8 +19,9 @@ class Navbar extends React.Component {
   // }
 
   handleLogout = () => {
-    // notify.show('Come back soon!', 'success', 3000)
+    notify.show('Come back soon!', 'success', 3000)
     Authentication.logout()
+
     this.props.history.push('/')
   }
 

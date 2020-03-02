@@ -41,7 +41,7 @@ class NewLog extends React.Component {
     console.log(this.state.formData)
     try {
       await axios.post(
-        'http://localhost:8000/api/logs/',
+        '/api/logs/',
         this.state.formData,
         {
           headers: {
@@ -49,7 +49,8 @@ class NewLog extends React.Component {
           }
         }
       )
-      // this.props.history.push(`/cheeses/${res.data._id}`)
+      notify.show('Log entry created', 'success', 2000)
+      this.props.history.push('/api/myaccount')
     } catch (error) {
       console.log(error.res)
     }
