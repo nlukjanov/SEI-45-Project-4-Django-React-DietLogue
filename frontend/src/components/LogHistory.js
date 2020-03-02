@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Authentication from './Authentication'
+
 const moment = require('moment');
 class LogHistory extends Component {
   state = {
@@ -9,12 +11,12 @@ class LogHistory extends Component {
   async componentDidMount() {
     try {
       const res = await axios.get(
-        'http://localhost:8000/api/myaccount',
+        '/api/myaccount',
         {
           headers: {
-            Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjF9.ToXIHM9kzaAX264Jyc81T5vpxJG5tNKH6vvI8iFkOCQ`
+            Authorization: `Bearer ${Authentication.getToken('token')}`
           }
-        } // we include our users token in the request header to authenticate them
+        } 
       )
       const sortedLogs = res.data.logs.sort((a, b) => b.id - a.id)
       this.setState({ logData: sortedLogs })

@@ -17,7 +17,7 @@ class NewLog extends React.Component {
 
   async componentDidMount() {
     try {
-      const res = await axios.get('http://localhost:8000/api/foods/')
+      const res = await axios.get('/api/foods/')
       const foodOptions = []
       res.data.map(el => {
         const foodObject = {}
