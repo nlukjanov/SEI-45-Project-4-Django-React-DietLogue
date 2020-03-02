@@ -41,26 +41,16 @@ class NewLog extends React.Component {
     e.preventDefault()
     console.log(this.state.formData)
     try {
-      await axios.post(
-        '/api/logs/',
-        this.state.formData,
-        {
-          headers: {
-            Authorization: `Bearer ${Authentication.getToken('token')}`
-          }
+      await axios.post('/api/logs/', this.state.formData, {
+        headers: {
+          Authorization: `Bearer ${Authentication.getToken('token')}`
         }
-      )
+      })
       notify.show('Log entry created', 'success', 2000)
-      this.props.history.push('/api/myaccount')
+      this.props.history.push('/loghistory')
     } catch (error) {
       console.log(error.res)
     }
-    this.setState({
-      formData: {
-        food: '',
-        portion: 1
-      }
-    })
   }
 
   handleMultiChange = selected => {
@@ -164,24 +154,17 @@ class NewLog extends React.Component {
                 {this.state.helperData && (
                   <div className='flex-container'>
                     <small className='help'>
-                      {this.state.formData.portion}{' '}
-                      {pluralize('portion', this.state.formData.portion)} ={' '}
-                      {Number(this.state.helperData.measure) *
+                      {`${this.state.formData.portion}
+                      ${pluralize('portion', this.state.formData.portion)} = 
+                      ${Number(this.state.helperData.measure) *
                         this.state.formData.portion}
-                    </small>
-                    <small className='help'>
-                      {pluralize(
+                      ${pluralize(
                         this.state.helperData.unit,
                         Number(this.state.helperData.measure) *
                           this.state.formData.portion
-                      )}
-                    </small>
-                    <small className='help'>
-                      {' '}
-                      ={' '}
-                      {Number(this.state.helperData.grams) *
-                        this.state.formData.portion}{' '}
-                      grams
+                      )} = 
+                      ${Number(this.state.helperData.grams) *
+                        this.state.formData.portion} grams`}
                     </small>
                   </div>
                 )}
