@@ -40,7 +40,7 @@ class NewLog extends React.Component {
     e.preventDefault()
     console.log(this.state.formData)
     try {
-      const res = await axios.post(
+      await axios.post(
         'http://localhost:8000/api/logs/',
         this.state.formData,
         {
