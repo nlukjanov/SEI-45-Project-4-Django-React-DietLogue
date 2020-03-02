@@ -32,8 +32,8 @@ class LogHistory extends Component {
           <h1 className='title has-text-centered'>
             Your log history
           </h1>
-          <div class='table-container'>
-            <table class='table is-fullwidth'>
+          <div className='table-container'>
+            <table className='table is-fullwidth'>
               <thead>
                 <tr>
                   <th>Date</th>
