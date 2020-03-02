@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
+import Authentication from './Authentication'
+
 class Navbar extends React.Component {
   state = { navbarOpen: false }
 
@@ -8,19 +10,21 @@ class Navbar extends React.Component {
     this.setState({ navbarOpen: !this.state.navbarOpen })
   }
 
-  componentDidUpdate(prevProps) {
-    // we have imported withRouter for navbar to know about the current path. if the path has changed, then the navbar will close in mobile vue
-    //! somehow it works even without this code, probably some update in react or bulma
-    if (this.props.location.pathname !== prevProps.location.pathname) {
-      this.setState({ navbarOpen: false })
-    }
+  // componentDidUpdate(prevProps) {
+  //   // we have imported withRouter for navbar to know about the current path. if the path has changed, then the navbar will close in mobile vue
+  //   //! somehow it works even without this code, probably some update in react or bulma
+  //   if (this.props.location.pathname !== prevProps.location.pathname) {
+  //     this.setState({ navbarOpen: false })
+  //   }
+  // }
+
+  handleLogout = () => {
+    // notify.show('Come back soon!', 'success', 3000)
+    Authentication.logout()
+    this.props.history.push('/')
   }
 
-  // handleLogout = () => {
-  //   notify.show('Come back soon!', 'success', 3000)
-  //   Auth.logout()
-  //   this.props.history.push('/')
-  // }
+
   render() {
     const { navbarOpen } = this.state
     return (

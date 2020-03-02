@@ -48,8 +48,8 @@ TODO:
   - chart
 - secure route
 - replace requests with token from Auth
-- navbar burger
-- logout functionality
+X navbar burger
+X logout functionality
 - table rows - links to log edit
 - log edit form
 - log history multiply by portion
@@ -62,4 +62,5 @@ TODO:
   - slogan 
   - style register
   - style 
-
+- refactor and de-structure
+- remove console.logs
