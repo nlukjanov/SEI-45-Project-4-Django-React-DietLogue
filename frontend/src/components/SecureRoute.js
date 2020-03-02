@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
 import Authentication from './Authentication'
+import { notify } from 'react-notify-toast'
 
 const SecureRoute = ({ component: Component, ...rest }) => {
   console.log(Authentication.isAuthenticated())

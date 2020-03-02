@@ -1,7 +1,8 @@
 import React from 'react'
 import axios from 'axios'
-// import Auth from '../../lib/auth'
+import Authentication from './Authentication'
 import Select from 'react-select'
+import { notify } from 'react-notify-toast'
 const pluralize = require('pluralize')
 
 class NewLog extends React.Component {
@@ -27,7 +28,7 @@ class NewLog extends React.Component {
       })
       this.setState({ foodOption: foodOptions, foodData: res.data })
     } catch (error) {
-      // this.props.history.push('/notfound')
+      console.log(error)
     }
   }
 
@@ -45,7 +46,7 @@ class NewLog extends React.Component {
         this.state.formData,
         {
           headers: {
-            Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjF9.ToXIHM9kzaAX264Jyc81T5vpxJG5tNKH6vvI8iFkOCQ`
+            Authorization: `Bearer ${Authentication.getToken('token')}`
           }
         }
       )

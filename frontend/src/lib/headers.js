@@ -10,6 +10,4 @@ const headers = {
   }
 }
 
-console.log(csrftoken)
-
 export default headers

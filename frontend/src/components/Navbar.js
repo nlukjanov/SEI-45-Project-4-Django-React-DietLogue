@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
-
+import { notify } from 'react-notify-toast'
 import Authentication from './Authentication'
 
 class Navbar extends React.Component {
