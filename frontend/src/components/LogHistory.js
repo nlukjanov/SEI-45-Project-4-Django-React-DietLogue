@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import Authentication from './Authentication'
 
-const moment = require('moment');
+const moment = require('moment')
 class LogHistory extends Component {
   state = {
     logData: []

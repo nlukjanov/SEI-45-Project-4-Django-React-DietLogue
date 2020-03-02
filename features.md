@@ -47,7 +47,7 @@ TODO:
   - layout
   - chart
 X secure route
-- replace requests with token from Auth
+X replace requests with token from Auth
 X navbar burger
 X logout functionality
 - table rows - links to log edit
@@ -57,6 +57,7 @@ X logout functionality
 - register component extra details
 - change models to restrict empty entries
 - handle errors after models restriction
+- add standard diet values
 - styling:
   - logo
   - fonts
