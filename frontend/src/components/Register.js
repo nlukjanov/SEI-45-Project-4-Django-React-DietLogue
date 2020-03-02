@@ -32,14 +32,6 @@ class Register extends React.Component {
   heightOpitons = this.numberIncrease(100, 200, 1);
   weightOptions = this.numberIncrease(30, 150, 1);
 
-  numberIncrease = (start, stop, step) => {
-    return Array.from({ length: (stop - start) / step + 1}, 
-    (_, i) => start + (i * step))
-  }
-
-  heightOpitons = numberIncrease(100, 200, 1)
-  weightOptions = numberIncrease(30, 150, 1)
-
   handleChange = e => {
     const name = e.target.name;
     const value = e.target.value;
