@@ -3,23 +3,57 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Authentication from './Authentication'
 import Plot from 'react-plotly.js'
-// import LogChart from './LogChart'
 const moment = require('moment')
 
 const diet = {
-  fat: 70,
-  sat_fat: 20,
-  carbs: 260,
-  protein: 50,
-  fiber: 38,
-  calories: 2000
+  option1: {
+    fat: 56,
+    sat_fat: 16,
+    carbs: 208,
+    protein: 34,
+    fiber: 22.4,
+    calories: 1600
+  },
+  option2: {
+    fat: 63,
+    sat_fat: 18,
+    carbs: 236,
+    protein: 46,
+    fiber: 25.2,
+    calories: 1800
+  },
+  option3: {
+    fat: 70,
+    sat_fat: 20,
+    carbs: 260,
+    protein: 50,
+    fiber: 28,
+    calories: 2000
+  },
+  option4: {
+    fat: 77,
+    sat_fat: 22,
+    carbs: 286,
+    protein: 52,
+    fiber: 30.8,
+    calories: 2200
+  },
+  option5: {
+    fat: 84,
+    sat_fat: 24,
+    carbs: 312,
+    protein: 56,
+    fiber: 33.6,
+    calories: 2400
+  }
 }
 
 class MyAccount extends React.Component {
   state = {
     userData: {},
     todayLogEntries: [],
-    dropDownSelection: 'calories'
+    dropDownSelection: 'calories',
+    diet: ''
   }
 
   async componentDidMount() {
@@ -29,18 +63,22 @@ class MyAccount extends React.Component {
           Authorization: `Bearer ${Authentication.getToken('token')}`
         }
       })
-      this.setState({ userData: res.data }, () => this.setTodayLogEntries())
+      
+      this.setState({ userData: res.data }, () => this.setUserData())
     } catch (error) {
       console.log(error)
     }
   }
 
-  setTodayLogEntries = () => {
+  setUserData = () => {
     const todayLogEntries = this.state.userData.logs.filter(entry => {
       const today = moment(new Date()).format('YYYY-MM-DD')
       const entryDate = moment(entry.date).format('YYYY-MM-DD')
       return today === entryDate
     })
+    // const diet = () => {
+    //   if (this.state.userData.age)
+    // }
     this.setState({ todayLogEntries })
   }
 
@@ -125,7 +163,7 @@ class MyAccount extends React.Component {
               <progress
                 className='progress is-primary'
                 value={this.calculateProgress(this.state.dropDownSelection)}
-                max={diet[this.state.dropDownSelection]}
+                max={diet.option1[this.state.dropDownSelection]}
               ></progress>
               <div className='table-container'>
                 <table className='table is-fullwidth'>

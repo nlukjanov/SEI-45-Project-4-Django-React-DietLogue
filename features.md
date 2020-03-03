@@ -54,10 +54,11 @@ X table rows - links to log edit
 X add datetime field to log entry
 X log edit form
 X log history multiply by portion
-- register component extra details
+X register component extra details
 - change models to restrict empty entries
 - handle errors after models restriction
-- add standard diet values
+X add standard diet values
+- add diet depending on age
 - styling:
   - logo
   - fonts
@@ -68,4 +69,4 @@ X log history multiply by portion
 - remove console.logs
 - replace moment js with something lighter or built myself
 - refactor new and edit component to separate form
-- style table rows to show as link
+X style table rows to show as link

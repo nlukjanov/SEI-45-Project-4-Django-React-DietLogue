@@ -192,7 +192,7 @@ class NewLog extends React.Component {
               <div className='field'>
                 <button
                   type='submit'
-                  className='button is-fullwidth is-warning'
+                  className='button is-fullwidth is-primary'
                 >
                   Add Entry
                 </button>
