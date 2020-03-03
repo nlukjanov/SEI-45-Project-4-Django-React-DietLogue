@@ -58,7 +58,7 @@ class Register extends React.Component {
         <section className='section'>
           <div className='container'>
             <div className='columns is-mobile is-centered'>
-              <div className='column is-6 is-offset-3'>
+              <div className='column is-6'>
                 <form onSubmit={this.handleSubmit}>
                   <h2 className="title is-4">Create your account</h2>
                   <div>
