@@ -54,7 +54,7 @@ class NewLog extends React.Component {
     const logId = this.props.match.params.id
     console.log(this.state.formData)
     try {
-      await axios.put(`/api/logs/${logId}`, this.state.formData, {
+      await axios.put(`/api/logs/${logId}/`, this.state.formData, {
         headers: {
           Authorization: `Bearer ${Authentication.getToken('token')}`
         }

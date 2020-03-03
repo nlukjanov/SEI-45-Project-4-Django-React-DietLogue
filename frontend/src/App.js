@@ -14,6 +14,7 @@ import Navbar from './components/Navbar'
 import SecureRoute from './components/SecureRoute'
 import ErrorPage from './components/ErrorPage'
 import EditLog from './components/EditLog.js'
+import UnauthenticatedRoute from './components/UnauthenticatedRoute'
 
 const App = () => {
   return (
@@ -23,8 +24,8 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/register' component={Register} />
-          <Route path='/login' component={Login} />
+          <UnauthenticatedRoute path='/register' component={Register} />
+          <UnauthenticatedRoute path='/login' component={Login} />
           <SecureRoute path='/myaccount' component={MyAccount} />
           <SecureRoute path='/loghistory' component={LogHistory} />
           <SecureRoute path='/logs/:id/edit' component={EditLog} />
