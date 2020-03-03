@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Authentication from './Authentication'
 import Plot from 'react-plotly.js'
+// import LogChart from './LogChart'
 const moment = require('moment')
 
 const diet = {
