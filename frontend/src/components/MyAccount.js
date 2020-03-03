@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Authentication from './Authentication'
 import Plot from 'react-plotly.js'
-<<<<<<< HEAD
-
-=======
->>>>>>> 218ba0de6eb64145dedf86f7e2ff5cfa3802665e
 const moment = require('moment')
 
 
@@ -57,13 +53,9 @@ class MyAccount extends React.Component {
   state = {
     userData: {},
     todayLogEntries: [],
-<<<<<<< HEAD
     dailyLogEntries: [],
-    dropDownSelection: 'calories'
-=======
     dropDownSelection: 'calories',
     diet: ''
->>>>>>> 218ba0de6eb64145dedf86f7e2ff5cfa3802665e
   }
 
   async componentDidMount() {
@@ -73,16 +65,10 @@ class MyAccount extends React.Component {
           Authorization: `Bearer ${Authentication.getToken('token')}`
         }
       })
-<<<<<<< HEAD
       this.setState({ userData: res.data }, () => {
-          this.setTodayLogEntries()
+          this.setUserData()
           this.setDailyLogEntries()
         })
-      
-=======
-      
-      this.setState({ userData: res.data }, () => this.setUserData())
->>>>>>> 218ba0de6eb64145dedf86f7e2ff5cfa3802665e
     } catch (error) {
       console.log(error)
     }
@@ -91,10 +77,6 @@ class MyAccount extends React.Component {
   setUserData = () => {
     const todayLogEntries = this.state.userData.logs.filter(entry => {
       const today = moment(new Date()).format('YYYY-MM-DD')
-<<<<<<< HEAD
-      console.log(today)
-=======
->>>>>>> 218ba0de6eb64145dedf86f7e2ff5cfa3802665e
       const entryDate = moment(entry.date).format('YYYY-MM-DD')
       return today === entryDate
     })
