@@ -12,11 +12,13 @@
     "js-cookie": "^2.2.1",
     "moment": "^2.24.0",
     "node-sass": "^4.13.1",
+    "plotly.js": "^1.52.3",
     "pluralize": "^8.0.0",
     "react": "^16.13.0",
     "react-datepicker": "^2.13.0",
     "react-dom": "^16.13.0",
     "react-notify-toast": "^0.5.1",
+    "react-plotly.js": "^2.4.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-select": "^3.0.8"

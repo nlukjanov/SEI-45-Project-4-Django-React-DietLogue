@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Authentication from './Authentication'
+import Plot from 'react-plotly.js'
 const moment = require('moment')
 
 const diet = {
@@ -74,8 +75,36 @@ class MyAccount extends React.Component {
           </Link>
           <div className='columns'>
             <div className='column is-12'>
-              <div>Chart Area</div>
-              <div>Your Day In A Glance</div>
+              <div className='mobile'>
+                <Plot
+                  useResizeHandler
+                  style={{ height: '100%', width: '100%' }}
+                  data={[
+                    {
+                      x: [1, 2, 3, 4, 5, 6, 7],
+                      y: [2, 6, 3, 5, 1, 6, 9],
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'red' }
+                    },
+                    {
+                      x: [1, 2, 3, 4, 5, 6, 7],
+                      y: [4, 2, 1, 7, 2, 3, 6],
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'blue' }
+                    }
+                  ]}
+                  layout={{
+                    title: 'You consumption',
+                    margin: { t: 60, r: 10, l: 10, b: 30 },
+                    autosize: true,
+                    showlegend: false
+                  }}
+                  config={{ displayModeBar: false }}
+                />
+              </div>
+              <div>Your Day At A Glance</div>
               <div className='field'>
                 <div className='select'>
                   <select
@@ -83,7 +112,6 @@ class MyAccount extends React.Component {
                     onChange={this.handleChange}
                     value={this.state.dropDownSelection}
                   >
-
                     <option value='calories'>Calories</option>
                     <option value='protein'>Protein</option>
                     <option value='carbs'>Carbs</option>

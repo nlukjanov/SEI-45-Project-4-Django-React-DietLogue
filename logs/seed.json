@@ -1,0 +1,4874 @@
+[
+{
+  "model": "logs.food",
+  "pk": 1,
+  "fields": {
+    "name": "Almonds, dried",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "70.00",
+    "calories": "425.00",
+    "protein": "13.00",
+    "carbs": "13.00",
+    "fiber": "1.80",
+    "fat": "38.00",
+    "sat_fat": "28.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 2,
+  "fields": {
+    "name": "Apple juice, fresh or canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "62.50",
+    "protein": "0.00",
+    "carbs": "17.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 3,
+  "fields": {
+    "name": "Apple vinegar",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "150.00",
+    "calories": "21.00",
+    "protein": "0.00",
+    "carbs": "4.50",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 4,
+  "fields": {
+    "name": "Apples, raw",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "130.00",
+    "calories": "70.00",
+    "protein": "0.00",
+    "carbs": "18.00",
+    "fiber": "1.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 5,
+  "fields": {
+    "name": "Apples, stewed or canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "50.00",
+    "protein": "0.00",
+    "carbs": "13.00",
+    "fiber": "1.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 6,
+  "fields": {
+    "name": "Apricots, canned In syrup",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "110.00",
+    "protein": "1.00",
+    "carbs": "28.50",
+    "fiber": "0.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 7,
+  "fields": {
+    "name": "Apricots, Dried, uncooked",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "220.00",
+    "protein": "4.00",
+    "carbs": "50.00",
+    "fiber": "1.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 8,
+  "fields": {
+    "name": "Apricots, Fresh",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "38.00",
+    "calories": "18.33",
+    "protein": "0.33",
+    "carbs": "4.67",
+    "fiber": "0.23",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 9,
+  "fields": {
+    "name": "Artichoke, globe",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "100.00",
+    "calories": "44.00",
+    "protein": "2.00",
+    "carbs": "10.00",
+    "fiber": "2.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 10,
+  "fields": {
+    "name": "Asparagus, green",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "16.00",
+    "calories": "3.00",
+    "protein": "0.17",
+    "carbs": "0.50",
+    "fiber": "0.08",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 11,
+  "fields": {
+    "name": "Avocado",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "216.00",
+    "calories": "370.00",
+    "protein": "4.00",
+    "carbs": "12.00",
+    "fiber": "3.60",
+    "fat": "36.00",
+    "sat_fat": "24.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 12,
+  "fields": {
+    "name": "Bacon, crisp, drained",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "8.00",
+    "calories": "47.50",
+    "protein": "2.00",
+    "carbs": "0.50",
+    "fiber": "0.00",
+    "fat": "4.00",
+    "sat_fat": "3.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 13,
+  "fields": {
+    "name": "Banana",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "150.00",
+    "calories": "85.00",
+    "protein": "1.00",
+    "carbs": "23.00",
+    "fiber": "0.90",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 14,
+  "fields": {
+    "name": "Bean soups",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "95.00",
+    "protein": "4.00",
+    "carbs": "15.00",
+    "fiber": "0.30",
+    "fat": "2.50",
+    "sat_fat": "2.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 15,
+  "fields": {
+    "name": "Bean sprouts, uncooked",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "25.00",
+    "calories": "8.50",
+    "protein": "0.50",
+    "carbs": "1.50",
+    "fiber": "0.15",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 16,
+  "fields": {
+    "name": "Beans, green snap",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "62.50",
+    "calories": "12.50",
+    "protein": "0.50",
+    "carbs": "3.00",
+    "fiber": "0.40",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 17,
+  "fields": {
+    "name": "Beef and vegetable",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "50.00",
+    "protein": "3.00",
+    "carbs": "5.50",
+    "fiber": "0.25",
+    "fat": "2.00",
+    "sat_fat": "2.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 18,
+  "fields": {
+    "name": "Beef, chuck, pat-roasted",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "40.35",
+    "protein": "3.79",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "2.64",
+    "sat_fat": "2.47"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 19,
+  "fields": {
+    "name": "Beef, Dried or chipped",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "28.75",
+    "protein": "4.75",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "1.00",
+    "sat_fat": "1.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 20,
+  "fields": {
+    "name": "Beef, Ground lean",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "30.47",
+    "protein": "3.95",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "1.65",
+    "sat_fat": "1.48"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 21,
+  "fields": {
+    "name": "Beef, Hamburger, commercial",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "40.35",
+    "protein": "3.46",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "2.80",
+    "sat_fat": "2.47"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 22,
+  "fields": {
+    "name": "Beer (4% alcohol)",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "57.00",
+    "protein": "0.00",
+    "carbs": "2.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 23,
+  "fields": {
+    "name": "Beet greens, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "50.00",
+    "calories": "13.50",
+    "protein": "1.00",
+    "carbs": "3.00",
+    "fiber": "0.70",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 24,
+  "fields": {
+    "name": "Beetroots, boiled",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "82.50",
+    "calories": "0.50",
+    "protein": "6.00",
+    "carbs": "0.40",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 25,
+  "fields": {
+    "name": "Biscuits, 2 1/2 inch diameters",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "38.00",
+    "calories": "130.00",
+    "protein": "3.00",
+    "carbs": "18.00",
+    "fiber": "0.00",
+    "fat": "4.00",
+    "sat_fat": "3.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 26,
+  "fields": {
+    "name": "Blackberries, fresh",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "72.00",
+    "calories": "42.50",
+    "protein": "1.00",
+    "carbs": "9.50",
+    "fiber": "3.30",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 27,
+  "fields": {
+    "name": "Blueberries, canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "122.50",
+    "protein": "0.50",
+    "carbs": "32.50",
+    "fiber": "1.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 28,
+  "fields": {
+    "name": "Bouillon, broth",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "12.00",
+    "protein": "2.50",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 29,
+  "fields": {
+    "name": "Bran flakes",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "12.50",
+    "calories": "58.50",
+    "protein": "1.50",
+    "carbs": "16.00",
+    "fiber": "0.05",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 30,
+  "fields": {
+    "name": "Brazil nuts, unsalted",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "70.00",
+    "calories": "457.00",
+    "protein": "10.00",
+    "carbs": "7.00",
+    "fiber": "2.00",
+    "fat": "47.00",
+    "sat_fat": "31.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 31,
+  "fields": {
+    "name": "Bread pudding with raisins",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "133.33",
+    "calories": "249.33",
+    "protein": "7.33",
+    "carbs": "37.33",
+    "fiber": "0.13",
+    "fat": "8.00",
+    "sat_fat": "7.33"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 32,
+  "fields": {
+    "name": "Bread, cracked wheat",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "23.00",
+    "calories": "60.00",
+    "protein": "2.00",
+    "carbs": "12.00",
+    "fiber": "0.10",
+    "fat": "1.00",
+    "sat_fat": "1.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 33,
+  "fields": {
+    "name": "Bread, Rye",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "23.00",
+    "calories": "55.73",
+    "protein": "2.00",
+    "carbs": "12.00",
+    "fiber": "0.10",
+    "fat": "1.00",
+    "sat_fat": "1.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 34,
+  "fields": {
+    "name": "Bread, Whole-wheat",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "23.00",
+    "calories": "55.00",
+    "protein": "2.00",
+    "carbs": "11.00",
+    "fiber": "0.31",
+    "fat": "1.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 35,
+  "fields": {
+    "name": "Broccoli, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "22.50",
+    "protein": "2.50",
+    "carbs": "4.00",
+    "fiber": "0.95",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 36,
+  "fields": {
+    "name": "Brussels sprouts, steamed Cabbage",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "65.00",
+    "calories": "30.00",
+    "protein": "3.00",
+    "carbs": "6.00",
+    "fiber": "0.85",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 37,
+  "fields": {
+    "name": "Butter",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "100.00",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "11.00",
+    "sat_fat": "10.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 38,
+  "fields": {
+    "name": "Buttermilk, cultured",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "123.00",
+    "calories": "63.50",
+    "protein": "4.50",
+    "carbs": "6.50",
+    "fiber": "0.00",
+    "fat": "2.50",
+    "sat_fat": "2.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 39,
+  "fields": {
+    "name": "Cakes, angel food",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "40.00",
+    "calories": "110.00",
+    "protein": "3.00",
+    "carbs": "23.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 40,
+  "fields": {
+    "name": "Candy, caramels",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "5.00",
+    "calories": "20.80",
+    "protein": "0.00",
+    "carbs": "3.80",
+    "fiber": "0.00",
+    "fat": "0.60",
+    "sat_fat": "0.60"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 41,
+  "fields": {
+    "name": "Cane, refined",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "20.00",
+    "calories": "50.00",
+    "protein": "0.00",
+    "carbs": "13.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 42,
+  "fields": {
+    "name": "Cantaloupe",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "95.00",
+    "calories": "10.00",
+    "protein": "0.25",
+    "carbs": "2.25",
+    "fiber": "0.55",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 43,
+  "fields": {
+    "name": "Carrots, cooked, diced",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "22.50",
+    "protein": "0.50",
+    "carbs": "5.00",
+    "fiber": "0.45",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 44,
+  "fields": {
+    "name": "Cashews, unsalted",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "70.00",
+    "calories": "392.00",
+    "protein": "12.00",
+    "carbs": "20.00",
+    "fiber": "0.90",
+    "fat": "32.00",
+    "sat_fat": "28.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 45,
+  "fields": {
+    "name": "Cauliflower, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "60.00",
+    "calories": "15.00",
+    "protein": "1.50",
+    "carbs": "3.00",
+    "fiber": "0.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 46,
+  "fields": {
+    "name": "Celery, cooked, diced",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "50.00",
+    "calories": "10.00",
+    "protein": "0.50",
+    "carbs": "2.00",
+    "fiber": "0.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 47,
+  "fields": {
+    "name": "Chard steamed, leaves and stalks",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "15.00",
+    "protein": "1.00",
+    "carbs": "3.50",
+    "fiber": "0.70",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 48,
+  "fields": {
+    "name": "Cheddar, grated cup",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "56.00",
+    "calories": "226.00",
+    "protein": "14.00",
+    "carbs": "1.00",
+    "fiber": "0.00",
+    "fat": "19.00",
+    "sat_fat": "17.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 49,
+  "fields": {
+    "name": "Cheese, cottage, creamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "112.50",
+    "calories": "120.00",
+    "protein": "15.00",
+    "carbs": "3.00",
+    "fiber": "0.00",
+    "fat": "5.50",
+    "sat_fat": "5.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 50,
+  "fields": {
+    "name": "Cherries, canned, pitted",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "128.50",
+    "calories": "50.00",
+    "protein": "1.00",
+    "carbs": "13.00",
+    "fiber": "1.00",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 51,
+  "fields": {
+    "name": "Chicken livers, fried, medium",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "156.80",
+    "protein": "24.64",
+    "carbs": "2.56",
+    "fiber": "0.00",
+    "fat": "15.68",
+    "sat_fat": "13.44"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 52,
+  "fields": {
+    "name": "chicken or turkey",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "37.50",
+    "protein": "2.00",
+    "carbs": "5.00",
+    "fiber": "0.00",
+    "fat": "1.00",
+    "sat_fat": "1.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 53,
+  "fields": {
+    "name": "Chicken, Fried, breast or leg and thigh",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "322.82",
+    "protein": "32.96",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "19.76",
+    "sat_fat": "14.48"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 54,
+  "fields": {
+    "name": "Chicken, Roasted",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "324.80",
+    "protein": "28.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "22.40",
+    "sat_fat": "17.92"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 55,
+  "fields": {
+    "name": "chicken; broiled",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "243.76",
+    "protein": "30.32",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "11.84",
+    "sat_fat": "9.20"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 56,
+  "fields": {
+    "name": "Chocolate creams",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "15.00",
+    "calories": "65.00",
+    "protein": "0.00",
+    "carbs": "12.00",
+    "fiber": "0.00",
+    "fat": "2.00",
+    "sat_fat": "2.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 57,
+  "fields": {
+    "name": "Chocolate fudge w/ icing",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "120.00",
+    "calories": "420.00",
+    "protein": "5.00",
+    "carbs": "70.00",
+    "fiber": "0.30",
+    "fat": "14.00",
+    "sat_fat": "12.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 58,
+  "fields": {
+    "name": "Chocolate syrup",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "20.00",
+    "calories": "40.00",
+    "protein": "0.00",
+    "carbs": "11.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 59,
+  "fields": {
+    "name": "Clam chowder, without milk",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "127.50",
+    "calories": "42.50",
+    "protein": "2.50",
+    "carbs": "6.00",
+    "fiber": "0.25",
+    "fat": "1.00",
+    "sat_fat": "4.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 60,
+  "fields": {
+    "name": "Clams, steamed or canned",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "114.64",
+    "protein": "15.84",
+    "carbs": "2.64",
+    "fiber": "0.00",
+    "fat": "1.28",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 61,
+  "fields": {
+    "name": "Club soda",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "0.00",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 62,
+  "fields": {
+    "name": "Coconut, shredded, sweetened",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "50.00",
+    "calories": "274.00",
+    "protein": "1.00",
+    "carbs": "26.00",
+    "fiber": "2.00",
+    "fat": "20.00",
+    "sat_fat": "19.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 63,
+  "fields": {
+    "name": "Cod, broiled",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "190.40",
+    "protein": "31.36",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "5.60",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 64,
+  "fields": {
+    "name": "Coffee, black, unsweetened",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "115.00",
+    "calories": "1.50",
+    "protein": "0.00",
+    "carbs": "0.50",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 65,
+  "fields": {
+    "name": "Cola drinks, sweetened",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "47.51",
+    "protein": "0.00",
+    "carbs": "13.18",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 66,
+  "fields": {
+    "name": "Collards, steamed leaves",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "25.50",
+    "protein": "2.50",
+    "carbs": "4.00",
+    "fiber": "1.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 67,
+  "fields": {
+    "name": "cooked or canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "100.00",
+    "calories": "85.00",
+    "protein": "2.50",
+    "carbs": "20.50",
+    "fiber": "0.80",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 68,
+  "fields": {
+    "name": "Corn bread",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "50.00",
+    "calories": "100.00",
+    "protein": "3.00",
+    "carbs": "15.00",
+    "fiber": "0.30",
+    "fat": "4.00",
+    "sat_fat": "2.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 69,
+  "fields": {
+    "name": "Corn grits, cooked",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "121.00",
+    "calories": "60.00",
+    "protein": "4.00",
+    "carbs": "13.50",
+    "fiber": "0.10",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 70,
+  "fields": {
+    "name": "Corn meal, yellow",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "59.00",
+    "calories": "180.00",
+    "protein": "4.50",
+    "carbs": "37.00",
+    "fiber": "0.80",
+    "fat": "2.00",
+    "sat_fat": "1.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 71,
+  "fields": {
+    "name": "corn oil, peanut oil, soy oil or cottonseed",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "125.00",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "14.00",
+    "sat_fat": "5.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 72,
+  "fields": {
+    "name": "Corn, steamed,",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "100.00",
+    "calories": "92.00",
+    "protein": "3.00",
+    "carbs": "21.00",
+    "fiber": "0.80",
+    "fat": "1.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 73,
+  "fields": {
+    "name": "Corned beef",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "30.47",
+    "protein": "3.62",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "1.65",
+    "sat_fat": "1.48"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 74,
+  "fields": {
+    "name": "Corned beef hash, canned",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "19.76",
+    "protein": "1.98",
+    "carbs": "0.99",
+    "fiber": "0.00",
+    "fat": "1.32",
+    "sat_fat": "1.15"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 75,
+  "fields": {
+    "name": "Cornflakes",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "12.50",
+    "calories": "55.00",
+    "protein": "1.00",
+    "carbs": "12.50",
+    "fiber": "0.05",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 76,
+  "fields": {
+    "name": "Cow milk, whole",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "100.00",
+    "calories": "67.62",
+    "protein": "3.28",
+    "carbs": "4.92",
+    "fiber": "0.00",
+    "fat": "4.10",
+    "sat_fat": "3.69"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 77,
+  "fields": {
+    "name": "Cow\u00e2 milk, skim",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "100.00",
+    "calories": "36.59",
+    "protein": "3.66",
+    "carbs": "5.28",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 78,
+  "fields": {
+    "name": "Crab meat, cooked",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "118.59",
+    "protein": "18.48",
+    "carbs": "1.28",
+    "fiber": "0.00",
+    "fat": "2.64",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 79,
+  "fields": {
+    "name": "Crackers, graham",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "7.00",
+    "calories": "27.50",
+    "protein": "0.50",
+    "carbs": "5.00",
+    "fiber": "0.00",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 80,
+  "fields": {
+    "name": "Cranberry sauce, sweetened",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "138.50",
+    "calories": "265.00",
+    "protein": "0.00",
+    "carbs": "71.00",
+    "fiber": "0.60",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 81,
+  "fields": {
+    "name": "Cream cheese",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "56.00",
+    "calories": "210.00",
+    "protein": "4.00",
+    "carbs": "2.00",
+    "fiber": "0.00",
+    "fat": "22.00",
+    "sat_fat": "20.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 82,
+  "fields": {
+    "name": "Cream soups (asparagus, celery, etc.)",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "127.50",
+    "calories": "100.00",
+    "protein": "3.50",
+    "carbs": "9.00",
+    "fiber": "0.60",
+    "fat": "6.00",
+    "sat_fat": "5.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 83,
+  "fields": {
+    "name": "Cream, heavy, or whipping",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "119.00",
+    "calories": "430.00",
+    "protein": "2.00",
+    "carbs": "3.00",
+    "fiber": "1.00",
+    "fat": "44.00",
+    "sat_fat": "27.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 84,
+  "fields": {
+    "name": "Cream, light, or half-and-half",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "170.00",
+    "protein": "4.00",
+    "carbs": "5.00",
+    "fiber": "0.00",
+    "fat": "15.00",
+    "sat_fat": "13.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 85,
+  "fields": {
+    "name": "Cucumbers",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "6.25",
+    "calories": "0.75",
+    "protein": "0.00",
+    "carbs": "0.13",
+    "fiber": "0.03",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 86,
+  "fields": {
+    "name": "Cupcake with icing",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "50.00",
+    "calories": "160.00",
+    "protein": "3.00",
+    "carbs": "31.00",
+    "fiber": "0.00",
+    "fat": "3.00",
+    "sat_fat": "2.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 87,
+  "fields": {
+    "name": "Dandelion greens, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "90.00",
+    "calories": "40.00",
+    "protein": "2.50",
+    "carbs": "8.00",
+    "fiber": "1.60",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 88,
+  "fields": {
+    "name": "Dates, dried",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "89.00",
+    "calories": "252.50",
+    "protein": "2.00",
+    "carbs": "67.00",
+    "fiber": "1.80",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 89,
+  "fields": {
+    "name": "Doughnuts, cake type",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "33.00",
+    "calories": "135.00",
+    "protein": "2.00",
+    "carbs": "17.00",
+    "fiber": "0.00",
+    "fat": "7.00",
+    "sat_fat": "4.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 90,
+  "fields": {
+    "name": "Duck, domestic",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "414.40",
+    "protein": "17.92",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "31.36",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 91,
+  "fields": {
+    "name": "Eggplant, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "90.00",
+    "calories": "15.00",
+    "protein": "1.00",
+    "carbs": "4.50",
+    "fiber": "0.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 92,
+  "fields": {
+    "name": "Eggs, boiled, poached, or raw",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "50.00",
+    "calories": "75.00",
+    "protein": "6.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "6.00",
+    "sat_fat": "5.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 93,
+  "fields": {
+    "name": "Eggs, Scrambled, omelet, or fried",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "64.00",
+    "calories": "110.00",
+    "protein": "6.50",
+    "carbs": "0.50",
+    "fiber": "0.00",
+    "fat": "8.00",
+    "sat_fat": "7.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 94,
+  "fields": {
+    "name": "Eggs, Yolks only",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "17.00",
+    "calories": "60.00",
+    "protein": "3.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "5.00",
+    "sat_fat": "4.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 95,
+  "fields": {
+    "name": "Endive (escarole)",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "19.65",
+    "protein": "2.00",
+    "carbs": "3.92",
+    "fiber": "1.20",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 96,
+  "fields": {
+    "name": "European, as Muscat, Tokay",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "80.00",
+    "calories": "50.00",
+    "protein": "0.50",
+    "carbs": "13.00",
+    "fiber": "0.35",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 97,
+  "fields": {
+    "name": "Evaporated, undiluted",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "126.00",
+    "calories": "172.50",
+    "protein": "8.00",
+    "carbs": "12.00",
+    "fiber": "0.00",
+    "fat": "10.00",
+    "sat_fat": "9.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 98,
+  "fields": {
+    "name": "Farina",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "119.00",
+    "calories": "52.50",
+    "protein": "1.50",
+    "carbs": "11.00",
+    "fiber": "4.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 99,
+  "fields": {
+    "name": "Figs, dried, large, 2 inch by 1 inch",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "21.00",
+    "calories": "60.00",
+    "protein": "1.00",
+    "carbs": "15.00",
+    "fiber": "0.95",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 100,
+  "fields": {
+    "name": "Figs, fresh, raw",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "38.00",
+    "calories": "30.00",
+    "protein": "0.67",
+    "carbs": "7.33",
+    "fiber": "0.33",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 101,
+  "fields": {
+    "name": "Figs, stewed or canned with syrup",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "12.67",
+    "calories": "14.32",
+    "protein": "0.22",
+    "carbs": "2.44",
+    "fiber": "0.11",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 102,
+  "fields": {
+    "name": "Fish, fried, breaded fish",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "22.40",
+    "calories": "40.00",
+    "protein": "3.80",
+    "carbs": "1.60",
+    "fiber": "0.00",
+    "fat": "2.00",
+    "sat_fat": "1.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 103,
+  "fields": {
+    "name": "Flounder, baked",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "224.00",
+    "protein": "33.60",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "8.96",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 104,
+  "fields": {
+    "name": "Flour, soy, full fat",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "55.00",
+    "calories": "230.00",
+    "protein": "19.50",
+    "carbs": "16.50",
+    "fiber": "1.45",
+    "fat": "11.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 105,
+  "fields": {
+    "name": "Flour, Wheat (all purpose)",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "55.00",
+    "calories": "200.00",
+    "protein": "6.00",
+    "carbs": "42.00",
+    "fiber": "0.15",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 106,
+  "fields": {
+    "name": "Flour, Wheat (whole)",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "60.00",
+    "calories": "195.00",
+    "protein": "6.50",
+    "carbs": "39.50",
+    "fiber": "1.40",
+    "fat": "1.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 107,
+  "fields": {
+    "name": "Fortified milk",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "118.50",
+    "calories": "114.66",
+    "protein": "7.42",
+    "carbs": "9.92",
+    "fiber": "0.12",
+    "fat": "3.50",
+    "sat_fat": "1.92"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 108,
+  "fields": {
+    "name": "French salad dressing",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "15.00",
+    "calories": "60.00",
+    "protein": "0.00",
+    "carbs": "2.00",
+    "fiber": "0.00",
+    "fat": "6.00",
+    "sat_fat": "2.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 109,
+  "fields": {
+    "name": "French-fried potatoes",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "6.00",
+    "calories": "15.50",
+    "protein": "0.10",
+    "carbs": "2.00",
+    "fiber": "0.04",
+    "fat": "0.70",
+    "sat_fat": "0.30"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 110,
+  "fields": {
+    "name": "Fresh, raw",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "57.00",
+    "calories": "32.50",
+    "protein": "0.50",
+    "carbs": "7.50",
+    "fiber": "0.40",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 111,
+  "fields": {
+    "name": "Fresh, steamed peas",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "50.00",
+    "calories": "35.00",
+    "protein": "2.50",
+    "carbs": "6.00",
+    "fiber": "1.10",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 112,
+  "fields": {
+    "name": "Fruit cake",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "30.00",
+    "calories": "105.00",
+    "protein": "2.00",
+    "carbs": "17.00",
+    "fiber": "0.20",
+    "fat": "4.00",
+    "sat_fat": "3.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 113,
+  "fields": {
+    "name": "Fruit-flavored soda",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "55.84",
+    "protein": "0.00",
+    "carbs": "14.57",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 114,
+  "fields": {
+    "name": "Fudge, plain",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "45.00",
+    "calories": "185.00",
+    "protein": "0.00",
+    "carbs": "40.00",
+    "fiber": "0.05",
+    "fat": "6.00",
+    "sat_fat": "5.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 115,
+  "fields": {
+    "name": "Gelatin, made with water",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "119.50",
+    "calories": "77.50",
+    "protein": "2.00",
+    "carbs": "18.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 116,
+  "fields": {
+    "name": "Gin, rum, vodka, whiskey",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "35.00",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 117,
+  "fields": {
+    "name": "Ginger ale",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "36.42",
+    "protein": "0.00",
+    "carbs": "9.71",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 118,
+  "fields": {
+    "name": "Gingerbread",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "55.00",
+    "calories": "180.00",
+    "protein": "2.00",
+    "carbs": "28.00",
+    "fiber": "0.00",
+    "fat": "7.00",
+    "sat_fat": "6.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 119,
+  "fields": {
+    "name": "Goat milk, fresh",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "122.00",
+    "calories": "82.50",
+    "protein": "4.00",
+    "carbs": "5.50",
+    "fiber": "0.00",
+    "fat": "5.00",
+    "sat_fat": "4.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 120,
+  "fields": {
+    "name": "Grape juice, bottled",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "80.00",
+    "protein": "0.50",
+    "carbs": "21.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 121,
+  "fields": {
+    "name": "Grapefruit juice",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "50.00",
+    "protein": "0.50",
+    "carbs": "12.00",
+    "fiber": "0.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 122,
+  "fields": {
+    "name": "Grapefruit, canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "85.00",
+    "protein": "0.50",
+    "carbs": "22.00",
+    "fiber": "0.25",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 123,
+  "fields": {
+    "name": "Grapefruit, fresh, 5 inch diameter",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "285.00",
+    "calories": "50.00",
+    "protein": "1.00",
+    "carbs": "14.00",
+    "fiber": "1.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 124,
+  "fields": {
+    "name": "Grapes, American, as Concord",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "76.50",
+    "calories": "35.00",
+    "protein": "0.50",
+    "carbs": "8.00",
+    "fiber": "0.40",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 125,
+  "fields": {
+    "name": "Haddock, fried",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "177.88",
+    "protein": "21.12",
+    "carbs": "7.92",
+    "fiber": "0.00",
+    "fat": "6.56",
+    "sat_fat": "5.28"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 126,
+  "fields": {
+    "name": "Halibut, broiled",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "203.84",
+    "protein": "29.12",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "8.96",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 127,
+  "fields": {
+    "name": "Ham, canned, spiced",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "324.21",
+    "protein": "15.68",
+    "carbs": "2.00",
+    "fiber": "0.00",
+    "fat": "27.52",
+    "sat_fat": "23.60"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 128,
+  "fields": {
+    "name": "Ham, cured",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "334.04",
+    "protein": "25.52",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "25.52",
+    "sat_fat": "21.60"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 129,
+  "fields": {
+    "name": "Ham, cured, and pan-broiled",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "382.12",
+    "protein": "21.12",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "28.96",
+    "sat_fat": "25.04"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 130,
+  "fields": {
+    "name": "Hard candies",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "14.00",
+    "calories": "45.00",
+    "protein": "0.00",
+    "carbs": "14.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 131,
+  "fields": {
+    "name": "Herring, kippered",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "100.00",
+    "calories": "211.00",
+    "protein": "22.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "13.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 132,
+  "fields": {
+    "name": "Honey, strained honey, strained",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "21.00",
+    "calories": "60.00",
+    "protein": "0.00",
+    "carbs": "15.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 133,
+  "fields": {
+    "name": "Hydrogenated cooking fat",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "100.00",
+    "calories": "665.00",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "100.00",
+    "sat_fat": "88.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 134,
+  "fields": {
+    "name": "Ice cream, commercial",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "94.00",
+    "calories": "150.00",
+    "protein": "3.00",
+    "carbs": "14.50",
+    "fiber": "0.00",
+    "fat": "9.00",
+    "sat_fat": "8.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 135,
+  "fields": {
+    "name": "Ice milk, commercial",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "95.00",
+    "calories": "137.50",
+    "protein": "4.50",
+    "carbs": "16.00",
+    "fiber": "0.00",
+    "fat": "5.00",
+    "sat_fat": "4.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 136,
+  "fields": {
+    "name": "Iceberg lettuce",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "400.00",
+    "calories": "52.00",
+    "protein": "0.00",
+    "carbs": "12.00",
+    "fiber": "2.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 137,
+  "fields": {
+    "name": "Ices, lime, orange, etc.",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "58.50",
+    "protein": "0.00",
+    "carbs": "24.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 138,
+  "fields": {
+    "name": "Jams, marmalades, preserves",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "20.00",
+    "calories": "55.00",
+    "protein": "0.00",
+    "carbs": "14.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 139,
+  "fields": {
+    "name": "Jellies",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "20.00",
+    "calories": "50.00",
+    "protein": "0.00",
+    "carbs": "13.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 140,
+  "fields": {
+    "name": "Kale, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "55.00",
+    "calories": "22.50",
+    "protein": "2.00",
+    "carbs": "4.00",
+    "fiber": "0.45",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 141,
+  "fields": {
+    "name": "Kohlrabi, raw, sliced",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "70.00",
+    "calories": "20.00",
+    "protein": "1.00",
+    "carbs": "4.50",
+    "fiber": "0.75",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 142,
+  "fields": {
+    "name": "Lamb, chop, broiled",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "467.48",
+    "protein": "23.36",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "34.08",
+    "sat_fat": "32.16"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 143,
+  "fields": {
+    "name": "Lamb, Leg roasted",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "408.93",
+    "protein": "26.08",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "18.24",
+    "sat_fat": "18.24"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 144,
+  "fields": {
+    "name": "Lamb, Shoulder, braised",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "375.53",
+    "protein": "23.68",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "30.32",
+    "sat_fat": "27.68"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 145,
+  "fields": {
+    "name": "Lambs quarters, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "24.00",
+    "protein": "2.50",
+    "carbs": "3.50",
+    "fiber": "1.60",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 146,
+  "fields": {
+    "name": "Lard",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "110.00",
+    "calories": "992.00",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "110.00",
+    "sat_fat": "92.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 147,
+  "fields": {
+    "name": "Lemon juice, fresh",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "30.00",
+    "protein": "0.00",
+    "carbs": "10.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 148,
+  "fields": {
+    "name": "Lemonade concentrate, frozen",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "18.33",
+    "calories": "35.83",
+    "protein": "0.00",
+    "carbs": "9.33",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 149,
+  "fields": {
+    "name": "Lentils",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "100.00",
+    "calories": "106.00",
+    "protein": "7.50",
+    "carbs": "19.00",
+    "fiber": "1.20",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 150,
+  "fields": {
+    "name": "Lettuce, loose leaf, green",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "400.00",
+    "calories": "56.00",
+    "protein": "4.00",
+    "carbs": "8.00",
+    "fiber": "2.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 151,
+  "fields": {
+    "name": "Lima, dry, cooked",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "96.00",
+    "calories": "130.00",
+    "protein": "8.00",
+    "carbs": "24.00",
+    "fiber": "1.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 152,
+  "fields": {
+    "name": "Lima, green",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "80.00",
+    "calories": "70.00",
+    "protein": "4.00",
+    "carbs": "12.00",
+    "fiber": "1.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 153,
+  "fields": {
+    "name": "Lobster, steamed",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "100.00",
+    "calories": "92.00",
+    "protein": "18.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "1.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 154,
+  "fields": {
+    "name": "Macaroni, Baked with cheese",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "110.00",
+    "calories": "237.50",
+    "protein": "9.00",
+    "carbs": "22.00",
+    "fiber": "0.00",
+    "fat": "12.50",
+    "sat_fat": "12.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 155,
+  "fields": {
+    "name": "Macaroni, cooked",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "70.00",
+    "calories": "77.50",
+    "protein": "2.50",
+    "carbs": "16.00",
+    "fiber": "0.05",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 156,
+  "fields": {
+    "name": "Mackerel, canned",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "204.24",
+    "protein": "23.68",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "11.84",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 157,
+  "fields": {
+    "name": "Malted milk Cocoa",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "126.00",
+    "calories": "117.50",
+    "protein": "4.00",
+    "carbs": "13.00",
+    "fiber": "0.00",
+    "fat": "5.50",
+    "sat_fat": "5.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 158,
+  "fields": {
+    "name": "Margarine",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "100.75",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "11.00",
+    "sat_fat": "9.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 159,
+  "fields": {
+    "name": "Marshmallows, large",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "6.00",
+    "calories": "19.60",
+    "protein": "0.20",
+    "carbs": "4.60",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 160,
+  "fields": {
+    "name": "Mashed potatoes with milk and butter",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "100.00",
+    "calories": "115.00",
+    "protein": "2.00",
+    "carbs": "14.00",
+    "fiber": "0.35",
+    "fat": "6.00",
+    "sat_fat": "5.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 161,
+  "fields": {
+    "name": "Mayonnaise",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "15.00",
+    "calories": "110.00",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "12.00",
+    "sat_fat": "5.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 162,
+  "fields": {
+    "name": "Milk chocolate",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "14.00",
+    "calories": "72.50",
+    "protein": "0.50",
+    "carbs": "11.00",
+    "fiber": "0.05",
+    "fat": "1.50",
+    "sat_fat": "1.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 163,
+  "fields": {
+    "name": "Milk pudding (cornstarch)",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "124.00",
+    "calories": "137.50",
+    "protein": "4.50",
+    "carbs": "20.00",
+    "fiber": "0.00",
+    "fat": "5.00",
+    "sat_fat": "4.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 164,
+  "fields": {
+    "name": "Milk pudding Custard, baked",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "124.00",
+    "calories": "142.50",
+    "protein": "6.50",
+    "carbs": "14.00",
+    "fiber": "0.00",
+    "fat": "7.00",
+    "sat_fat": "5.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 165,
+  "fields": {
+    "name": "Molasses, blackstrap",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "20.00",
+    "calories": "45.00",
+    "protein": "0.00",
+    "carbs": "11.00",
+    "fiber": "8.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 166,
+  "fields": {
+    "name": "Muffins of refined flour",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "48.00",
+    "calories": "135.00",
+    "protein": "4.00",
+    "carbs": "19.00",
+    "fiber": "0.00",
+    "fat": "5.00",
+    "sat_fat": "4.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 167,
+  "fields": {
+    "name": "Mushrooms, cooked or canned",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "30.00",
+    "calories": "3.00",
+    "protein": "0.50",
+    "carbs": "1.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 168,
+  "fields": {
+    "name": "Mustard greens, steamed",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "140.00",
+    "calories": "30.00",
+    "protein": "3.00",
+    "carbs": "6.00",
+    "fiber": "1.20",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 169,
+  "fields": {
+    "name": "Navy, baked with pork",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "133.33",
+    "calories": "166.66",
+    "protein": "7.33",
+    "carbs": "24.67",
+    "fiber": "1.33",
+    "fat": "4.00",
+    "sat_fat": "4.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 170,
+  "fields": {
+    "name": "Noodle, rice, barley soup",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "57.50",
+    "protein": "3.00",
+    "carbs": "6.50",
+    "fiber": "0.10",
+    "fat": "2.00",
+    "sat_fat": "1.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 171,
+  "fields": {
+    "name": "Noodles",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "80.00",
+    "calories": "100.00",
+    "protein": "3.50",
+    "carbs": "18.50",
+    "fiber": "0.05",
+    "fat": "1.00",
+    "sat_fat": "1.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 172,
+  "fields": {
+    "name": "Oatmeal, or rolled oats",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "118.00",
+    "calories": "75.00",
+    "protein": "2.50",
+    "carbs": "13.00",
+    "fiber": "2.30",
+    "fat": "1.50",
+    "sat_fat": "1.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 173,
+  "fields": {
+    "name": "Okra, diced, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "37.59",
+    "calories": "12.03",
+    "protein": "0.38",
+    "carbs": "2.63",
+    "fiber": "0.38",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 174,
+  "fields": {
+    "name": "Olive oil",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "125.00",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "14.00",
+    "sat_fat": "3.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 175,
+  "fields": {
+    "name": "Olives, green, canned, large",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "6.50",
+    "calories": "7.20",
+    "protein": "0.10",
+    "carbs": "0.30",
+    "fiber": "0.08",
+    "fat": "1.00",
+    "sat_fat": "0.90"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 176,
+  "fields": {
+    "name": "Onions, mature cooked",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "210.00",
+    "calories": "80.00",
+    "protein": "2.00",
+    "carbs": "18.00",
+    "fiber": "1.60",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 177,
+  "fields": {
+    "name": "Orange juice, fresh",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "15.63",
+    "calories": "7.00",
+    "protein": "0.13",
+    "carbs": "1.56",
+    "fiber": "0.01",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 178,
+  "fields": {
+    "name": "Oranges, fresh, 3 inch diameter",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "180.00",
+    "calories": "60.00",
+    "protein": "2.00",
+    "carbs": "16.00",
+    "fiber": "1.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 179,
+  "fields": {
+    "name": "Oyster stew, with milk",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "115.00",
+    "calories": "100.00",
+    "protein": "5.50",
+    "carbs": "5.50",
+    "fiber": "0.00",
+    "fat": "6.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 180,
+  "fields": {
+    "name": "Oysters, raw",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "14.00",
+    "calories": "1.32",
+    "protein": "0.49",
+    "carbs": "0.00",
+    "fiber": "0.33",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 181,
+  "fields": {
+    "name": "Pancakes, buckwheat, 4 inch diam",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "27.00",
+    "calories": "62.50",
+    "protein": "1.75",
+    "carbs": "7.00",
+    "fiber": "0.03",
+    "fat": "2.25",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 182,
+  "fields": {
+    "name": "Pancakes, wheat, 4 inch diam.",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "27.00",
+    "calories": "62.50",
+    "protein": "1.75",
+    "carbs": "7.00",
+    "fiber": "0.03",
+    "fat": "2.25",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 183,
+  "fields": {
+    "name": "Papaya, fresh",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "100.00",
+    "calories": "37.50",
+    "protein": "0.50",
+    "carbs": "9.00",
+    "fiber": "0.90",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 184,
+  "fields": {
+    "name": "Parsley, chopped, raw",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "25.00",
+    "calories": "1.00",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 185,
+  "fields": {
+    "name": "Parsnips, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "77.50",
+    "calories": "47.50",
+    "protein": "1.00",
+    "carbs": "11.00",
+    "fiber": "1.50",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 186,
+  "fields": {
+    "name": "Peaches, canned, sliced",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "128.50",
+    "calories": "100.00",
+    "protein": "0.50",
+    "carbs": "26.00",
+    "fiber": "0.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 187,
+  "fields": {
+    "name": "Peanut butter, commercial",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "450.00",
+    "protein": "18.00",
+    "carbs": "13.50",
+    "fiber": "1.35",
+    "fat": "37.50",
+    "sat_fat": "25.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 188,
+  "fields": {
+    "name": "Peanut butter, natural",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "426.00",
+    "protein": "19.50",
+    "carbs": "12.00",
+    "fiber": "1.35",
+    "fat": "36.00",
+    "sat_fat": "15.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 189,
+  "fields": {
+    "name": "Peanuts, roasted",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "435.00",
+    "protein": "19.50",
+    "carbs": "13.50",
+    "fiber": "1.80",
+    "fat": "37.50",
+    "sat_fat": "24.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 190,
+  "fields": {
+    "name": "Pears Raw",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "182.00",
+    "calories": "15.00",
+    "protein": "1.00",
+    "carbs": "25.00",
+    "fiber": "2.00",
+    "fat": "1.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 191,
+  "fields": {
+    "name": "Pears, canned, sweetened",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "127.50",
+    "calories": "97.50",
+    "protein": "0.50",
+    "carbs": "25.00",
+    "fiber": "1.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 192,
+  "fields": {
+    "name": "Peas, green, canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "50.00",
+    "calories": "33.00",
+    "protein": "1.50",
+    "carbs": "6.50",
+    "fiber": "0.05",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 193,
+  "fields": {
+    "name": "Pecans, raw, halves",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "78.00",
+    "calories": "514.50",
+    "protein": "7.50",
+    "carbs": "10.50",
+    "fiber": "1.65",
+    "fat": "52.50",
+    "sat_fat": "37.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 194,
+  "fields": {
+    "name": "Persimmons, Japanese",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "125.00",
+    "calories": "75.00",
+    "protein": "1.00",
+    "carbs": "20.00",
+    "fiber": "2.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 195,
+  "fields": {
+    "name": "Pie, apple, 9 inch diam. pie",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "135.00",
+    "calories": "330.00",
+    "protein": "3.00",
+    "carbs": "53.00",
+    "fiber": "0.10",
+    "fat": "13.00",
+    "sat_fat": "11.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 196,
+  "fields": {
+    "name": "Pie, Cherry",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "135.00",
+    "calories": "340.00",
+    "protein": "3.00",
+    "carbs": "55.00",
+    "fiber": "0.10",
+    "fat": "13.00",
+    "sat_fat": "11.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 197,
+  "fields": {
+    "name": "Pie, Custard",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "130.00",
+    "calories": "265.00",
+    "protein": "7.00",
+    "carbs": "34.00",
+    "fiber": "0.00",
+    "fat": "11.00",
+    "sat_fat": "10.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 198,
+  "fields": {
+    "name": "Pie, Lemon meringue",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "120.00",
+    "calories": "300.00",
+    "protein": "4.00",
+    "carbs": "45.00",
+    "fiber": "0.10",
+    "fat": "12.00",
+    "sat_fat": "10.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 199,
+  "fields": {
+    "name": "Pie, Mince",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "135.00",
+    "calories": "340.00",
+    "protein": "3.00",
+    "carbs": "62.00",
+    "fiber": "0.70",
+    "fat": "9.00",
+    "sat_fat": "8.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 200,
+  "fields": {
+    "name": "Pie, Pumpkin",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "130.00",
+    "calories": "265.00",
+    "protein": "5.00",
+    "carbs": "34.00",
+    "fiber": "8.00",
+    "fat": "12.00",
+    "sat_fat": "11.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 201,
+  "fields": {
+    "name": "Pineapple juice, canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "60.00",
+    "protein": "0.50",
+    "carbs": "16.00",
+    "fiber": "0.10",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 202,
+  "fields": {
+    "name": "Pineapple, canned, sliced",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "122.00",
+    "calories": "95.00",
+    "protein": "0.00",
+    "carbs": "26.00",
+    "fiber": "0.40",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 203,
+  "fields": {
+    "name": "Pizza, cheese, 1/8 of 14 inch diam.",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "75.00",
+    "calories": "180.00",
+    "protein": "8.00",
+    "carbs": "23.00",
+    "fiber": "0.00",
+    "fat": "6.00",
+    "sat_fat": "5.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 204,
+  "fields": {
+    "name": "Plain, with no icing",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "55.00",
+    "calories": "180.00",
+    "protein": "4.00",
+    "carbs": "31.00",
+    "fiber": "0.00",
+    "fat": "5.00",
+    "sat_fat": "4.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 205,
+  "fields": {
+    "name": "Plums, canned in syrup",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "128.00",
+    "calories": "92.50",
+    "protein": "0.50",
+    "carbs": "25.00",
+    "fiber": "0.35",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 206,
+  "fields": {
+    "name": "Plums, Raw, 2 inch diameter",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "60.00",
+    "calories": "15.00",
+    "protein": "0.00",
+    "carbs": "7.00",
+    "fiber": "0.20",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 207,
+  "fields": {
+    "name": "Popcorn, with oil and salt",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "7.00",
+    "calories": "38.00",
+    "protein": "0.75",
+    "carbs": "5.00",
+    "fiber": "0.13",
+    "fat": "1.75",
+    "sat_fat": "0.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 208,
+  "fields": {
+    "name": "Pork roast",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "408.47",
+    "protein": "27.68",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "31.60",
+    "sat_fat": "27.68"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 209,
+  "fields": {
+    "name": "Pork sausage, bulk",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "532.00",
+    "protein": "20.16",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "49.28",
+    "sat_fat": "44.80"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 210,
+  "fields": {
+    "name": "Pork, chop, 1 thick",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "291.20",
+    "protein": "17.92",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "23.52",
+    "sat_fat": "20.16"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 211,
+  "fields": {
+    "name": "Pot-pie, 4 1/2 inch diameter",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "227.00",
+    "calories": "480.00",
+    "protein": "18.00",
+    "carbs": "32.00",
+    "fiber": "0.00",
+    "fat": "28.00",
+    "sat_fat": "25.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 212,
+  "fields": {
+    "name": "Potatoes, baked",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "100.00",
+    "calories": "100.00",
+    "protein": "2.00",
+    "carbs": "22.00",
+    "fiber": "0.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 213,
+  "fields": {
+    "name": "Potatoes, pan-tried",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "66.67",
+    "calories": "178.68",
+    "protein": "2.67",
+    "carbs": "22.00",
+    "fiber": "0.27",
+    "fat": "9.33",
+    "sat_fat": "4.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 214,
+  "fields": {
+    "name": "Powdered milk, skim, instant",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "56.50",
+    "calories": "192.76",
+    "protein": "20.00",
+    "carbs": "28.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 215,
+  "fields": {
+    "name": "Powdered milk, whole",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "51.50",
+    "calories": "257.50",
+    "protein": "13.50",
+    "carbs": "19.50",
+    "fiber": "0.00",
+    "fat": "14.00",
+    "sat_fat": "12.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 216,
+  "fields": {
+    "name": "Processed cheese",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "56.00",
+    "calories": "210.00",
+    "protein": "14.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "18.00",
+    "sat_fat": "16.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 217,
+  "fields": {
+    "name": "Prune juice, canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "85.00",
+    "protein": "0.50",
+    "carbs": "22.50",
+    "fiber": "0.35",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 218,
+  "fields": {
+    "name": "Prunes, cooked",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "135.00",
+    "calories": "150.00",
+    "protein": "1.50",
+    "carbs": "40.50",
+    "fiber": "0.40",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 219,
+  "fields": {
+    "name": "Puffed rice",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "7.00",
+    "calories": "27.50",
+    "protein": "0.00",
+    "carbs": "6.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 220,
+  "fields": {
+    "name": "Radishes, raw",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "10.00",
+    "calories": "2.00",
+    "protein": "0.00",
+    "carbs": "0.40",
+    "fiber": "0.06",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 221,
+  "fields": {
+    "name": "Raisins, dried",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "88.00",
+    "calories": "230.00",
+    "protein": "2.00",
+    "carbs": "82.00",
+    "fiber": "0.70",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 222,
+  "fields": {
+    "name": "Raspberries, frozen",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "100.00",
+    "calories": "100.00",
+    "protein": "0.00",
+    "carbs": "25.00",
+    "fiber": "2.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 223,
+  "fields": {
+    "name": "Raspberries, Raw, red",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "66.67",
+    "calories": "38.00",
+    "protein": "0.00",
+    "carbs": "9.33",
+    "fiber": "3.33",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 224,
+  "fields": {
+    "name": "Raw, grated",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "55.00",
+    "calories": "22.50",
+    "protein": "0.50",
+    "carbs": "5.00",
+    "fiber": "0.60",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 225,
+  "fields": {
+    "name": "Raw, green, sweet peppers",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "100.00",
+    "calories": "25.00",
+    "protein": "1.00",
+    "carbs": "6.00",
+    "fiber": "1.40",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 226,
+  "fields": {
+    "name": "Red kidney, canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "130.00",
+    "calories": "115.00",
+    "protein": "7.50",
+    "carbs": "21.00",
+    "fiber": "1.25",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 227,
+  "fields": {
+    "name": "Rhubarb, cooked, sweetened",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "135.00",
+    "calories": "192.50",
+    "protein": "0.50",
+    "carbs": "49.00",
+    "fiber": "0.95",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 228,
+  "fields": {
+    "name": "Rice flakes",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "15.00",
+    "calories": "57.50",
+    "protein": "1.00",
+    "carbs": "13.00",
+    "fiber": "0.05",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 229,
+  "fields": {
+    "name": "Rice polish",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "50.00",
+    "calories": "132.00",
+    "protein": "6.00",
+    "carbs": "28.00",
+    "fiber": "1.20",
+    "fat": "6.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 230,
+  "fields": {
+    "name": "Rice, uncooked, brown",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "104.00",
+    "calories": "374.00",
+    "protein": "7.50",
+    "carbs": "77.00",
+    "fiber": "0.60",
+    "fat": "1.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 231,
+  "fields": {
+    "name": "Rice, White",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "95.50",
+    "calories": "346.00",
+    "protein": "7.00",
+    "carbs": "75.00",
+    "fiber": "0.15",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 232,
+  "fields": {
+    "name": "Ripe, canned, large",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "6.50",
+    "calories": "10.50",
+    "protein": "0.10",
+    "carbs": "0.10",
+    "fiber": "0.10",
+    "fat": "1.30",
+    "sat_fat": "1.20"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 233,
+  "fields": {
+    "name": "Roast beef, oven-cooked",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "64.24",
+    "protein": "2.64",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "5.93",
+    "sat_fat": "5.76"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 234,
+  "fields": {
+    "name": "roasted and salted",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "70.00",
+    "calories": "439.00",
+    "protein": "13.00",
+    "carbs": "13.00",
+    "fiber": "1.80",
+    "fat": "40.00",
+    "sat_fat": "31.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 235,
+  "fields": {
+    "name": "Rolls, breakfast, sweet",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "50.00",
+    "calories": "411.00",
+    "protein": "3.00",
+    "carbs": "23.00",
+    "fiber": "0.10",
+    "fat": "12.00",
+    "sat_fat": "11.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 236,
+  "fields": {
+    "name": "Rolls, of refined flour",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "38.00",
+    "calories": "115.00",
+    "protein": "3.00",
+    "carbs": "20.00",
+    "fiber": "0.00",
+    "fat": "2.00",
+    "sat_fat": "2.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 237,
+  "fields": {
+    "name": "Rolls, whole-wheat",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "40.00",
+    "calories": "102.00",
+    "protein": "4.00",
+    "carbs": "20.00",
+    "fiber": "0.10",
+    "fat": "1.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 238,
+  "fields": {
+    "name": "Root beer",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "48.55",
+    "protein": "0.00",
+    "carbs": "12.14",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 239,
+  "fields": {
+    "name": "Roquefort type",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "56.00",
+    "calories": "210.00",
+    "protein": "12.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "18.00",
+    "sat_fat": "16.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 240,
+  "fields": {
+    "name": "Safflower, sunflower oil",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "125.00",
+    "protein": "0.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "14.00",
+    "sat_fat": "3.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 241,
+  "fields": {
+    "name": "Salmon, canned",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "158.12",
+    "protein": "22.40",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "6.56",
+    "sat_fat": "1.28"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 242,
+  "fields": {
+    "name": "Sardines, canned",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "237.18",
+    "protein": "28.96",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "11.84",
+    "sat_fat": "5.28"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 243,
+  "fields": {
+    "name": "Sauerkraut, canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "75.00",
+    "calories": "16.00",
+    "protein": "0.50",
+    "carbs": "3.50",
+    "fiber": "0.60",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 244,
+  "fields": {
+    "name": "Scalloped with cheese",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "66.67",
+    "calories": "96.67",
+    "protein": "4.00",
+    "carbs": "9.33",
+    "fiber": "0.27",
+    "fat": "5.33",
+    "sat_fat": "4.67"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 245,
+  "fields": {
+    "name": "Scallops, breaded, fried",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "116.48",
+    "protein": "20.16",
+    "carbs": "11.20",
+    "fiber": "0.00",
+    "fat": "8.96",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 246,
+  "fields": {
+    "name": "Sesame seeds, dry",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "50.00",
+    "calories": "280.00",
+    "protein": "9.00",
+    "carbs": "10.00",
+    "fiber": "3.10",
+    "fat": "24.00",
+    "sat_fat": "13.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 247,
+  "fields": {
+    "name": "Shad, baked",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "224.00",
+    "protein": "26.32",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "13.20",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 248,
+  "fields": {
+    "name": "Shredded wheat biscuit",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "28.00",
+    "calories": "100.00",
+    "protein": "3.00",
+    "carbs": "23.00",
+    "fiber": "0.70",
+    "fat": "1.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 249,
+  "fields": {
+    "name": "Shrimp, steamed",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "144.94",
+    "protein": "30.32",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "1.28",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 250,
+  "fields": {
+    "name": "Soybeans, unseasoned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "100.00",
+    "calories": "130.00",
+    "protein": "11.00",
+    "carbs": "10.00",
+    "fiber": "1.60",
+    "fat": "5.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 251,
+  "fields": {
+    "name": "Spaghetti with meat sauce",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "142.50",
+    "protein": "6.50",
+    "carbs": "17.50",
+    "fiber": "0.25",
+    "fat": "5.00",
+    "sat_fat": "3.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 252,
+  "fields": {
+    "name": "Spaghetti, with tomatoes and cheese",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "105.00",
+    "protein": "3.00",
+    "carbs": "18.00",
+    "fiber": "0.25",
+    "fat": "2.50",
+    "sat_fat": "1.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 253,
+  "fields": {
+    "name": "Spanish rice with meat",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "108.50",
+    "protein": "2.00",
+    "carbs": "20.00",
+    "fiber": "0.60",
+    "fat": "2.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 254,
+  "fields": {
+    "name": "Spinach, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "50.00",
+    "calories": "13.00",
+    "protein": "1.50",
+    "carbs": "1.50",
+    "fiber": "0.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 255,
+  "fields": {
+    "name": "Split peas cooked",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "12.50",
+    "calories": "14.38",
+    "protein": "1.00",
+    "carbs": "2.63",
+    "fiber": "0.05",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 256,
+  "fields": {
+    "name": "Split-pea soup (lentil)",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "73.50",
+    "protein": "4.00",
+    "carbs": "12.50",
+    "fiber": "0.25",
+    "fat": "1.50",
+    "sat_fat": "1.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 257,
+  "fields": {
+    "name": "Sponge cake, no icing",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "40.00",
+    "calories": "115.00",
+    "protein": "3.00",
+    "carbs": "22.00",
+    "fiber": "0.00",
+    "fat": "2.00",
+    "sat_fat": "2.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 258,
+  "fields": {
+    "name": "Squash, summer",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "105.00",
+    "calories": "17.50",
+    "protein": "0.50",
+    "carbs": "4.00",
+    "fiber": "0.30",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 259,
+  "fields": {
+    "name": "Squash, Winter, mashed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "100.00",
+    "calories": "47.50",
+    "protein": "2.00",
+    "carbs": "11.50",
+    "fiber": "1.30",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 260,
+  "fields": {
+    "name": "Stalk raw",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "40.00",
+    "calories": "5.00",
+    "protein": "1.00",
+    "carbs": "1.00",
+    "fiber": "0.30",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 261,
+  "fields": {
+    "name": "Steak, as sirloin",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "54.35",
+    "protein": "3.29",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "4.45",
+    "sat_fat": "4.12"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 262,
+  "fields": {
+    "name": "Steak, lean, as round",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "14.00",
+    "calories": "36.24",
+    "protein": "3.95",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "1.98",
+    "sat_fat": "1.81"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 263,
+  "fields": {
+    "name": "Steamed cabbage",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "85.00",
+    "calories": "20.00",
+    "protein": "1.00",
+    "carbs": "4.50",
+    "fiber": "0.65",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 264,
+  "fields": {
+    "name": "Stew, with vegetables",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "117.50",
+    "calories": "92.50",
+    "protein": "7.50",
+    "carbs": "7.50",
+    "fiber": "0.00",
+    "fat": "5.00",
+    "sat_fat": "4.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 265,
+  "fields": {
+    "name": "Strawberries, frozen",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "113.50",
+    "calories": "121.00",
+    "protein": "0.50",
+    "carbs": "30.00",
+    "fiber": "0.65",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 266,
+  "fields": {
+    "name": "Strawberries, Raw",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "74.50",
+    "calories": "27.00",
+    "protein": "0.00",
+    "carbs": "6.00",
+    "fiber": "0.95",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 267,
+  "fields": {
+    "name": "Strips, from raw",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "50.00",
+    "calories": "20.00",
+    "protein": "0.00",
+    "carbs": "5.00",
+    "fiber": "0.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 268,
+  "fields": {
+    "name": "Stuffed peppers with beef and crumbs",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "150.00",
+    "calories": "255.00",
+    "protein": "19.00",
+    "carbs": "24.00",
+    "fiber": "1.00",
+    "fat": "9.00",
+    "sat_fat": "8.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 269,
+  "fields": {
+    "name": "Sugar, beet or cane",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "100.00",
+    "calories": "385.00",
+    "protein": "0.00",
+    "carbs": "99.50",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 270,
+  "fields": {
+    "name": "Sugar, Brown, firm-packed, dark",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "110.00",
+    "calories": "407.50",
+    "protein": "0.00",
+    "carbs": "105.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 271,
+  "fields": {
+    "name": "Sunflower seeds",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "50.00",
+    "calories": "280.00",
+    "protein": "12.00",
+    "carbs": "10.00",
+    "fiber": "1.90",
+    "fat": "26.00",
+    "sat_fat": "7.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 272,
+  "fields": {
+    "name": "Sweet potatoes, baked",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "110.00",
+    "calories": "155.00",
+    "protein": "2.00",
+    "carbs": "36.00",
+    "fiber": "1.00",
+    "fat": "1.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 273,
+  "fields": {
+    "name": "Sweet potatoes, Candied",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "175.00",
+    "calories": "235.00",
+    "protein": "2.00",
+    "carbs": "80.00",
+    "fiber": "1.50",
+    "fat": "6.00",
+    "sat_fat": "5.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 274,
+  "fields": {
+    "name": "Swiss",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "56.00",
+    "calories": "210.00",
+    "protein": "14.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "16.00",
+    "sat_fat": "14.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 275,
+  "fields": {
+    "name": "Swordfish, broiled",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "100.00",
+    "calories": "180.00",
+    "protein": "27.00",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "6.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 276,
+  "fields": {
+    "name": "Syrup, maple",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "20.00",
+    "calories": "50.00",
+    "protein": "0.00",
+    "carbs": "12.50",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 277,
+  "fields": {
+    "name": "Tangerines, fresh",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "114.00",
+    "calories": "40.00",
+    "protein": "1.00",
+    "carbs": "10.00",
+    "fiber": "1.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 278,
+  "fields": {
+    "name": "Tapioca cream pudding",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "167.50",
+    "protein": "5.00",
+    "carbs": "21.00",
+    "fiber": "0.00",
+    "fat": "5.00",
+    "sat_fat": "4.50"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 279,
+  "fields": {
+    "name": "Tea, clear, unsweetened",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "115.00",
+    "calories": "2.00",
+    "protein": "0.00",
+    "carbs": "0.50",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 280,
+  "fields": {
+    "name": "Thousand Island salad dressing",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "15.00",
+    "calories": "75.00",
+    "protein": "0.00",
+    "carbs": "1.00",
+    "fiber": "0.00",
+    "fat": "8.00",
+    "sat_fat": "3.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 281,
+  "fields": {
+    "name": "Tomato catsup",
+    "measure": "1.00",
+    "unit": "tablespoon",
+    "grams": "17.00",
+    "calories": "15.00",
+    "protein": "0.00",
+    "carbs": "4.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 282,
+  "fields": {
+    "name": "Tomato juice, canned",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "25.00",
+    "protein": "1.00",
+    "carbs": "5.00",
+    "fiber": "0.30",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 283,
+  "fields": {
+    "name": "Tomato soup, diluted w/milk",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "122.50",
+    "calories": "87.50",
+    "protein": "3.00",
+    "carbs": "11.00",
+    "fiber": "0.25",
+    "fat": "3.50",
+    "sat_fat": "3.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 284,
+  "fields": {
+    "name": "Tomatoes, canned whole",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "25.00",
+    "protein": "1.00",
+    "carbs": "4.50",
+    "fiber": "0.50",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 285,
+  "fields": {
+    "name": "Tomatoes, Raw, 2 by 2 1/2",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "150.00",
+    "calories": "30.00",
+    "protein": "1.00",
+    "carbs": "6.00",
+    "fiber": "0.60",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 286,
+  "fields": {
+    "name": "Tuna, canned, drained",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "85.00",
+    "calories": "170.00",
+    "protein": "4.12",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "1.15",
+    "sat_fat": "0.49"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 287,
+  "fields": {
+    "name": "Turkey, roasted",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "296.80",
+    "protein": "30.24",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "16.80",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 288,
+  "fields": {
+    "name": "Turnip greens, steamed",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "72.50",
+    "calories": "22.50",
+    "protein": "2.00",
+    "carbs": "4.00",
+    "fiber": "0.90",
+    "fat": "0.50",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 289,
+  "fields": {
+    "name": "Turnips, steamed, sliced",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "77.50",
+    "calories": "20.00",
+    "protein": "0.50",
+    "carbs": "4.50",
+    "fiber": "0.90",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 290,
+  "fields": {
+    "name": "Veal, cutlet, broiled",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "243.76",
+    "protein": "30.32",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "11.84",
+    "sat_fat": "10.56"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 291,
+  "fields": {
+    "name": "Veal, Roast",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "112.00",
+    "calories": "401.88",
+    "protein": "17.12",
+    "carbs": "0.00",
+    "fiber": "0.00",
+    "fat": "18.48",
+    "sat_fat": "17.12"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 292,
+  "fields": {
+    "name": "Vegetable (vegetarian) soup",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "40.00",
+    "protein": "2.00",
+    "carbs": "7.00",
+    "fiber": "0.00",
+    "fat": "1.00",
+    "sat_fat": "1.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 293,
+  "fields": {
+    "name": "Waffles, 1/2 x 4 1/2 x 5 1/2 inch",
+    "measure": "1.00",
+    "unit": "piece",
+    "grams": "75.00",
+    "calories": "240.00",
+    "protein": "8.00",
+    "carbs": "30.00",
+    "fiber": "0.10",
+    "fat": "9.00",
+    "sat_fat": "1.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 294,
+  "fields": {
+    "name": "Walnuts, English, raw",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "50.00",
+    "calories": "325.00",
+    "protein": "7.00",
+    "carbs": "8.00",
+    "fiber": "1.00",
+    "fat": "32.00",
+    "sat_fat": "7.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 295,
+  "fields": {
+    "name": "Watercress, leaves and stems, raw",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "25.00",
+    "calories": "4.50",
+    "protein": "0.50",
+    "carbs": "0.50",
+    "fiber": "0.15",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 296,
+  "fields": {
+    "name": "Watermelon, 4 by 8 inch",
+    "measure": "1.00",
+    "unit": "slice",
+    "grams": "925.00",
+    "calories": "120.00",
+    "protein": "2.00",
+    "carbs": "29.00",
+    "fiber": "3.60",
+    "fat": "1.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 297,
+  "fields": {
+    "name": "Wine Table (12.2% alcohol)",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "150.00",
+    "protein": "0.00",
+    "carbs": "5.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 298,
+  "fields": {
+    "name": "Wines Dessert (8.8% alcohol)",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "120.00",
+    "calories": "164.00",
+    "protein": "0.00",
+    "carbs": "9.00",
+    "fiber": "0.00",
+    "fat": "0.00",
+    "sat_fat": "0.00"
+  }
+},
+{
+  "model": "logs.food",
+  "pk": 299,
+  "fields": {
+    "name": "Yogurt, of partially skim. milk",
+    "measure": "0.50",
+    "unit": "cup",
+    "grams": "125.00",
+    "calories": "64.00",
+    "protein": "9.00",
+    "carbs": "6.50",
+    "fiber": "0.50",
+    "fat": "2.00",
+    "sat_fat": "1.50"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 1,
+  "fields": {
+    "food": 1,
+    "portion": 3,
+    "owner": 1,
+    "created_at": "2020-03-02T17:15:22.923Z",
+    "updated_at": "2020-03-02T17:15:22.923Z"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 2,
+  "fields": {
+    "food": 1,
+    "portion": 4,
+    "owner": 1,
+    "created_at": "2020-03-02T17:15:50.214Z",
+    "updated_at": "2020-03-02T17:15:50.214Z"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 3,
+  "fields": {
+    "food": 1,
+    "portion": 3,
+    "owner": 1,
+    "created_at": "2020-03-02T17:16:08.517Z",
+    "updated_at": "2020-03-02T17:16:08.517Z"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 4,
+  "fields": {
+    "food": 74,
+    "portion": 2,
+    "owner": 1,
+    "created_at": "2020-03-02T17:18:29.342Z",
+    "updated_at": "2020-03-02T17:18:29.342Z"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 5,
+  "fields": {
+    "food": 221,
+    "portion": 3,
+    "owner": 1,
+    "created_at": "2020-02-02T17:19:10.648Z",
+    "updated_at": "2020-03-02T17:19:10.648Z"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 6,
+  "fields": {
+    "food": 221,
+    "portion": 1,
+    "owner": 1,
+    "created_at": "2020-02-01T17:19:10.648Z",
+    "updated_at": "2020-03-02T17:19:10.648Z"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 7,
+  "fields": {
+    "food": 178,
+    "portion": 3,
+    "owner": 1,
+    "created_at": "2020-03-03T09:08:41.302Z",
+    "updated_at": "2020-03-03T09:08:41.302Z"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 7,
+  "fields": {
+    "food": 178,
+    "portion": 3,
+    "owner": 1,
+    "created_at": "2020-03-03T09:08:41.302Z",
+    "updated_at": "2020-03-03T09:08:41.302Z"
+  }
+}
+]

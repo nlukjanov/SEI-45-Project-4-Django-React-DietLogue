@@ -1,0 +1,117 @@
+[
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$hxPBiOnK6eEP$Z24HH9w4spm+tjLU78vaXBHtlgmsra/IKD71xn4MUzw=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@email.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-03-02T17:12:31.485Z",
+    "height": null,
+    "weight": null,
+    "gender": null,
+    "dob": null,
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$ighecbh4q6tR$0teOnxJseN0bANZYHpig6bqDMJWA3pwxY1jX1j/u3yk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "kin",
+    "first_name": "",
+    "last_name": "",
+    "email": "kin@email.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T09:30:35.010Z",
+    "height": null,
+    "weight": null,
+    "gender": null,
+    "dob": null,
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$QaUfKL8tvt0U$nxtULZqlOCq/0XXpFDKXXm0dPjUQlVkRgZ63CGmQvCA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ikin",
+    "first_name": "",
+    "last_name": "",
+    "email": "ikin@email.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T09:30:44.929Z",
+    "height": null,
+    "weight": null,
+    "gender": null,
+    "dob": null,
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$k4rFS9Gat4O0$KfhllD/S9/+VnXjFRyKidGkjbgV9ADlKKa7rwX47nBM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "tikin",
+    "first_name": "",
+    "last_name": "",
+    "email": "tikin@email.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T09:30:58.771Z",
+    "height": null,
+    "weight": null,
+    "gender": null,
+    "dob": null,
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$V0wJK7hADYnp$QLNRVMcJ97GqzGrxXiWqtAqiTmnvwZBVr+DlaVtgMOI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "atikin",
+    "first_name": "",
+    "last_name": "",
+    "email": "atikin@email.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T09:31:10.026Z",
+    "height": null,
+    "weight": null,
+    "gender": null,
+    "dob": null,
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
