@@ -7,12 +7,12 @@ import Plot from 'react-plotly.js'
 const moment = require('moment')
 
 const diet = {
-  calories: 2000,
-  protein: 50,
-  carbs: 260,
-  fiber: 0,
   fat: 70,
-  sat_fat: 20
+  sat_fat: 20,
+  carbs: 260,
+  protein: 50,
+  fiber: 38,
+  calories: 2000
 }
 
 class MyAccount extends React.Component {
