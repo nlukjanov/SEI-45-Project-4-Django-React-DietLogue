@@ -6,16 +6,14 @@ import DynamicSelect from './DynamicSelect'
 import 'bulma-calendar'
 import 'bulma-calendar/dist/css/bulma-calendar.min.css'
 
-
 import 'react-datepicker/dist/react-datepicker.css'
-
 
 //todo fix the height/weight dropdown error
 
 class Register extends React.Component {
   state = {
     data: {
-      name: '',
+      username: '',
       email: '',
       password: '',
       password_confirmation: '',
@@ -23,8 +21,7 @@ class Register extends React.Component {
       height: null,
       weight: null,
       dob: new Date()
-    },
-    selectedValue: null
+    }
   }
 
   numberIncrease = (start, stop, step) => {
@@ -44,8 +41,18 @@ class Register extends React.Component {
     this.setState({ data })
   }
 
-  handleSelectChange = selectedValue => {
-    this.setState({selectedValue: selectedValue})
+  handleHeightSelectChange = selectedValue => {
+    this.setState({
+      ...this.state,
+      data: { ...this.state.data, height: Number(selectedValue) }
+    })
+  }
+
+  handleWeightSelectChange = selectedValue => {
+    this.setState({
+      ...this.state,
+      data: { ...this.state.data, weight: Number(selectedValue) }
+    })
   }
 
   handleSubmit = async e => {
@@ -53,14 +60,14 @@ class Register extends React.Component {
     try {
       await axios.post('/api/register/', this.state.data, headers)
       notify.show('Account successfully created', 'success', 2000)
-      this.props.history.push('/api/login/')
+      this.props.history.push('/login/')
     } catch (error) {
       console.log(error.response)
     }
   }
 
   render() {
-
+    console.log(this.state)
     return (
       <>
         <section className='section'>
@@ -68,7 +75,7 @@ class Register extends React.Component {
             <div className='columns is-mobile is-centered'>
               <div className='column is-6'>
                 <form onSubmit={this.handleSubmit}>
-                  <h2 className="title is-5 is-mobile">Create your account</h2>
+                  <h2 className='title is-5 is-mobile'>Create your account</h2>
 
                   <div>
                     <input
@@ -113,9 +120,11 @@ class Register extends React.Component {
                     />
                   </div>
 
-                  <hr/>
+                  <hr />
                   <div>
-                    <h2 className="title is-5 is-mobile">Tell us a little bit about yourself</h2>
+                    <h2 className='title is-5 is-mobile'>
+                      Tell us a little bit about yourself
+                    </h2>
                   </div>
 
                   <div className='control'>
@@ -144,8 +153,9 @@ class Register extends React.Component {
                       <div className='control'>
                         <DynamicSelect
                           data={this.heights}
-                          onSelectChange={this.handleSelectChange}
-                        /><br/>
+                          onSelectChange={this.handleHeightSelectChange}
+                        />
+                        <br />
                       </div>
                     </div>
 
@@ -154,21 +164,22 @@ class Register extends React.Component {
                       <div className='control'>
                         <DynamicSelect
                           data={this.weights}
-                          onSelectChange={this.handleSelectChange}
-                        /><br/>
+                          onSelectChange={this.handleWeightSelectChange}
+                        />
+                        <br />
                       </div>
                     </div>
 
                     <div className='field'>
                       <label className='label'>Date of Birth</label>
                       <div className='control'>
-                        <input 
-                          type="date"
-                          className="input"
-                        >
-                        </input>
-                        <br/>
-
+                        <input
+                          type='date'
+                          className='input'
+                          name='dob'
+                          onChange={this.handleChange}
+                        ></input>
+                        <br />
                       </div>
                     </div>
                   </div>
