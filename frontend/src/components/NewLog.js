@@ -4,12 +4,14 @@ import Authentication from './Authentication'
 import Select from 'react-select'
 import { notify } from 'react-notify-toast'
 const pluralize = require('pluralize')
+const moment = require('moment')
 
 class NewLog extends React.Component {
   state = {
     formData: {
       food: null,
-      portion: 1
+      portion: 1,
+      date: moment(new Date()).format('YYYY-MM-DD')
     },
     foodOption: [],
     foodData: [],
@@ -34,6 +36,11 @@ class NewLog extends React.Component {
 
   handleChange = ({ target: { name, value } }) => {
     const formData = { ...this.state.formData, [name]: Number(value) }
+    this.setState({ formData })
+  }
+
+  handleDate = ({ target: { name, value } }) => {
+    const formData = { ...this.state.formData, [name]: value }
     this.setState({ formData })
   }
 
@@ -168,6 +175,18 @@ class NewLog extends React.Component {
                     </small>
                   </div>
                 )}
+              </div>
+              <div className='field'>
+                <label className='label has-text-centered'>Date</label>
+                <div className='control'>
+                  <input
+                    className='input'
+                    type='date'
+                    name='date'
+                    value={this.state.formData.date}
+                    onChange={this.handleDate}
+                  />
+                </div>
               </div>
               <div className='field'>
                 <button

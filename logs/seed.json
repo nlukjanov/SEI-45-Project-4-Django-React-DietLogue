@@ -4785,69 +4785,2809 @@
 },
 {
   "model": "logs.log",
-  "pk": 1,
+  "pk": 8,
   "fields": {
-    "food": 1,
-    "portion": 3,
-    "owner": 1,
+    "food": 133,
+    "portion": 8,
+    "owner": 2,
+    "date": "2020-02-19"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 9,
+  "fields": {
+    "food": 137,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 10,
+  "fields": {
+    "food": 189,
+    "portion": 9,
+    "owner": 5,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 11,
+  "fields": {
+    "food": 77,
+    "portion": 8,
+    "owner": 4,
     "date": "2020-03-02"
   }
 },
 {
   "model": "logs.log",
-  "pk": 2,
+  "pk": 12,
   "fields": {
-    "food": 1,
+    "food": 186,
+    "portion": 6,
+    "owner": 3,
+    "date": "2020-02-25"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 13,
+  "fields": {
+    "food": 16,
+    "portion": 3,
+    "owner": 3,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 14,
+  "fields": {
+    "food": 36,
+    "portion": 6,
+    "owner": 2,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 15,
+  "fields": {
+    "food": 31,
+    "portion": 1,
+    "owner": 1,
+    "date": "2020-02-28"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 16,
+  "fields": {
+    "food": 168,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 17,
+  "fields": {
+    "food": 155,
     "portion": 4,
-    "owner": 1,
-    "date": "2020-03-02"
+    "owner": 5,
+    "date": "2020-02-01"
   }
 },
 {
   "model": "logs.log",
-  "pk": 3,
+  "pk": 18,
   "fields": {
-    "food": 1,
+    "food": 69,
     "portion": 3,
     "owner": 1,
-    "date": "2020-03-02"
+    "date": "2020-02-28"
   }
 },
 {
   "model": "logs.log",
-  "pk": 4,
+  "pk": 19,
   "fields": {
-    "food": 74,
+    "food": 222,
+    "portion": 2,
+    "owner": 5,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 20,
+  "fields": {
+    "food": 87,
+    "portion": 7,
+    "owner": 3,
+    "date": "2020-02-03"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 21,
+  "fields": {
+    "food": 28,
+    "portion": 6,
+    "owner": 3,
+    "date": "2020-02-15"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 22,
+  "fields": {
+    "food": 122,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-03"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 23,
+  "fields": {
+    "food": 55,
+    "portion": 1,
+    "owner": 1,
+    "date": "2020-02-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 24,
+  "fields": {
+    "food": 233,
+    "portion": 2,
+    "owner": 3,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 25,
+  "fields": {
+    "food": 230,
+    "portion": 3,
+    "owner": 5,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 26,
+  "fields": {
+    "food": 61,
+    "portion": 9,
+    "owner": 2,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 27,
+  "fields": {
+    "food": 297,
+    "portion": 7,
+    "owner": 2,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 28,
+  "fields": {
+    "food": 35,
+    "portion": 10,
+    "owner": 4,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 29,
+  "fields": {
+    "food": 47,
+    "portion": 6,
+    "owner": 3,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 30,
+  "fields": {
+    "food": 186,
+    "portion": 2,
+    "owner": 4,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 31,
+  "fields": {
+    "food": 90,
+    "portion": 3,
+    "owner": 4,
+    "date": "2020-02-07"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 32,
+  "fields": {
+    "food": 177,
+    "portion": 10,
+    "owner": 2,
+    "date": "2020-02-10"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 33,
+  "fields": {
+    "food": 237,
+    "portion": 6,
+    "owner": 3,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 34,
+  "fields": {
+    "food": 167,
+    "portion": 8,
+    "owner": 2,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 35,
+  "fields": {
+    "food": 96,
+    "portion": 6,
+    "owner": 1,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 36,
+  "fields": {
+    "food": 294,
+    "portion": 4,
+    "owner": 5,
+    "date": "2020-02-10"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 37,
+  "fields": {
+    "food": 91,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-02-07"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 38,
+  "fields": {
+    "food": 169,
+    "portion": 2,
+    "owner": 3,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 39,
+  "fields": {
+    "food": 20,
     "portion": 2,
     "owner": 1,
-    "date": "2020-03-02"
+    "date": "2020-02-09"
   }
 },
 {
   "model": "logs.log",
-  "pk": 5,
+  "pk": 40,
   "fields": {
-    "food": 221,
+    "food": 259,
+    "portion": 7,
+    "owner": 4,
+    "date": "2020-02-21"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 41,
+  "fields": {
+    "food": 189,
+    "portion": 3,
+    "owner": 3,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 42,
+  "fields": {
+    "food": 157,
+    "portion": 10,
+    "owner": 2,
+    "date": "2020-02-05"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 43,
+  "fields": {
+    "food": 116,
+    "portion": 7,
+    "owner": 3,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 44,
+  "fields": {
+    "food": 180,
+    "portion": 3,
+    "owner": 3,
+    "date": "2020-02-03"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 45,
+  "fields": {
+    "food": 226,
+    "portion": 5,
+    "owner": 2,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 46,
+  "fields": {
+    "food": 184,
+    "portion": 10,
+    "owner": 2,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 47,
+  "fields": {
+    "food": 240,
+    "portion": 10,
+    "owner": 2,
+    "date": "2020-02-25"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 48,
+  "fields": {
+    "food": 270,
+    "portion": 2,
+    "owner": 1,
+    "date": "2020-02-28"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 49,
+  "fields": {
+    "food": 20,
+    "portion": 1,
+    "owner": 1,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 50,
+  "fields": {
+    "food": 146,
+    "portion": 9,
+    "owner": 4,
+    "date": "2020-02-16"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 51,
+  "fields": {
+    "food": 171,
+    "portion": 5,
+    "owner": 2,
+    "date": "2020-02-16"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 52,
+  "fields": {
+    "food": 54,
+    "portion": 5,
+    "owner": 1,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 53,
+  "fields": {
+    "food": 194,
+    "portion": 7,
+    "owner": 4,
+    "date": "2020-02-22"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 54,
+  "fields": {
+    "food": 38,
+    "portion": 8,
+    "owner": 4,
+    "date": "2020-02-29"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 55,
+  "fields": {
+    "food": 202,
+    "portion": 8,
+    "owner": 5,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 56,
+  "fields": {
+    "food": 74,
+    "portion": 4,
+    "owner": 4,
+    "date": "2020-02-13"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 57,
+  "fields": {
+    "food": 270,
+    "portion": 7,
+    "owner": 3,
+    "date": "2020-02-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 58,
+  "fields": {
+    "food": 296,
+    "portion": 3,
+    "owner": 4,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 59,
+  "fields": {
+    "food": 192,
+    "portion": 9,
+    "owner": 5,
+    "date": "2020-02-16"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 60,
+  "fields": {
+    "food": 61,
+    "portion": 8,
+    "owner": 2,
+    "date": "2020-02-10"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 61,
+  "fields": {
+    "food": 285,
     "portion": 3,
     "owner": 1,
+    "date": "2020-02-16"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 62,
+  "fields": {
+    "food": 288,
+    "portion": 5,
+    "owner": 5,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 63,
+  "fields": {
+    "food": 213,
+    "portion": 8,
+    "owner": 1,
+    "date": "2020-02-06"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 64,
+  "fields": {
+    "food": 49,
+    "portion": 9,
+    "owner": 5,
+    "date": "2020-02-07"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 65,
+  "fields": {
+    "food": 200,
+    "portion": 6,
+    "owner": 3,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 66,
+  "fields": {
+    "food": 158,
+    "portion": 9,
+    "owner": 4,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 67,
+  "fields": {
+    "food": 175,
+    "portion": 9,
+    "owner": 1,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 68,
+  "fields": {
+    "food": 293,
+    "portion": 6,
+    "owner": 3,
+    "date": "2020-02-15"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 69,
+  "fields": {
+    "food": 257,
+    "portion": 9,
+    "owner": 4,
+    "date": "2020-02-19"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 70,
+  "fields": {
+    "food": 258,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 71,
+  "fields": {
+    "food": 88,
+    "portion": 4,
+    "owner": 2,
+    "date": "2020-02-15"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 72,
+  "fields": {
+    "food": 102,
+    "portion": 3,
+    "owner": 1,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 73,
+  "fields": {
+    "food": 298,
+    "portion": 6,
+    "owner": 1,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 74,
+  "fields": {
+    "food": 18,
+    "portion": 1,
+    "owner": 2,
+    "date": "2020-02-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 75,
+  "fields": {
+    "food": 198,
+    "portion": 6,
+    "owner": 2,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 76,
+  "fields": {
+    "food": 119,
+    "portion": 6,
+    "owner": 3,
+    "date": "2020-02-25"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 77,
+  "fields": {
+    "food": 143,
+    "portion": 10,
+    "owner": 3,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 78,
+  "fields": {
+    "food": 82,
+    "portion": 6,
+    "owner": 4,
+    "date": "2020-02-25"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 79,
+  "fields": {
+    "food": 117,
+    "portion": 5,
+    "owner": 5,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 80,
+  "fields": {
+    "food": 116,
+    "portion": 2,
+    "owner": 3,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 81,
+  "fields": {
+    "food": 137,
+    "portion": 1,
+    "owner": 4,
+    "date": "2020-02-28"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 82,
+  "fields": {
+    "food": 294,
+    "portion": 9,
+    "owner": 4,
+    "date": "2020-02-05"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 83,
+  "fields": {
+    "food": 50,
+    "portion": 7,
+    "owner": 1,
+    "date": "2020-02-10"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 84,
+  "fields": {
+    "food": 50,
+    "portion": 10,
+    "owner": 2,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 85,
+  "fields": {
+    "food": 247,
+    "portion": 2,
+    "owner": 4,
+    "date": "2020-02-03"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 86,
+  "fields": {
+    "food": 95,
+    "portion": 3,
+    "owner": 1,
+    "date": "2020-02-19"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 87,
+  "fields": {
+    "food": 108,
+    "portion": 2,
+    "owner": 5,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 88,
+  "fields": {
+    "food": 149,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-19"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 89,
+  "fields": {
+    "food": 18,
+    "portion": 6,
+    "owner": 3,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 90,
+  "fields": {
+    "food": 31,
+    "portion": 9,
+    "owner": 3,
     "date": "2020-03-02"
   }
 },
 {
   "model": "logs.log",
-  "pk": 6,
+  "pk": 91,
+  "fields": {
+    "food": 279,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 92,
+  "fields": {
+    "food": 87,
+    "portion": 2,
+    "owner": 1,
+    "date": "2020-02-05"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 93,
+  "fields": {
+    "food": 50,
+    "portion": 4,
+    "owner": 1,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 94,
+  "fields": {
+    "food": 171,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 95,
+  "fields": {
+    "food": 61,
+    "portion": 5,
+    "owner": 5,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 96,
+  "fields": {
+    "food": 235,
+    "portion": 7,
+    "owner": 4,
+    "date": "2020-02-03"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 97,
+  "fields": {
+    "food": 137,
+    "portion": 9,
+    "owner": 3,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 98,
+  "fields": {
+    "food": 48,
+    "portion": 9,
+    "owner": 1,
+    "date": "2020-02-20"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 99,
+  "fields": {
+    "food": 118,
+    "portion": 7,
+    "owner": 4,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 100,
+  "fields": {
+    "food": 107,
+    "portion": 7,
+    "owner": 4,
+    "date": "2020-02-16"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 101,
+  "fields": {
+    "food": 293,
+    "portion": 1,
+    "owner": 4,
+    "date": "2020-02-05"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 102,
+  "fields": {
+    "food": 119,
+    "portion": 10,
+    "owner": 4,
+    "date": "2020-02-27"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 103,
+  "fields": {
+    "food": 175,
+    "portion": 6,
+    "owner": 1,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 104,
+  "fields": {
+    "food": 26,
+    "portion": 2,
+    "owner": 1,
+    "date": "2020-02-27"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 105,
+  "fields": {
+    "food": 178,
+    "portion": 9,
+    "owner": 3,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 106,
+  "fields": {
+    "food": 21,
+    "portion": 6,
+    "owner": 2,
+    "date": "2020-03-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 107,
+  "fields": {
+    "food": 4,
+    "portion": 10,
+    "owner": 2,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 108,
+  "fields": {
+    "food": 247,
+    "portion": 5,
+    "owner": 3,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 109,
+  "fields": {
+    "food": 131,
+    "portion": 5,
+    "owner": 5,
+    "date": "2020-02-07"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 110,
+  "fields": {
+    "food": 72,
+    "portion": 4,
+    "owner": 2,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 111,
+  "fields": {
+    "food": 27,
+    "portion": 5,
+    "owner": 5,
+    "date": "2020-02-10"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 112,
+  "fields": {
+    "food": 46,
+    "portion": 10,
+    "owner": 3,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 113,
+  "fields": {
+    "food": 58,
+    "portion": 5,
+    "owner": 1,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 114,
+  "fields": {
+    "food": 36,
+    "portion": 1,
+    "owner": 2,
+    "date": "2020-02-21"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 115,
+  "fields": {
+    "food": 70,
+    "portion": 10,
+    "owner": 5,
+    "date": "2020-02-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 116,
+  "fields": {
+    "food": 33,
+    "portion": 4,
+    "owner": 4,
+    "date": "2020-02-07"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 117,
+  "fields": {
+    "food": 247,
+    "portion": 6,
+    "owner": 1,
+    "date": "2020-02-21"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 118,
+  "fields": {
+    "food": 299,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-02-16"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 119,
+  "fields": {
+    "food": 186,
+    "portion": 5,
+    "owner": 2,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 120,
+  "fields": {
+    "food": 66,
+    "portion": 1,
+    "owner": 1,
+    "date": "2020-02-22"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 121,
   "fields": {
     "food": 221,
     "portion": 1,
+    "owner": 5,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 122,
+  "fields": {
+    "food": 32,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 123,
+  "fields": {
+    "food": 112,
+    "portion": 5,
+    "owner": 4,
+    "date": "2020-02-15"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 124,
+  "fields": {
+    "food": 222,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-27"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 125,
+  "fields": {
+    "food": 145,
+    "portion": 5,
+    "owner": 2,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 126,
+  "fields": {
+    "food": 293,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-05"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 127,
+  "fields": {
+    "food": 112,
+    "portion": 10,
+    "owner": 5,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 128,
+  "fields": {
+    "food": 50,
+    "portion": 1,
+    "owner": 4,
+    "date": "2020-02-19"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 129,
+  "fields": {
+    "food": 45,
+    "portion": 8,
+    "owner": 5,
+    "date": "2020-02-25"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 130,
+  "fields": {
+    "food": 88,
+    "portion": 4,
+    "owner": 2,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 131,
+  "fields": {
+    "food": 237,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 132,
+  "fields": {
+    "food": 222,
+    "portion": 4,
+    "owner": 2,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 133,
+  "fields": {
+    "food": 110,
+    "portion": 9,
+    "owner": 2,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 134,
+  "fields": {
+    "food": 258,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 135,
+  "fields": {
+    "food": 254,
+    "portion": 5,
+    "owner": 5,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 136,
+  "fields": {
+    "food": 73,
+    "portion": 9,
+    "owner": 5,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 137,
+  "fields": {
+    "food": 280,
+    "portion": 4,
+    "owner": 5,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 138,
+  "fields": {
+    "food": 86,
+    "portion": 8,
     "owner": 1,
+    "date": "2020-02-29"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 139,
+  "fields": {
+    "food": 81,
+    "portion": 2,
+    "owner": 5,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 140,
+  "fields": {
+    "food": 92,
+    "portion": 6,
+    "owner": 4,
+    "date": "2020-02-07"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 141,
+  "fields": {
+    "food": 200,
+    "portion": 4,
+    "owner": 2,
+    "date": "2020-02-18"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 142,
+  "fields": {
+    "food": 50,
+    "portion": 5,
+    "owner": 2,
+    "date": "2020-02-06"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 143,
+  "fields": {
+    "food": 247,
+    "portion": 7,
+    "owner": 3,
+    "date": "2020-02-18"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 144,
+  "fields": {
+    "food": 183,
+    "portion": 8,
+    "owner": 2,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 145,
+  "fields": {
+    "food": 72,
+    "portion": 7,
+    "owner": 2,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 146,
+  "fields": {
+    "food": 103,
+    "portion": 10,
+    "owner": 2,
+    "date": "2020-02-28"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 147,
+  "fields": {
+    "food": 248,
+    "portion": 4,
+    "owner": 2,
+    "date": "2020-02-16"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 148,
+  "fields": {
+    "food": 293,
+    "portion": 3,
+    "owner": 3,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 149,
+  "fields": {
+    "food": 245,
+    "portion": 5,
+    "owner": 5,
+    "date": "2020-02-05"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 150,
+  "fields": {
+    "food": 103,
+    "portion": 9,
+    "owner": 3,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 151,
+  "fields": {
+    "food": 211,
+    "portion": 8,
+    "owner": 1,
+    "date": "2020-02-29"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 152,
+  "fields": {
+    "food": 105,
+    "portion": 10,
+    "owner": 3,
+    "date": "2020-02-27"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 153,
+  "fields": {
+    "food": 24,
+    "portion": 3,
+    "owner": 1,
+    "date": "2020-02-16"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 154,
+  "fields": {
+    "food": 175,
+    "portion": 1,
+    "owner": 3,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 155,
+  "fields": {
+    "food": 49,
+    "portion": 3,
+    "owner": 4,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 156,
+  "fields": {
+    "food": 215,
+    "portion": 5,
+    "owner": 2,
+    "date": "2020-02-21"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 157,
+  "fields": {
+    "food": 142,
+    "portion": 7,
+    "owner": 3,
+    "date": "2020-02-27"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 158,
+  "fields": {
+    "food": 25,
+    "portion": 1,
+    "owner": 4,
+    "date": "2020-02-19"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 159,
+  "fields": {
+    "food": 193,
+    "portion": 5,
+    "owner": 4,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 160,
+  "fields": {
+    "food": 223,
+    "portion": 7,
+    "owner": 3,
+    "date": "2020-02-03"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 161,
+  "fields": {
+    "food": 267,
+    "portion": 7,
+    "owner": 2,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 162,
+  "fields": {
+    "food": 159,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-02-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 163,
+  "fields": {
+    "food": 241,
+    "portion": 6,
+    "owner": 4,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 164,
+  "fields": {
+    "food": 234,
+    "portion": 3,
+    "owner": 2,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 165,
+  "fields": {
+    "food": 129,
+    "portion": 8,
+    "owner": 1,
+    "date": "2020-02-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 166,
+  "fields": {
+    "food": 96,
+    "portion": 5,
+    "owner": 5,
+    "date": "2020-02-03"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 167,
+  "fields": {
+    "food": 237,
+    "portion": 1,
+    "owner": 3,
+    "date": "2020-02-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 168,
+  "fields": {
+    "food": 189,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-16"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 169,
+  "fields": {
+    "food": 201,
+    "portion": 1,
+    "owner": 4,
+    "date": "2020-02-08"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 170,
+  "fields": {
+    "food": 292,
+    "portion": 8,
+    "owner": 2,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 171,
+  "fields": {
+    "food": 80,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 172,
+  "fields": {
+    "food": 299,
+    "portion": 1,
+    "owner": 3,
+    "date": "2020-02-22"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 173,
+  "fields": {
+    "food": 190,
+    "portion": 5,
+    "owner": 2,
+    "date": "2020-02-05"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 174,
+  "fields": {
+    "food": 145,
+    "portion": 9,
+    "owner": 4,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 175,
+  "fields": {
+    "food": 217,
+    "portion": 3,
+    "owner": 3,
+    "date": "2020-02-06"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 176,
+  "fields": {
+    "food": 207,
+    "portion": 7,
+    "owner": 2,
+    "date": "2020-02-28"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 177,
+  "fields": {
+    "food": 202,
+    "portion": 9,
+    "owner": 2,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 178,
+  "fields": {
+    "food": 118,
+    "portion": 9,
+    "owner": 4,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 179,
+  "fields": {
+    "food": 37,
+    "portion": 2,
+    "owner": 2,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 180,
+  "fields": {
+    "food": 153,
+    "portion": 4,
+    "owner": 5,
+    "date": "2020-02-28"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 181,
+  "fields": {
+    "food": 271,
+    "portion": 10,
+    "owner": 5,
+    "date": "2020-02-20"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 182,
+  "fields": {
+    "food": 125,
+    "portion": 5,
+    "owner": 4,
+    "date": "2020-02-08"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 183,
+  "fields": {
+    "food": 238,
+    "portion": 2,
+    "owner": 5,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 184,
+  "fields": {
+    "food": 111,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 185,
+  "fields": {
+    "food": 114,
+    "portion": 5,
+    "owner": 3,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 186,
+  "fields": {
+    "food": 35,
+    "portion": 4,
+    "owner": 1,
+    "date": "2020-02-25"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 187,
+  "fields": {
+    "food": 148,
+    "portion": 6,
+    "owner": 4,
+    "date": "2020-02-18"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 188,
+  "fields": {
+    "food": 285,
+    "portion": 9,
+    "owner": 1,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 189,
+  "fields": {
+    "food": 271,
+    "portion": 7,
+    "owner": 5,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 190,
+  "fields": {
+    "food": 197,
+    "portion": 7,
+    "owner": 1,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 191,
+  "fields": {
+    "food": 271,
+    "portion": 9,
+    "owner": 1,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 192,
+  "fields": {
+    "food": 83,
+    "portion": 6,
+    "owner": 1,
+    "date": "2020-02-29"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 193,
+  "fields": {
+    "food": 174,
+    "portion": 10,
+    "owner": 5,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 194,
+  "fields": {
+    "food": 89,
+    "portion": 4,
+    "owner": 4,
+    "date": "2020-02-22"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 195,
+  "fields": {
+    "food": 274,
+    "portion": 2,
+    "owner": 2,
+    "date": "2020-02-06"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 196,
+  "fields": {
+    "food": 67,
+    "portion": 3,
+    "owner": 3,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 197,
+  "fields": {
+    "food": 28,
+    "portion": 5,
+    "owner": 4,
+    "date": "2020-02-21"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 198,
+  "fields": {
+    "food": 5,
+    "portion": 7,
+    "owner": 2,
+    "date": "2020-02-15"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 199,
+  "fields": {
+    "food": 110,
+    "portion": 10,
+    "owner": 1,
+    "date": "2020-02-05"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 200,
+  "fields": {
+    "food": 202,
+    "portion": 5,
+    "owner": 5,
     "date": "2020-03-02"
   }
 },
 {
   "model": "logs.log",
-  "pk": 7,
+  "pk": 201,
   "fields": {
-    "food": 178,
+    "food": 64,
+    "portion": 1,
+    "owner": 4,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 202,
+  "fields": {
+    "food": 248,
+    "portion": 1,
+    "owner": 4,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 203,
+  "fields": {
+    "food": 193,
+    "portion": 10,
+    "owner": 4,
+    "date": "2020-02-21"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 204,
+  "fields": {
+    "food": 286,
+    "portion": 3,
+    "owner": 2,
+    "date": "2020-02-13"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 205,
+  "fields": {
+    "food": 246,
+    "portion": 4,
+    "owner": 5,
+    "date": "2020-02-22"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 206,
+  "fields": {
+    "food": 121,
+    "portion": 7,
+    "owner": 2,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 207,
+  "fields": {
+    "food": 234,
+    "portion": 8,
+    "owner": 4,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 208,
+  "fields": {
+    "food": 117,
+    "portion": 8,
+    "owner": 2,
+    "date": "2020-02-08"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 209,
+  "fields": {
+    "food": 254,
+    "portion": 5,
+    "owner": 5,
+    "date": "2020-02-15"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 210,
+  "fields": {
+    "food": 254,
+    "portion": 2,
+    "owner": 1,
+    "date": "2020-02-22"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 211,
+  "fields": {
+    "food": 254,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 212,
+  "fields": {
+    "food": 67,
+    "portion": 9,
+    "owner": 4,
+    "date": "2020-02-19"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 213,
+  "fields": {
+    "food": 201,
+    "portion": 2,
+    "owner": 1,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 214,
+  "fields": {
+    "food": 40,
+    "portion": 8,
+    "owner": 1,
+    "date": "2020-02-06"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 215,
+  "fields": {
+    "food": 250,
+    "portion": 3,
+    "owner": 3,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 216,
+  "fields": {
+    "food": 208,
+    "portion": 2,
+    "owner": 1,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 217,
+  "fields": {
+    "food": 259,
+    "portion": 4,
+    "owner": 5,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 218,
+  "fields": {
+    "food": 131,
+    "portion": 6,
+    "owner": 1,
+    "date": "2020-02-29"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 219,
+  "fields": {
+    "food": 266,
+    "portion": 10,
+    "owner": 2,
+    "date": "2020-02-03"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 220,
+  "fields": {
+    "food": 123,
+    "portion": 10,
+    "owner": 2,
+    "date": "2020-02-07"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 221,
+  "fields": {
+    "food": 226,
+    "portion": 7,
+    "owner": 5,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 222,
+  "fields": {
+    "food": 11,
+    "portion": 9,
+    "owner": 1,
+    "date": "2020-02-13"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 223,
+  "fields": {
+    "food": 89,
+    "portion": 2,
+    "owner": 5,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 224,
+  "fields": {
+    "food": 199,
+    "portion": 7,
+    "owner": 4,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 225,
+  "fields": {
+    "food": 297,
+    "portion": 6,
+    "owner": 5,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 226,
+  "fields": {
+    "food": 295,
+    "portion": 4,
+    "owner": 1,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 227,
+  "fields": {
+    "food": 73,
+    "portion": 1,
+    "owner": 2,
+    "date": "2020-02-17"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 228,
+  "fields": {
+    "food": 70,
+    "portion": 8,
+    "owner": 4,
+    "date": "2020-02-15"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 229,
+  "fields": {
+    "food": 276,
+    "portion": 7,
+    "owner": 3,
+    "date": "2020-02-07"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 230,
+  "fields": {
+    "food": 120,
+    "portion": 8,
+    "owner": 5,
+    "date": "2020-02-05"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 231,
+  "fields": {
+    "food": 121,
+    "portion": 4,
+    "owner": 2,
+    "date": "2020-02-27"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 232,
+  "fields": {
+    "food": 68,
+    "portion": 6,
+    "owner": 2,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 233,
+  "fields": {
+    "food": 245,
+    "portion": 7,
+    "owner": 2,
+    "date": "2020-02-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 234,
+  "fields": {
+    "food": 229,
+    "portion": 6,
+    "owner": 3,
+    "date": "2020-02-28"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 235,
+  "fields": {
+    "food": 242,
+    "portion": 1,
+    "owner": 4,
+    "date": "2020-03-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 236,
+  "fields": {
+    "food": 88,
+    "portion": 10,
+    "owner": 3,
+    "date": "2020-02-03"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 237,
+  "fields": {
+    "food": 179,
+    "portion": 8,
+    "owner": 4,
+    "date": "2020-02-28"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 238,
+  "fields": {
+    "food": 41,
+    "portion": 9,
+    "owner": 3,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 239,
+  "fields": {
+    "food": 124,
+    "portion": 1,
+    "owner": 3,
+    "date": "2020-02-20"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 240,
+  "fields": {
+    "food": 15,
+    "portion": 8,
+    "owner": 5,
+    "date": "2020-02-15"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 241,
+  "fields": {
+    "food": 284,
+    "portion": 7,
+    "owner": 2,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 242,
+  "fields": {
+    "food": 34,
+    "portion": 3,
+    "owner": 5,
+    "date": "2020-02-20"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 243,
+  "fields": {
+    "food": 45,
+    "portion": 2,
+    "owner": 4,
+    "date": "2020-02-10"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 244,
+  "fields": {
+    "food": 291,
+    "portion": 2,
+    "owner": 2,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 245,
+  "fields": {
+    "food": 20,
+    "portion": 9,
+    "owner": 5,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 246,
+  "fields": {
+    "food": 71,
+    "portion": 5,
+    "owner": 4,
+    "date": "2020-03-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 247,
+  "fields": {
+    "food": 12,
+    "portion": 1,
+    "owner": 2,
+    "date": "2020-02-19"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 248,
+  "fields": {
+    "food": 237,
+    "portion": 1,
+    "owner": 4,
+    "date": "2020-02-07"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 249,
+  "fields": {
+    "food": 200,
+    "portion": 5,
+    "owner": 3,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 250,
+  "fields": {
+    "food": 194,
+    "portion": 10,
+    "owner": 4,
+    "date": "2020-02-07"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 251,
+  "fields": {
+    "food": 109,
+    "portion": 2,
+    "owner": 3,
+    "date": "2020-02-24"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 252,
+  "fields": {
+    "food": 228,
+    "portion": 2,
+    "owner": 5,
+    "date": "2020-02-19"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 253,
+  "fields": {
+    "food": 185,
+    "portion": 6,
+    "owner": 4,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 254,
+  "fields": {
+    "food": 58,
+    "portion": 7,
+    "owner": 4,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 255,
+  "fields": {
+    "food": 149,
+    "portion": 2,
+    "owner": 2,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 256,
+  "fields": {
+    "food": 127,
+    "portion": 5,
+    "owner": 3,
+    "date": "2020-02-11"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 257,
+  "fields": {
+    "food": 101,
+    "portion": 7,
+    "owner": 1,
+    "date": "2020-02-20"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 258,
+  "fields": {
+    "food": 80,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-12"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 259,
+  "fields": {
+    "food": 218,
+    "portion": 8,
+    "owner": 5,
+    "date": "2020-02-18"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 260,
+  "fields": {
+    "food": 13,
+    "portion": 9,
+    "owner": 2,
+    "date": "2020-02-21"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 261,
+  "fields": {
+    "food": 203,
+    "portion": 8,
+    "owner": 3,
+    "date": "2020-02-06"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 262,
+  "fields": {
+    "food": 245,
+    "portion": 4,
+    "owner": 3,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 263,
+  "fields": {
+    "food": 163,
+    "portion": 8,
+    "owner": 4,
+    "date": "2020-02-29"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 264,
+  "fields": {
+    "food": 83,
+    "portion": 5,
+    "owner": 2,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 265,
+  "fields": {
+    "food": 76,
+    "portion": 8,
+    "owner": 1,
+    "date": "2020-02-27"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 266,
+  "fields": {
+    "food": 101,
+    "portion": 10,
+    "owner": 3,
+    "date": "2020-02-14"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 267,
+  "fields": {
+    "food": 269,
+    "portion": 6,
+    "owner": 1,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 268,
+  "fields": {
+    "food": 5,
+    "portion": 2,
+    "owner": 2,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 269,
+  "fields": {
+    "food": 96,
+    "portion": 10,
+    "owner": 4,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 270,
+  "fields": {
+    "food": 69,
+    "portion": 5,
+    "owner": 3,
+    "date": "2020-02-18"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 271,
+  "fields": {
+    "food": 240,
+    "portion": 10,
+    "owner": 4,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 272,
+  "fields": {
+    "food": 199,
+    "portion": 5,
+    "owner": 5,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 273,
+  "fields": {
+    "food": 133,
+    "portion": 8,
+    "owner": 1,
+    "date": "2020-02-05"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 274,
+  "fields": {
+    "food": 133,
+    "portion": 6,
+    "owner": 2,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 275,
+  "fields": {
+    "food": 182,
+    "portion": 3,
+    "owner": 3,
+    "date": "2020-02-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 276,
+  "fields": {
+    "food": 162,
+    "portion": 9,
+    "owner": 3,
+    "date": "2020-02-10"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 277,
+  "fields": {
+    "food": 150,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-02-26"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 278,
+  "fields": {
+    "food": 79,
+    "portion": 8,
+    "owner": 4,
+    "date": "2020-02-29"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 279,
+  "fields": {
+    "food": 182,
+    "portion": 2,
+    "owner": 4,
+    "date": "2020-02-20"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 280,
+  "fields": {
+    "food": 72,
+    "portion": 5,
+    "owner": 3,
+    "date": "2020-02-27"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 281,
+  "fields": {
+    "food": 152,
+    "portion": 8,
+    "owner": 2,
+    "date": "2020-02-19"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 282,
+  "fields": {
+    "food": 35,
+    "portion": 3,
+    "owner": 5,
+    "date": "2020-02-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 283,
+  "fields": {
+    "food": 37,
+    "portion": 10,
+    "owner": 2,
+    "date": "2020-02-15"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 284,
+  "fields": {
+    "food": 24,
+    "portion": 2,
+    "owner": 4,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 285,
+  "fields": {
+    "food": 253,
+    "portion": 7,
+    "owner": 1,
+    "date": "2020-02-08"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 286,
+  "fields": {
+    "food": 161,
+    "portion": 7,
+    "owner": 3,
+    "date": "2020-02-21"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 287,
+  "fields": {
+    "food": 134,
+    "portion": 6,
+    "owner": 5,
+    "date": "2020-02-08"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 288,
+  "fields": {
+    "food": 50,
     "portion": 3,
     "owner": 1,
     "date": "2020-03-02"
@@ -4855,12 +7595,132 @@
 },
 {
   "model": "logs.log",
-  "pk": 7,
+  "pk": 289,
   "fields": {
-    "food": 178,
+    "food": 158,
+    "portion": 2,
+    "owner": 2,
+    "date": "2020-02-16"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 290,
+  "fields": {
+    "food": 123,
+    "portion": 3,
+    "owner": 5,
+    "date": "2020-02-25"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 291,
+  "fields": {
+    "food": 111,
     "portion": 3,
     "owner": 1,
+    "date": "2020-02-21"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 292,
+  "fields": {
+    "food": 81,
+    "portion": 10,
+    "owner": 3,
+    "date": "2020-02-23"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 293,
+  "fields": {
+    "food": 145,
+    "portion": 6,
+    "owner": 2,
+    "date": "2020-02-04"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 294,
+  "fields": {
+    "food": 179,
+    "portion": 1,
+    "owner": 5,
+    "date": "2020-03-01"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 295,
+  "fields": {
+    "food": 98,
+    "portion": 7,
+    "owner": 1,
+    "date": "2020-02-08"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 296,
+  "fields": {
+    "food": 23,
+    "portion": 2,
+    "owner": 5,
+    "date": "2020-02-09"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 297,
+  "fields": {
+    "food": 272,
+    "portion": 4,
+    "owner": 5,
+    "date": "2020-02-29"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 298,
+  "fields": {
+    "food": 125,
+    "portion": 6,
+    "owner": 1,
     "date": "2020-03-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 299,
+  "fields": {
+    "food": 125,
+    "portion": 8,
+    "owner": 1,
+    "date": "2020-02-28"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 300,
+  "fields": {
+    "food": 46,
+    "portion": 2,
+    "owner": 4,
+    "date": "2020-02-02"
+  }
+},
+{
+  "model": "logs.log",
+  "pk": 301,
+  "fields": {
+    "food": 196,
+    "portion": 3,
+    "owner": 1,
+    "date": "2020-02-25"
   }
 }
 ]
