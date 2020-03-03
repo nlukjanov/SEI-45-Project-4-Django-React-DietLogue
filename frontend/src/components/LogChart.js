@@ -1,28 +1,35 @@
 import React from 'react'
 import Plot from 'react-plotly.js'
 import axios from 'axios'
+import Authentication from './Authentication'
 import headers from "../lib/headers"
 
 class LogChart extends React.Component {
   state = {
-    data: {
+    data: [{
       calories: 0,
       proteins: 0,
       carbs: 0,
       fiber: 0,
       fat: 0,
       sat_fat: 0
-    }
+    }]
   }
 
-  // async componentDidMount() {
-  //   try {
-  //     const response = await axios.get('http://localhost:8000/api/myaccount', headers)
-  //   } 
-  // }
-
-
-
+  async componentDidMount() {
+    try {
+      const response = await axios.get('/api/myaccount',
+      {
+        headers: {
+          Authorization: `Bearer ${Authentication.getToken('token')}`
+        }
+      })
+      const sortedLogs = response.data.logs.sort((a, b) => b.id - a.id)
+      this.setState({ logData: sortedLogs })
+    } catch (error) {
+      this.props.history.push('/notfound')
+    }
+  }
 
   render () {
     return(

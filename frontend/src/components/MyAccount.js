@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Authentication from './Authentication'
+import LogChart from './LogChart'
 const moment = require('moment')
 
 const diet = {
@@ -74,7 +75,10 @@ class MyAccount extends React.Component {
           </Link>
           <div className='columns'>
             <div className='column is-12'>
-              <div>Chart Area</div>
+              <div>
+                <p>Chart Area</p>
+                <LogChart />
+              </div>
               <div>Your Day In A Glance</div>
               <div className='field'>
                 <div className='select'>
