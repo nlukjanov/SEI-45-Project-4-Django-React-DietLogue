@@ -35,14 +35,38 @@ class LogChart extends React.Component {
     return(
       <Plot 
         data = {[
-          {
-            x: ['Monday', 'Tuesday'],
-            y: [3, 5],
-            type: 'scatter',
+          proteins = {
+            x: [1, 2, 3, 4],
+            y: [10, 15, 13, 17],
+            mode: 'markers',
+            name: 'Scatter'
+          },
+          
+          calories = {
+            x: [2, 3, 4, 5],
+            y: [16, 5, 11, 9],
+            mode: 'lines',
+            name: 'Lines'
+          },
+          
+          fat = {
+            x: [1, 2, 3, 4],
+            y: [12, 9, 15, 12],
             mode: 'lines+markers',
-            marker: {color: 'red'}
+            name: 'Scatter and Lines'
+          }],
+          
+          layout = {
+            title: 'Title of the Graph',
+            xaxis: {
+              title: 'date'
+            },
+            yaxis: {
+              title: 'amount'
+            }
           }
-        ]}
+          
+        }
         layout={ {width: 320, height: 240, title: 'food log'}} />
     )
   }

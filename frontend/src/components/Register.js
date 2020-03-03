@@ -2,8 +2,10 @@ import React from 'react'
 import axios from 'axios'
 import { notify } from 'react-notify-toast'
 import headers from '../lib/headers'
-import Select from 'react-select'
-import DatePicker from 'react-datepicker'
+import DynamicSelect from './DynamicSelect'
+import 'bulma-calendar'
+import 'bulma-calendar/dist/css/bulma-calendar.min.css'
+
 
 import 'react-datepicker/dist/react-datepicker.css'
 
@@ -18,10 +20,11 @@ class Register extends React.Component {
       password: '',
       password_confirmation: '',
       gender: '',
-      height: 100,
-      weight: 30,
+      height: null,
+      weight: null,
       dob: new Date()
-    }
+    },
+    selectedValue: null
   }
 
   numberIncrease = (start, stop, step) => {
@@ -31,14 +34,18 @@ class Register extends React.Component {
     )
   }
 
-  heightOptions = this.numberIncrease(100, 200, 1)
-  weightOptions = this.numberIncrease(30, 150, 1)
+  heights = this.numberIncrease(100, 200, 1)
+  weights = this.numberIncrease(30, 150, 1)
 
   handleChange = e => {
     const name = e.target.name
     const value = e.target.value
     const data = { ...this.state.data, [name]: value }
     this.setState({ data })
+  }
+
+  handleSelectChange = selectedValue => {
+    this.setState({selectedValue: selectedValue})
   }
 
   handleSubmit = async e => {
@@ -53,6 +60,7 @@ class Register extends React.Component {
   }
 
   render() {
+
     return (
       <>
         <section className='section'>
@@ -60,7 +68,8 @@ class Register extends React.Component {
             <div className='columns is-mobile is-centered'>
               <div className='column is-6'>
                 <form onSubmit={this.handleSubmit}>
-                  <h2 className="title is-4">Create your account</h2>
+                  <h2 className="title is-5 is-mobile">Create your account</h2>
+
                   <div>
                     <input
                       className='input'
@@ -70,6 +79,7 @@ class Register extends React.Component {
                       required
                     />
                   </div>
+
                   <div>
                     <input
                       className='input'
@@ -80,6 +90,7 @@ class Register extends React.Component {
                       required
                     />
                   </div>
+
                   <div>
                     <input
                       className='input'
@@ -90,6 +101,7 @@ class Register extends React.Component {
                       required
                     />
                   </div>
+
                   <div>
                     <input
                       className='input'
@@ -100,9 +112,12 @@ class Register extends React.Component {
                       required
                     />
                   </div>
+
+                  <hr/>
                   <div>
-                    <h2 className="title is-4">Tell us a little bit about yourself</h2>
+                    <h2 className="title is-5 is-mobile">Tell us a little bit about yourself</h2>
                   </div>
+
                   <div className='control'>
                     <label className='label'>Gender</label>
                     <label className='radio'>
@@ -127,37 +142,37 @@ class Register extends React.Component {
                     <div className='field'>
                       <label className='label'>Height</label>
                       <div className='control'>
-                        <Select
-                          options={this.heightOptions}
-                          onChange={this.handleChange}
-                          name='height'
-                          className='basic-multi-select'
-                          classNamePrefix='select'
-                        />
+                        <DynamicSelect
+                          data={this.heights}
+                          onSelectChange={this.handleSelectChange}
+                        /><br/>
                       </div>
                     </div>
+
                     <div className='field'>
                       <label className='label'>Weight</label>
                       <div className='control'>
-                        <Select
-                          options={this.heightOptions}
-                          onChange={this.handleChange}
-                          name='weight'
-                          className='basic-multi-select'
-                          classNamePrefix='select'
-                        />
+                        <DynamicSelect
+                          data={this.weights}
+                          onSelectChange={this.handleSelectChange}
+                        /><br/>
                       </div>
                     </div>
+
                     <div className='field'>
                       <label className='label'>Date of Birth</label>
                       <div className='control'>
-                        <DatePicker
-                          selected={this.state.startDate}
-                          onChange={this.handleChange}
-                        />
+                        <input 
+                          type="date"
+                          className="input"
+                        >
+                        </input>
+                        <br/>
+
                       </div>
                     </div>
                   </div>
+
                   <div>
                     <button
                       className='button is-primary is-fullwidth'
