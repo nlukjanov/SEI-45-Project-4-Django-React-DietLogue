@@ -38,7 +38,7 @@ class MyAccount extends React.Component {
   setTodayLogEntries = () => {
     const todayLogEntries = this.state.userData.logs.filter(entry => {
       const today = moment(new Date()).format('YYYY-MM-DD')
-      const entryDate = moment(entry.created_at).format('YYYY-MM-DD')
+      const entryDate = moment(entry.date).format('YYYY-MM-DD')
       return today === entryDate
     })
     this.setState({ todayLogEntries })
@@ -46,7 +46,7 @@ class MyAccount extends React.Component {
 
   calculateProgress = nutrient => {
     const foodNutrition = this.state.todayLogEntries.map(entry => {
-      return entry.food[nutrient]
+      return entry.food[nutrient] * entry.portion
     })
     console.log(foodNutrition.reduce((a, b) => Number(a) + Number(b), 0))
     return foodNutrition.reduce((a, b) => Number(a) + Number(b), 0)
@@ -153,13 +153,25 @@ class MyAccount extends React.Component {
                           <td>{entry.portion}</td>
                           <td>{entry.food.measure}</td>
                           <td>{entry.food.unit}</td>
-                          <td>{entry.food.grams}</td>
-                          <td>{entry.food.calories}</td>
-                          <td>{entry.food.protein}</td>
-                          <td>{entry.food.carbs}</td>
-                          <td>{entry.food.fiber}</td>
-                          <td>{entry.food.fat}</td>
-                          <td>{entry.food.sat_fat}</td>
+                          <td>
+                            {Math.round(entry.food.grams * entry.portion)}
+                          </td>
+                          <td>
+                            {Math.round(entry.food.calories * entry.portion)}
+                          </td>
+                          <td>
+                            {Math.round(entry.food.protein * entry.portion)}
+                          </td>
+                          <td>
+                            {Math.round(entry.food.carbs * entry.portion)}
+                          </td>
+                          <td>
+                            {Math.round(entry.food.fiber * entry.portion)}
+                          </td>
+                          <td>{Math.round(entry.food.fat * entry.portion)}</td>
+                          <td>
+                            {Math.round(entry.food.sat_fat * entry.portion)}
+                          </td>
                         </tr>
                       )
                     })}

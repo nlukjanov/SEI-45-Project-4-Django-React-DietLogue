@@ -51,9 +51,9 @@ X replace requests with token from Auth
 X navbar burger
 X logout functionality
 - table rows - links to log edit
-- add datetime field to log entry
+X add datetime field to log entry
 - log edit form
-- log history multiply by portion
+X log history multiply by portion
 - register component extra details
 - change models to restrict empty entries
 - handle errors after models restriction
