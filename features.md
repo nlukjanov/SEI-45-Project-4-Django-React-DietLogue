@@ -50,9 +50,9 @@ X secure route
 X replace requests with token from Auth
 X navbar burger
 X logout functionality
-- table rows - links to log edit
+X table rows - links to log edit
 X add datetime field to log entry
-- log edit form
+X log edit form
 X log history multiply by portion
 - register component extra details
 - change models to restrict empty entries
@@ -68,3 +68,4 @@ X log history multiply by portion
 - remove console.logs
 - replace moment js with something lighter or built myself
 - refactor new and edit component to separate form
+- style table rows to show as link

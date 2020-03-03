@@ -148,7 +148,13 @@ class MyAccount extends React.Component {
                     {this.state.todayLogEntries.map(entry => {
                       console.log(entry.food.sat_fat)
                       return (
-                        <tr key={entry.id}>
+                        <tr
+                          className='link'
+                          key={entry.id}
+                          onClick={() =>
+                            this.props.history.push(`/logs/${entry.id}/edit`)
+                          }
+                        >
                           <td>{entry.food.name}</td>
                           <td>{entry.portion}</td>
                           <td>{entry.food.measure}</td>
