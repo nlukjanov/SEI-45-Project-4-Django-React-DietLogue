@@ -25,49 +25,60 @@ class Login extends React.Component {
       Authentication.setToken(res.data.token)
       notify.show('Welcome Back!', 'success', 3000)
       this.props.history.push('/')
-      
     } catch (error) {
-      this.setState({ error: 'Invalid Credentials' })
+      console.log(error.response.data.message)
+      this.setState({ error: error.response.data.message })
     }
   }
 
   render() {
     console.log(this.state.data)
     return (
-      <section className="section">
-        <div className="container">
-          <div className="columns is-mobile is-centered">
-            <div className="column is-6">
-            <h1 className="title is-4">Login Here</h1>
-          <form onSubmit={this.handleSubmit}>
-            <div className="">
-              <input
-                className="input"
-                placeholder="email"
-                name="email"
-                onChange={this.handleChange} />
+      <section className='section'>
+        <div className='container'>
+          <div className='columns is-mobile is-centered'>
+            <div className='column is-6'>
+              <h1 className='title is-4'>Login Here</h1>
+              <form onSubmit={this.handleSubmit}>
+                <div className='field'>
+                  <div className='control'>
+                    <input
+                      className='input'
+                      placeholder='email'
+                      name='email'
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                </div>
+                <div className='field'>
+                  <div className='control'>
+                    <input
+                      className='input'
+                      type='password'
+                      placeholder='password'
+                      name='password'
+                      onChange={this.handleChange}
+                    ></input>
+                  </div>
+                  {this.state.error && (
+                    <small className='help is-danger'>
+                      {this.state.error}
+                    </small>
+                  )}
+                </div>
+                <div className='field'>
+                  <div className='control'>
+                    <button
+                      className='button is-primary is-fullwidth'
+                      type='submit'
+                    >
+                      Login
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div className="">
-              <input
-                className="input"
-                type="password"
-                placeholder="password"
-                name="password"
-                onChange={this.handleChange} />
-            </div>
-            <div className="">
-              <button
-                className="button is-primary is-fullwidth"
-                type="submit">
-                Login</button>
-            </div>
-          </form>
-
-            </div>
-
           </div>
-          
-          
         </div>
       </section>
     )

@@ -15,21 +15,25 @@ class NewLog extends React.Component {
     },
     foodOption: [],
     foodData: null,
-    helperData: null,
-    errors: {}
+    helperData: null
   }
 
   async componentDidMount() {
+    const logId = this.props.match.params.id
     try {
-      const res = await axios.get('/api/foods/')
+      const res = await Promise.all([
+        axios.get('/api/foods/'),
+        axios.get(`/api/logs/${logId}`)
+      ])
       const foodOptions = []
-      res.data.map(el => {
+      res[0].data.map(el => {
         const foodObject = {}
         foodObject['value'] = el.id
         foodObject['label'] = el.name
         foodOptions.push(foodObject)
       })
-      this.setState({ foodOption: foodOptions, foodData: res.data })
+      const currentEntry = res[1].data
+      this.setState({ foodOption: foodOptions, foodData: res[0].data, formData: currentEntry })
     } catch (error) {
       console.log(error)
     }
@@ -47,18 +51,18 @@ class NewLog extends React.Component {
 
   handleSubmit = async e => {
     e.preventDefault()
+    const logId = this.props.match.params.id
     console.log(this.state.formData)
     try {
-      await axios.post('/api/logs/', this.state.formData, {
+      await axios.put(`/api/logs/${logId}/`, this.state.formData, {
         headers: {
           Authorization: `Bearer ${Authentication.getToken('token')}`
         }
       })
-      notify.show('Log entry created', 'success', 2000)
+      notify.show('Log entry updated', 'success', 2000)
       this.props.history.push('/loghistory')
     } catch (error) {
-      console.log(error.response.data)
-      this.setState({ ...this.state, errors: error.response.data })
+      console.log(error.res)
     }
   }
 
@@ -111,7 +115,7 @@ class NewLog extends React.Component {
 
   render() {
     // if (!this.state.foodData) return null
-    console.log(this.state.errors)
+    // console.log(this.state.foodData[1])
     // console.log(this.state.formData.food)
     // console.log(this.state.foodData[this.state.formData.food].name)
     return (
@@ -122,7 +126,7 @@ class NewLog extends React.Component {
               onSubmit={this.handleSubmit}
               className='column is-half is-offset-one-quarter'
             >
-              <h2 className='title'>New Log Entry</h2>
+              <h2 className='title'>Update Log Entry</h2>
               <div className='field'>
                 <label className='label has-text-centered'>Food</label>
                 <div className='control'>
@@ -132,11 +136,6 @@ class NewLog extends React.Component {
                     isClearable
                   />
                 </div>
-                {this.state.errors.food && (
-                  <small className='help is-danger'>
-                    {this.state.errors.food[0].replace('null', 'empty')}
-                  </small>
-                )}
               </div>
               <div className='field'>
                 <label className='label has-text-centered'>Portion</label>
@@ -195,16 +194,11 @@ class NewLog extends React.Component {
                     onChange={this.handleDate}
                   />
                 </div>
-                {this.state.errors.date && (
-                  <small className='help is-danger'>
-                    {this.state.errors.date[0]}
-                  </small>
-                )}
               </div>
               <div className='field'>
                 <button
                   type='submit'
-                  className='button is-fullwidth is-primary'
+                  className='button is-fullwidth is-warning'
                 >
                   Add Entry
                 </button>

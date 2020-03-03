@@ -3,25 +3,67 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Authentication from './Authentication'
 import Plot from 'react-plotly.js'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 218ba0de6eb64145dedf86f7e2ff5cfa3802665e
 const moment = require('moment')
 
 
 const diet = {
-  calories: 2000,
-  protein: 50,
-  carbs: 260,
-  fiber: 0,
-  fat: 70,
-  sat_fat: 20
+  option1: {
+    fat: 56,
+    sat_fat: 16,
+    carbs: 208,
+    protein: 34,
+    fiber: 22.4,
+    calories: 1600
+  },
+  option2: {
+    fat: 63,
+    sat_fat: 18,
+    carbs: 236,
+    protein: 46,
+    fiber: 25.2,
+    calories: 1800
+  },
+  option3: {
+    fat: 70,
+    sat_fat: 20,
+    carbs: 260,
+    protein: 50,
+    fiber: 28,
+    calories: 2000
+  },
+  option4: {
+    fat: 77,
+    sat_fat: 22,
+    carbs: 286,
+    protein: 52,
+    fiber: 30.8,
+    calories: 2200
+  },
+  option5: {
+    fat: 84,
+    sat_fat: 24,
+    carbs: 312,
+    protein: 56,
+    fiber: 33.6,
+    calories: 2400
+  }
 }
 
 class MyAccount extends React.Component {
   state = {
     userData: {},
     todayLogEntries: [],
+<<<<<<< HEAD
     dailyLogEntries: [],
     dropDownSelection: 'calories'
+=======
+    dropDownSelection: 'calories',
+    diet: ''
+>>>>>>> 218ba0de6eb64145dedf86f7e2ff5cfa3802665e
   }
 
   async componentDidMount() {
@@ -31,23 +73,34 @@ class MyAccount extends React.Component {
           Authorization: `Bearer ${Authentication.getToken('token')}`
         }
       })
+<<<<<<< HEAD
       this.setState({ userData: res.data }, () => {
           this.setTodayLogEntries()
           this.setDailyLogEntries()
         })
       
+=======
+      
+      this.setState({ userData: res.data }, () => this.setUserData())
+>>>>>>> 218ba0de6eb64145dedf86f7e2ff5cfa3802665e
     } catch (error) {
       console.log(error)
     }
   }
 
-  setTodayLogEntries = () => {
+  setUserData = () => {
     const todayLogEntries = this.state.userData.logs.filter(entry => {
       const today = moment(new Date()).format('YYYY-MM-DD')
+<<<<<<< HEAD
       console.log(today)
+=======
+>>>>>>> 218ba0de6eb64145dedf86f7e2ff5cfa3802665e
       const entryDate = moment(entry.date).format('YYYY-MM-DD')
       return today === entryDate
     })
+    // const diet = () => {
+    //   if (this.state.userData.age)
+    // }
     this.setState({ todayLogEntries })
     console.log(todayLogEntries)
   }
@@ -68,7 +121,7 @@ class MyAccount extends React.Component {
 
   calculateProgress = nutrient => {
     const foodNutrition = this.state.todayLogEntries.map(entry => {
-      return entry.food[nutrient]
+      return entry.food[nutrient] * entry.portion
     })
     console.log(foodNutrition.reduce((a, b) => Number(a) + Number(b), 0))
     return foodNutrition.reduce((a, b) => Number(a) + Number(b), 0)
@@ -201,7 +254,7 @@ class MyAccount extends React.Component {
               <progress
                 className='progress is-primary'
                 value={this.calculateProgress(this.state.dropDownSelection)}
-                max={diet[this.state.dropDownSelection]}
+                max={diet.option1[this.state.dropDownSelection]}
               ></progress>
               <div className='table-container'>
                 <table className='table is-fullwidth'>
@@ -224,18 +277,36 @@ class MyAccount extends React.Component {
                     {this.state.todayLogEntries.map(entry => {
                       console.log(entry.food.sat_fat)
                       return (
-                        <tr key={entry.id}>
+                        <tr
+                          className='link'
+                          key={entry.id}
+                          onClick={() =>
+                            this.props.history.push(`/logs/${entry.id}/edit`)
+                          }
+                        >
                           <td>{entry.food.name}</td>
                           <td>{entry.portion}</td>
                           <td>{entry.food.measure}</td>
                           <td>{entry.food.unit}</td>
-                          <td>{entry.food.grams}</td>
-                          <td>{entry.food.calories}</td>
-                          <td>{entry.food.protein}</td>
-                          <td>{entry.food.carbs}</td>
-                          <td>{entry.food.fiber}</td>
-                          <td>{entry.food.fat}</td>
-                          <td>{entry.food.sat_fat}</td>
+                          <td>
+                            {Math.round(entry.food.grams * entry.portion)}
+                          </td>
+                          <td>
+                            {Math.round(entry.food.calories * entry.portion)}
+                          </td>
+                          <td>
+                            {Math.round(entry.food.protein * entry.portion)}
+                          </td>
+                          <td>
+                            {Math.round(entry.food.carbs * entry.portion)}
+                          </td>
+                          <td>
+                            {Math.round(entry.food.fiber * entry.portion)}
+                          </td>
+                          <td>{Math.round(entry.food.fat * entry.portion)}</td>
+                          <td>
+                            {Math.round(entry.food.sat_fat * entry.portion)}
+                          </td>
                         </tr>
                       )
                     })}

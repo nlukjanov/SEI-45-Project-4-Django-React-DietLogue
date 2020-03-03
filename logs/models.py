@@ -20,7 +20,7 @@ class Food(models.Model):
 
 
 class Log(models.Model):
-    food = models.ForeignKey(Food, related_name='food', null=True, on_delete=models.CASCADE)
+    food = models.ForeignKey(Food, related_name='food', on_delete=models.CASCADE)
     portion = models.PositiveSmallIntegerField()
-    owner = models.ForeignKey(User, related_name='logs', null=True, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, related_name='logs', on_delete=models.CASCADE)
     date = models.DateField()

@@ -25,7 +25,6 @@ class Navbar extends React.Component {
     this.props.history.push('/')
   }
 
-
   render() {
     const { navbarOpen } = this.state
     return (
@@ -49,24 +48,38 @@ class Navbar extends React.Component {
             onClick={this.toggleNavbar}
           >
             <div className='navbar-end'>
-              <Link className='navbar-item' to='/logs/new'>
-                New Log Entry
-              </Link>
-              <Link className='navbar-item' to='/register'>
-                Register
-              </Link>
-              <Link className='navbar-item' to='/login'>
-                Login
-              </Link>
-              <Link className='navbar-item' to='/myaccount'>
-                My Account
-              </Link>
-              <Link className='navbar-item' to='/loghistory'>
-                Log History
-              </Link>
-              <a onClick={this.handleLogout} className='navbar-item'>
-                Logout
-              </a>
+              {Authentication.isAuthenticated() &&
+                (
+                  <Link className='navbar-item' to='/logs/new'>
+                    New Log Entry
+                  </Link>
+                )}
+              {!Authentication.isAuthenticated() && (
+                <Link className='navbar-item' to='/register'>
+                  Register
+                </Link>
+              )}
+              {!Authentication.isAuthenticated() && (
+                <Link className='navbar-item' to='/login'>
+                  Login
+                </Link>
+              )}
+              {Authentication.isAuthenticated() && (
+                <Link className='navbar-item' to='/myaccount'>
+                  My Account
+                </Link>
+              )}
+              {Authentication.isAuthenticated() && (
+                <Link className='navbar-item' to='/loghistory'>
+                  Log History
+                </Link>
+              )}
+              {Authentication.isAuthenticated() &&
+                (
+                  <a onClick={this.handleLogout} className='navbar-item'>
+                    Logout
+                  </a>
+                )}
             </div>
           </div>
         </div>

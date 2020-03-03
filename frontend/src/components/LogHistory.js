@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Authentication from './Authentication'
+import { withRouter } from 'react-router'
 
 const moment = require('moment')
 class LogHistory extends Component {
@@ -53,7 +54,7 @@ class LogHistory extends Component {
               <tbody>
                 {logData.map(entry => {
                   return (
-                    <tr key={entry.id}>
+                    <tr className='link' key={entry.id} onClick={() => this.props.history.push(`/logs/${entry.id}/edit`)}>
                       <td>{moment(entry.date).format('DD/MM/YYYY')}</td>
                       <td>{entry.food.name}</td>
                       <td>{entry.portion}</td>
@@ -78,4 +79,4 @@ class LogHistory extends Component {
   }
 }
 
-export default LogHistory
+export default withRouter(LogHistory)

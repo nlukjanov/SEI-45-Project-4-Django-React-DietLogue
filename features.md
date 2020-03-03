@@ -50,21 +50,16 @@ TODO:
 X secure route
 X replace requests with token from Auth
 X navbar burger
-X logout functionality 
-
-- chart [xw]
-  - toggle monthly, weekly, daily 
-  - add standard intake for montly, weekly and daily based on age group
-  - progress bar
-
-- table rows - links to log edit (and delete? [xw])
-- add datetime field to log entry
-- log edit form
-- log history multiply by portion
-- register component extra details
-- change models to restrict empty entries
+X logout functionality
+X table rows - links to log edit
+X add datetime field to log entry
+X log edit form
+X log history multiply by portion
+X register component extra details
+X change models to restrict empty entries
 - handle errors after models restriction
-- add standard diet values
+X add standard diet values
+- add diet depending on age
 - styling:
   - logo
   - fonts
@@ -73,8 +68,6 @@ X logout functionality
   - style 
 - refactor and de-structure
 - remove console.logs
-
-
-
-- a few minor things [xw]
-  - navbar disappears when scroll down
+- replace moment js with something lighter or built myself
+- refactor new and edit component to separate form
+X style table rows to show as link
