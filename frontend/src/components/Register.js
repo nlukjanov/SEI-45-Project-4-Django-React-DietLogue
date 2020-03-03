@@ -21,7 +21,8 @@ class Register extends React.Component {
       height: null,
       weight: null,
       dob: new Date()
-    }
+    },
+    errors: {}
   }
 
   numberIncrease = (start, stop, step) => {
@@ -62,7 +63,8 @@ class Register extends React.Component {
       notify.show('Account successfully created', 'success', 2000)
       this.props.history.push('/login/')
     } catch (error) {
-      console.log(error.response)
+      console.log(error.response.data)
+      this.setState({ errors: error.response.data })
     }
   }
 
@@ -72,12 +74,17 @@ class Register extends React.Component {
       <>
         <section className='section'>
           <div className='container'>
-            <div className='columns is-mobile is-centered'>
-              <div className='column is-6'>
-                <form onSubmit={this.handleSubmit}>
-                  <h2 className='title is-5 is-mobile'>Create your account</h2>
+            <div className='columns'>
+              <form
+                className='column is-half is-offset-one-quarter'
+                onSubmit={this.handleSubmit}
+              >
+                <h2 className='title is-5 is-mobile has-text-centered'>
+                  Create your account
+                </h2>
 
-                  <div>
+                <div className='field'>
+                  <div className='control'>
                     <input
                       className='input'
                       onChange={this.handleChange}
@@ -86,8 +93,10 @@ class Register extends React.Component {
                       required
                     />
                   </div>
+                </div>
 
-                  <div>
+                <div className='field'>
+                  <div className='control'>
                     <input
                       className='input'
                       onChange={this.handleChange}
@@ -97,8 +106,10 @@ class Register extends React.Component {
                       required
                     />
                   </div>
+                </div>
 
-                  <div>
+                <div className='field'>
+                  <div className='control'>
                     <input
                       className='input'
                       onChange={this.handleChange}
@@ -108,8 +119,10 @@ class Register extends React.Component {
                       required
                     />
                   </div>
+                </div>
 
-                  <div>
+                <div className='field'>
+                  <div className='control'>
                     <input
                       className='input'
                       onChange={this.handleChange}
@@ -119,14 +132,15 @@ class Register extends React.Component {
                       required
                     />
                   </div>
+                </div>
+                <hr />
+                <div>
+                  <h2 className='title is-5 is-mobile has-text-centered'>
+                    Tell us a little bit about yourself
+                  </h2>
+                </div>
 
-                  <hr />
-                  <div>
-                    <h2 className='title is-5 is-mobile'>
-                      Tell us a little bit about yourself
-                    </h2>
-                  </div>
-
+                <div className='field'>
                   <div className='control'>
                     <label className='label'>Gender</label>
                     <label className='radio'>
@@ -147,53 +161,70 @@ class Register extends React.Component {
                       />
                       Female
                     </label>
-
-                    <div className='field'>
-                      <label className='label'>Height</label>
-                      <div className='control'>
-                        <DynamicSelect
-                          data={this.heights}
-                          onSelectChange={this.handleHeightSelectChange}
-                        />
-                        <br />
-                      </div>
-                    </div>
-
-                    <div className='field'>
-                      <label className='label'>Weight</label>
-                      <div className='control'>
-                        <DynamicSelect
-                          data={this.weights}
-                          onSelectChange={this.handleWeightSelectChange}
-                        />
-                        <br />
-                      </div>
-                    </div>
-
-                    <div className='field'>
-                      <label className='label'>Date of Birth</label>
-                      <div className='control'>
-                        <input
-                          type='date'
-                          className='input'
-                          name='dob'
-                          onChange={this.handleChange}
-                        ></input>
-                        <br />
-                      </div>
-                    </div>
                   </div>
+                  {this.state.errors.gender && (
+                    <small className='help is-danger'>
+                      Please select a gender
+                    </small>
+                  )}
+                </div>
 
-                  <div>
-                    <button
-                      className='button is-primary is-fullwidth'
-                      type='submit'
-                    >
-                      Register
-                    </button>
+                <div className='field'>
+                  <label className='label'>Height</label>
+                  <div className='control'>
+                    <DynamicSelect
+                      data={this.heights}
+                      onSelectChange={this.handleHeightSelectChange}
+                    />
                   </div>
-                </form>
-              </div>
+                  {this.state.errors.height && (
+                    <small className='help is-danger'>
+                      {this.state.errors.height[0].replace('null', 'empty')}
+                    </small>
+                  )}
+                </div>
+
+                <div className='field'>
+                  <label className='label'>Weight</label>
+                  <div className='control'>
+                    <DynamicSelect
+                      data={this.weights}
+                      onSelectChange={this.handleWeightSelectChange}
+                    />
+                  </div>
+                  {this.state.errors.weight && (
+                    <small className='help is-danger'>
+                      {this.state.errors.weight[0].replace('null', 'empty')}
+                    </small>
+                  )}
+                </div>
+
+                <div className='field'>
+                  <label className='label'>Date of Birth</label>
+                  <div className='control'>
+                    <input
+                      type='date'
+                      className='input'
+                      name='dob'
+                      onChange={this.handleChange}
+                    ></input>
+                  </div>
+                  {this.state.errors.height && (
+                    <small className='help is-danger'>
+                      {this.state.errors.dob[0]}
+                    </small>
+                  )}
+                </div>
+
+                <div>
+                  <button
+                    className='button is-primary is-fullwidth'
+                    type='submit'
+                  >
+                    Register
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </section>
