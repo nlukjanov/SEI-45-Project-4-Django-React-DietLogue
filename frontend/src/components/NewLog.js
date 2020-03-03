@@ -15,7 +15,8 @@ class NewLog extends React.Component {
     },
     foodOption: [],
     foodData: null,
-    helperData: null
+    helperData: null,
+    errors: {}
   }
 
   async componentDidMount() {
@@ -56,7 +57,8 @@ class NewLog extends React.Component {
       notify.show('Log entry created', 'success', 2000)
       this.props.history.push('/loghistory')
     } catch (error) {
-      console.log(error.res)
+      console.log(error.response.data)
+      this.setState({ ...this.state, errors: error.response.data })
     }
   }
 
@@ -109,7 +111,7 @@ class NewLog extends React.Component {
 
   render() {
     // if (!this.state.foodData) return null
-    // console.log(this.state.foodData[1])
+    console.log(this.state.errors)
     // console.log(this.state.formData.food)
     // console.log(this.state.foodData[this.state.formData.food].name)
     return (
@@ -130,6 +132,11 @@ class NewLog extends React.Component {
                     isClearable
                   />
                 </div>
+                {this.state.errors.food && (
+                  <small className='help is-danger'>
+                    {this.state.errors.food[0].replace('null', 'empty')}
+                  </small>
+                )}
               </div>
               <div className='field'>
                 <label className='label has-text-centered'>Portion</label>
@@ -188,6 +195,11 @@ class NewLog extends React.Component {
                     onChange={this.handleDate}
                   />
                 </div>
+                {this.state.errors.date && (
+                  <small className='help is-danger'>
+                    {this.state.errors.date[0]}
+                  </small>
+                )}
               </div>
               <div className='field'>
                 <button
