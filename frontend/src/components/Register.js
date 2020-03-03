@@ -13,6 +13,7 @@ import 'react-datepicker/dist/react-datepicker.css'
 //todo fix the height/weight dropdown error
 
 class Register extends React.Component {
+  
   state = {
     data: {
       name: '',
@@ -20,10 +21,10 @@ class Register extends React.Component {
       password: '',
       password_confirmation: '',
       gender: '',
-      height: null,
-      weight: null,
+      height: 0,
+      weight: 0,
       dob: new Date()
-    },
+    }, 
     selectedValue: null
   }
 
@@ -44,8 +45,8 @@ class Register extends React.Component {
     this.setState({ data })
   }
 
-  handleSelectChange = selectedValue => {
-    this.setState({selectedValue: selectedValue})
+  handleHeightSelectChange = selectedValue => {
+      this.setState({selectedValue, selectedValue})
   }
 
   handleSubmit = async e => {

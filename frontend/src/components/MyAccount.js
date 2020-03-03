@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Authentication from './Authentication'
 import Plot from 'react-plotly.js'
-// import LogChart from './LogChart'
+
 const moment = require('moment')
+
 
 const diet = {
   calories: 2000,
@@ -19,6 +20,7 @@ class MyAccount extends React.Component {
   state = {
     userData: {},
     todayLogEntries: [],
+    dailyLogEntries: [],
     dropDownSelection: 'calories'
   }
 
@@ -29,7 +31,11 @@ class MyAccount extends React.Component {
           Authorization: `Bearer ${Authentication.getToken('token')}`
         }
       })
-      this.setState({ userData: res.data }, () => this.setTodayLogEntries())
+      this.setState({ userData: res.data }, () => {
+          this.setTodayLogEntries()
+          this.setDailyLogEntries()
+        })
+      
     } catch (error) {
       console.log(error)
     }
@@ -38,10 +44,26 @@ class MyAccount extends React.Component {
   setTodayLogEntries = () => {
     const todayLogEntries = this.state.userData.logs.filter(entry => {
       const today = moment(new Date()).format('YYYY-MM-DD')
-      const entryDate = moment(entry.created_at).format('YYYY-MM-DD')
+      console.log(today)
+      const entryDate = moment(entry.date).format('YYYY-MM-DD')
       return today === entryDate
     })
     this.setState({ todayLogEntries })
+    console.log(todayLogEntries)
+  }
+
+  setDailyLogEntries = () => {
+    const dailyLogEntries = this.state.userData.logs.reduce((foods, entry) => {
+      const entryDate = entry.date
+      if (!foods[entryDate]) {
+        foods[entryDate] = []
+      }
+      foods[entryDate].push(entry.food)
+      return foods
+    }, {})
+    this.setState({ dailyLogEntries })
+    console.log(dailyLogEntries)
+    
   }
 
   calculateProgress = nutrient => {
@@ -52,13 +74,20 @@ class MyAccount extends React.Component {
     return foodNutrition.reduce((a, b) => Number(a) + Number(b), 0)
   }
 
+  calculateDailyTotal = nutrient => {
+    const foodNutrition = this.state.dailyLogEntries.map(entry => entry.food[nutrient])
+    const dailyTotal = foodNutrition.reduce((a, b) => Number(a) + Number(b), 0)
+    console.log(dailyTotal)
+    return dailyTotal
+  }
+
   handleChange = ({ target: { name, value, checked, type } }) => {
     const newValue = type === 'checkbox' ? checked : value
     this.setState({ [name]: newValue })
   }
 
   render() {
-    // if (!this.state.userData.logs) return null
+
     console.log(this.state)
     return (
       <section className='section'>
@@ -74,6 +103,7 @@ class MyAccount extends React.Component {
           <Link className='button is-primary is-fullwidth' to='/logs/new'>
             Log Your Food
           </Link>
+
           <div className='columns'>
             <div className='column is-12'>
               <div className='mobile'>
@@ -86,25 +116,75 @@ class MyAccount extends React.Component {
                       y: [2, 6, 3, 5, 1, 6, 9],
                       type: 'scatter',
                       mode: 'lines+markers',
-                      marker: { color: 'red' }
+                      marker: { color: 'red' },
+                      name: 'protein'
                     },
                     {
                       x: [1, 2, 3, 4, 5, 6, 7],
+                      y: [2, 6, 3, 5, 1, 6, 9],
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'yellow' },
+                      name: 'calories'
+                    },
+                    {
+                      x: [1, 2, 3, 4, 5, 6, 7],
+                      y: [2, 6, 3, 5, 1, 6, 9],
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'green' },
+                      name: 'carbs'
+                    },
+                    {
+                      x: [1, 2, 3, 4, 5, 6, 7],
+                      y: [2, 6, 3, 5, 1, 6, 9],
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'red' },
+                      name: 'fat'
+                    },
+                    {
+                      x: [1, 2, 3, 4, 8, 9, 0],
                       y: [4, 2, 1, 7, 2, 3, 6],
                       type: 'scatter',
                       mode: 'lines+markers',
-                      marker: { color: 'blue' }
+                      marker: { color: 'blue' },
+                      name: 'sat_fat'
                     }
                   ]}
                   layout={{
-                    title: 'You consumption',
+                    title: 'You weekly consumption',
                     margin: { t: 60, r: 10, l: 10, b: 30 },
                     autosize: true,
-                    showlegend: false
+                    showlegend: true,
+                    xaxis: {
+                      autorange: true,
+                      range: [moment().day(1), moment().day(7)],
+                      rangeSelector: {buttons: [
+                        {
+                          count: 1,
+                          label: '1 week',
+                          step: 'week',
+                          stepmode: 'backward'
+                        },
+                        {
+                          count: 4, 
+                          label: '4 weeks',
+                          step: 'week',
+                          stepmode: 'backward'
+                        },
+                        {step: 'all'}
+                      ]},
+                      rangeslider: {
+                        range: []
+                      },
+                      type: 'date'
+                    }
                   }}
                   config={{ displayModeBar: false }}
                 />
               </div>
+
               <div>Your Day At A Glance</div>
               <div className='field'>
                 <div className='select'>
@@ -137,7 +217,7 @@ class MyAccount extends React.Component {
                       <th>Unit</th>
                       <th>Grams</th>
                       <th>Calories</th>
-                      <th>Proteins</th>
+                      <th>Protein</th>
                       <th>Carbs</th>
                       <th>Fiber</th>
                       <th>Fat</th>

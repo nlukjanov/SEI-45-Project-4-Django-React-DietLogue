@@ -46,11 +46,18 @@ TODO:
 - my account
   - layout
   - chart
+
 X secure route
 X replace requests with token from Auth
 X navbar burger
-X logout functionality
-- table rows - links to log edit
+X logout functionality 
+
+- chart [xw]
+  - toggle monthly, weekly, daily 
+  - add standard intake for montly, weekly and daily based on age group
+  - progress bar
+
+- table rows - links to log edit (and delete? [xw])
 - add datetime field to log entry
 - log edit form
 - log history multiply by portion
@@ -66,3 +73,8 @@ X logout functionality
   - style 
 - refactor and de-structure
 - remove console.logs
+
+
+
+- a few minor things [xw]
+  - navbar disappears when scroll down
