@@ -174,11 +174,7 @@ class MyAccount extends React.Component {
                           stepmode: 'backward'
                         },
                         {step: 'all'}
-                      ]},
-                      rangeslider: {
-                        range: []
-                      },
-                      type: 'date'
+                      ]}
                     }
                   }}
                   config={{ displayModeBar: false }}
