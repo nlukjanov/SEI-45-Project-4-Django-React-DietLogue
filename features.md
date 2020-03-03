@@ -67,3 +67,4 @@ X log history multiply by portion
 - refactor and de-structure
 - remove console.logs
 - replace moment js with something lighter or built myself
+- refactor new and edit component to separate form
