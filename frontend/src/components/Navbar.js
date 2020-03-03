@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
-
+import { notify } from 'react-notify-toast'
 import Authentication from './Authentication'
 
 class Navbar extends React.Component {
@@ -19,8 +19,9 @@ class Navbar extends React.Component {
   // }
 
   handleLogout = () => {
-    // notify.show('Come back soon!', 'success', 3000)
+    notify.show('Come back soon!', 'success', 3000)
     Authentication.logout()
+
     this.props.history.push('/')
   }
 

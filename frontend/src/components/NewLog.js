@@ -1,7 +1,8 @@
 import React from 'react'
 import axios from 'axios'
-// import Auth from '../../lib/auth'
+import Authentication from './Authentication'
 import Select from 'react-select'
+import { notify } from 'react-notify-toast'
 const pluralize = require('pluralize')
 
 class NewLog extends React.Component {
@@ -17,7 +18,7 @@ class NewLog extends React.Component {
 
   async componentDidMount() {
     try {
-      const res = await axios.get('http://localhost:8000/api/foods/')
+      const res = await axios.get('/api/foods/')
       const foodOptions = []
       res.data.map(el => {
         const foodObject = {}
@@ -27,7 +28,7 @@ class NewLog extends React.Component {
       })
       this.setState({ foodOption: foodOptions, foodData: res.data })
     } catch (error) {
-      // this.props.history.push('/notfound')
+      console.log(error)
     }
   }
 
@@ -40,25 +41,16 @@ class NewLog extends React.Component {
     e.preventDefault()
     console.log(this.state.formData)
     try {
-      await axios.post(
-        'http://localhost:8000/api/logs/',
-        this.state.formData,
-        {
-          headers: {
-            Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjF9.ToXIHM9kzaAX264Jyc81T5vpxJG5tNKH6vvI8iFkOCQ`
-          }
+      await axios.post('/api/logs/', this.state.formData, {
+        headers: {
+          Authorization: `Bearer ${Authentication.getToken('token')}`
         }
-      )
-      // this.props.history.push(`/cheeses/${res.data._id}`)
+      })
+      notify.show('Log entry created', 'success', 2000)
+      this.props.history.push('/loghistory')
     } catch (error) {
       console.log(error.res)
     }
-    this.setState({
-      formData: {
-        food: '',
-        portion: 1
-      }
-    })
   }
 
   handleMultiChange = selected => {
@@ -162,24 +154,17 @@ class NewLog extends React.Component {
                 {this.state.helperData && (
                   <div className='flex-container'>
                     <small className='help'>
-                      {this.state.formData.portion}{' '}
-                      {pluralize('portion', this.state.formData.portion)} ={' '}
-                      {Number(this.state.helperData.measure) *
+                      {`${this.state.formData.portion}
+                      ${pluralize('portion', this.state.formData.portion)} = 
+                      ${Number(this.state.helperData.measure) *
                         this.state.formData.portion}
-                    </small>
-                    <small className='help'>
-                      {pluralize(
+                      ${pluralize(
                         this.state.helperData.unit,
                         Number(this.state.helperData.measure) *
                           this.state.formData.portion
-                      )}
-                    </small>
-                    <small className='help'>
-                      {' '}
-                      ={' '}
-                      {Number(this.state.helperData.grams) *
-                        this.state.formData.portion}{' '}
-                      grams
+                      )} = 
+                      ${Number(this.state.helperData.grams) *
+                        this.state.formData.portion} grams`}
                     </small>
                   </div>
                 )}

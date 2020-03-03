@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import headers from "../lib/headers"
+import Authentication from './Authentication'
+
 const moment = require('moment')
-
-
 class LogHistory extends Component {
   state = {
     logData: []
@@ -12,11 +11,17 @@ class LogHistory extends Component {
   async componentDidMount() {
     try {
       const res = await axios.get(
-        'http://localhost:8000/api/myaccount', headers)
+        '/api/myaccount',
+        {
+          headers: {
+            Authorization: `Bearer ${Authentication.getToken('token')}`
+          }
+        } 
+      )
       const sortedLogs = res.data.logs.sort((a, b) => b.id - a.id)
       this.setState({ logData: sortedLogs })
     } catch (error) {
-      // this.props.history.push('/notfound')
+      this.props.history.push('/notfound')
     }
   }
 

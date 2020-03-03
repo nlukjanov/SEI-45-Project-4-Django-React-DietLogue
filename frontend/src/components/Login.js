@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-
+import { notify } from 'react-notify-toast'
 import Authentication from './Authentication'
 import headers from '../lib/headers'
 
@@ -23,7 +23,7 @@ class Login extends React.Component {
     try {
       const res = await axios.post('/api/login/', this.state.data, headers)
       Authentication.setToken(res.data.token)
-      console.log(res.data)
+      notify.show('Welcome Back!', 'success', 3000)
       this.props.history.push('/')
       
     } catch (error) {
