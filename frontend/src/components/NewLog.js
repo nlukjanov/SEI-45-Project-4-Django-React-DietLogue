@@ -14,7 +14,7 @@ class NewLog extends React.Component {
       date: moment(new Date()).format('YYYY-MM-DD')
     },
     foodOption: [],
-    foodData: [],
+    foodData: null,
     helperData: null
   }
 
@@ -108,7 +108,10 @@ class NewLog extends React.Component {
   }
 
   render() {
-    console.log(this.state)
+    // if (!this.state.foodData) return null
+    // console.log(this.state.foodData[1])
+    // console.log(this.state.formData.food)
+    // console.log(this.state.foodData[this.state.formData.food].name)
     return (
       <section className='section'>
         <div className='container'>
@@ -125,8 +128,6 @@ class NewLog extends React.Component {
                     onChange={this.handleMultiChange}
                     options={this.state.foodOption}
                     isClearable
-                    className='basic-multi-select'
-                    classNamePrefix='select'
                   />
                 </div>
               </div>

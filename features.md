@@ -66,3 +66,4 @@ X log history multiply by portion
   - style 
 - refactor and de-structure
 - remove console.logs
+- replace moment js with something lighter or built myself
