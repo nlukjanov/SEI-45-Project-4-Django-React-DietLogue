@@ -222,7 +222,7 @@ class MyAccount extends React.Component {
                   ]}
                   layout={{
                     title: 'You weekly consumption',
-                    margin: { t: 60, r: 10, l: 10, b: 30 },
+                    margin: { t: 60, r: 10, l: 30, b: 30 },
                     autosize: true,
                     showlegend: true,
                     xaxis: {
