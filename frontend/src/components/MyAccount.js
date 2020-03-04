@@ -100,6 +100,8 @@ class MyAccount extends React.Component {
           return dietOptions.option4
         } else if (age >= 51) {
           return dietOptions.option3
+        } else {
+          return dietOptions.option3
         }
       } else if (this.state.userData.gender === 'F') {
         if (age >= 9 && age <= 13) {
@@ -112,6 +114,8 @@ class MyAccount extends React.Component {
           return dietOptions.option2
         } else if (age >= 51) {
           return dietOptions.option1
+        } else {
+          return dietOptions.option3
         }
       }
     }
