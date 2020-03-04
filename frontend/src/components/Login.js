@@ -35,7 +35,7 @@ class Login extends React.Component {
       <section className='section'>
         <div className='container'>
           <div className='columns'>
-            <div className='column is-6'>
+            <div className='column column is-half is-offset-one-quarter'>
               <h1 className='title is-5 is-mobile has-text-centered'>
                 Login Here
               </h1>

@@ -186,10 +186,6 @@ class MyAccount extends React.Component {
               <div>Diet Log</div>
             </div> */}
           </div>
-          <Link className='button is-primary is-fullwidth' to='/logs/new'>
-            Log Your Food
-          </Link>
-
           <div className='columns'>
             <div className='column is-12'>
               <div className='mobile'>
