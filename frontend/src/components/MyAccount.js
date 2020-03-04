@@ -241,7 +241,7 @@ class MyAccount extends React.Component {
                   ]}
                   layout={{
                     title: 'You weekly consumption',
-                    margin: { t: 60, r: 10, l: 30, b: 60 },
+                    margin: { t: 60, r: 50, l: 30, b: 60 },
                     autosize: true,
                     showlegend: true,
                     xaxis: {
@@ -253,17 +253,16 @@ class MyAccount extends React.Component {
                       title: 'calories measure'
                     },
                     legend: {
-                      x: 1.5,
-                      y: 0.5
+                      x: 0.5,
+                      y: 1
                     }
                   }}
                   config={{ displayModeBar: false }}
                 />
-                ;
               </div>
               <hr />
               <div>
-                <h4 className='is-size-4 has-text-centered'>
+                <h4 className='is-size-5 has-text-centered'>
                   Your day at a glance
                 </h4>
               </div>
