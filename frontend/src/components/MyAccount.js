@@ -49,6 +49,14 @@ const diet = {
   }
 }
 
+let currentWeek = []
+let currentTime = new Date
+for (let i = 1; i <=7; i++) {
+  let first = currentTime.getDate() - currentTime.getDay() + i
+  let day = new Date(currentTime.setDate(first)).toISOString().slice(0, 10)
+  currentWeek.push(day)
+}
+
 class MyAccount extends React.Component {
   state = {
     userData: {},
@@ -116,6 +124,17 @@ class MyAccount extends React.Component {
     return dailyTotal
   }
 
+  // unpackEntries = (logEntries) => {
+  //   return Object.entries(logEntries)
+  // }
+
+  unpackNutrients = (date) => {
+    const dateFoodArr = Object.entries(this.state.dailyLogEntries)
+    const currentEntry = dateFoodArr.filter(dateFoodItem => dateFoodItem[0] === date)
+    return currentEntry[0]
+    
+  }
+
   handleChange = ({ target: { name, value, checked, type } }) => {
     const newValue = type === 'checkbox' ? checked : value
     this.setState({ [name]: newValue })
@@ -123,7 +142,10 @@ class MyAccount extends React.Component {
 
   render() {
 
+
     console.log(this.state)
+    // console.log(this.unpackEntries(this.state.dailyLogEntries))
+    console.log(this.unpackNutrients('2020-03-03'))
     return (
       <section className='section'>
         <div className='container'>
@@ -147,45 +169,46 @@ class MyAccount extends React.Component {
                   style={{ height: '100%', width: '100%' }}
                   data={[
                     {
-                      x: [1, 2, 3, 4, 5, 6, 7],
-                      y: [2, 6, 3, 5, 1, 6, 9],
+                      // x: [1, 2, 3, 4, 5, 6, 7],
+                      x: currentWeek,
+                      y: [1, 2, 3, 4, 5, 6, 7],
                       type: 'scatter',
                       mode: 'lines+markers',
                       marker: { color: 'red' },
                       name: 'protein'
                     },
-                    {
-                      x: [1, 2, 3, 4, 5, 6, 7],
-                      y: [2, 6, 3, 5, 1, 6, 9],
-                      type: 'scatter',
-                      mode: 'lines+markers',
-                      marker: { color: 'yellow' },
-                      name: 'calories'
-                    },
-                    {
-                      x: [1, 2, 3, 4, 5, 6, 7],
-                      y: [2, 6, 3, 5, 1, 6, 9],
-                      type: 'scatter',
-                      mode: 'lines+markers',
-                      marker: { color: 'green' },
-                      name: 'carbs'
-                    },
-                    {
-                      x: [1, 2, 3, 4, 5, 6, 7],
-                      y: [2, 6, 3, 5, 1, 6, 9],
-                      type: 'scatter',
-                      mode: 'lines+markers',
-                      marker: { color: 'red' },
-                      name: 'fat'
-                    },
-                    {
-                      x: [1, 2, 3, 4, 8, 9, 0],
-                      y: [4, 2, 1, 7, 2, 3, 6],
-                      type: 'scatter',
-                      mode: 'lines+markers',
-                      marker: { color: 'blue' },
-                      name: 'sat_fat'
-                    }
+                    // {
+                    //   x: [1, 2, 3, 4, 5, 6, 7],
+                    //   y: [2, 6, 3, 5, 1, 6, 9],
+                    //   type: 'scatter',
+                    //   mode: 'lines+markers',
+                    //   marker: { color: 'yellow' },
+                    //   name: 'calories'
+                    // },
+                    // {
+                    //   x: [1, 2, 3, 4, 5, 6, 7],
+                    //   y: [2, 6, 3, 5, 1, 6, 9],
+                    //   type: 'scatter',
+                    //   mode: 'lines+markers',
+                    //   marker: { color: 'green' },
+                    //   name: 'carbs'
+                    // },
+                    // {
+                    //   x: [1, 2, 3, 4, 5, 6, 7],
+                    //   y: [2, 6, 3, 5, 1, 6, 9],
+                    //   type: 'scatter',
+                    //   mode: 'lines+markers',
+                    //   marker: { color: 'red' },
+                    //   name: 'fat'
+                    // },
+                    // {
+                    //   x: [1, 2, 3, 4, 8, 9, 0],
+                    //   y: [4, 2, 1, 7, 2, 3, 6],
+                    //   type: 'scatter',
+                    //   mode: 'lines+markers',
+                    //   marker: { color: 'blue' },
+                    //   name: 'sat_fat'
+                    // }
                   ]}
                   layout={{
                     title: 'You weekly consumption',
@@ -195,21 +218,21 @@ class MyAccount extends React.Component {
                     xaxis: {
                       autorange: true,
                       range: [moment().day(1), moment().day(7)],
-                      rangeSelector: {buttons: [
-                        {
-                          count: 1,
-                          label: '1 week',
-                          step: 'week',
-                          stepmode: 'backward'
-                        },
-                        {
-                          count: 4, 
-                          label: '4 weeks',
-                          step: 'week',
-                          stepmode: 'backward'
-                        },
-                        {step: 'all'}
-                      ]}
+                    //   rangeSelector: {buttons: [
+                    //     {
+                    //       count: 1,
+                    //       label: '1 week',
+                    //       step: 'week',
+                    //       stepmode: 'backward'
+                    //     },
+                    //     {
+                    //       count: 4, 
+                    //       label: '4 weeks',
+                    //       step: 'week',
+                    //       stepmode: 'backward'
+                    //     },
+                    //     {step: 'all'}
+                    //   ]}
                     }
                   }}
                   config={{ displayModeBar: false }}
