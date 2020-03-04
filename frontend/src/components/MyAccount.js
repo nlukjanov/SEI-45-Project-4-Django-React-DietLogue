@@ -162,11 +162,16 @@ class MyAccount extends React.Component {
         <div className='container'>
           <div className='columns is-mobile is-centered'>
             <div className='column is-6'>
-              <div className=''>Logo</div>
+            <figure className="column is-mobile">
+                <img
+                  className="column is-3 is-mobile has-image-centered is-16x16"
+                  src={require("../assets/logo-notext.png")}
+                />
+              </figure>
             </div>
-            <div className='column is-6'>
+            {/* <div className='column is-6'>
               <div>Diet Log</div>
-            </div>
+            </div> */}
           </div>
           <Link className='button is-primary is-fullwidth' to='/logs/new'>
             Log Your Food
@@ -248,14 +253,18 @@ class MyAccount extends React.Component {
                   config={{ displayModeBar: false }}
                 />
               </div>
-
-              <div>Your Day At A Glance</div>
-              <div className='field'>
+              <hr/>
+              <div>
+                <h4 className="is-size-4 has-text-centered">Your day at a glance</h4>
+              </div>
+              <br/>
+              <div className='field is-centered'>
                 <div className='select'>
                   <select
                     name='dropDownSelection'
                     onChange={this.handleChange}
                     value={this.state.dropDownSelection}
+                    className='is-centered'
                   >
                     <option value='calories'>Calories</option>
                     <option value='protein'>Protein</option>

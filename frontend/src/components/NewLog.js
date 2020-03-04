@@ -121,7 +121,7 @@ class NewLog extends React.Component {
             <div className="column is-mobile is-centered">
               <figure className="column is-mobile">
                 <img
-                  className="column is-mobile has-image-centered is-16x16"
+                  className="column is-mobile is-4 has-image-centered is-64x64"
                   src={require("../assets/logo-notext.png")}
                 />
               </figure>

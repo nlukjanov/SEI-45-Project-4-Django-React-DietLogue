@@ -16,7 +16,7 @@ class Home extends React.Component {
                   </figure>
                 </div>
 
-                <div>LET'S START THE DIETLOGUE ABOUT NUTRITION!</div>
+                <div className='is-size-4 has-text-centered'>LET'S START THE DIETLOGUE ABOUT NUTRITION!</div>
               </div>
             </div>
             <Link className='button is-primary is-fullwidth' to='/register'>
