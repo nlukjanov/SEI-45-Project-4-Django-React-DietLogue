@@ -237,17 +237,23 @@ class MyAccount extends React.Component {
                   ]}
                   layout={{
                     title: 'You weekly consumption',
-                    margin: { t: 60, r: 10, l: 30, b: 30 },
+                    margin: { t: 60, r: 50, l: 30, b: 30 },
                     autosize: true,
                     showlegend: true,
+                    legend: {
+                      x: 1.5,
+                      xanchor: 'right',
+                      y: 1.5
+                    },
                     xaxis: {
                       autorange: true,
-                      tickwidth: 2
+                      
                     },
                     yaxis2: {
                       overlaying: 'y',
                       side: 'right',
-                      title: 'calories measure'
+                      title: 'calories measure',
+                      
                     }
                   }}
                   config={{ displayModeBar: false }}
