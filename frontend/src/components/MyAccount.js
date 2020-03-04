@@ -198,7 +198,8 @@ class MyAccount extends React.Component {
                       type: 'scatter',
                       mode: 'lines+markers',
                       marker: { color: 'yellow' },
-                      name: 'calories'
+                      name: 'calories',
+                      yaxis: 'y2'
                     },
                     {
                       x: currentWeek,
@@ -232,22 +233,12 @@ class MyAccount extends React.Component {
                     showlegend: true,
                     xaxis: {
                       autorange: true,
-                      // range: [moment().day(1), moment().day(7)],
-                    //   rangeSelector: {buttons: [
-                    //     {
-                    //       count: 1,
-                    //       label: '1 week',
-                    //       step: 'week',
-                    //       stepmode: 'backward'
-                    //     },
-                    //     {
-                    //       count: 4, 
-                    //       label: '4 weeks',
-                    //       step: 'week',
-                    //       stepmode: 'backward'
-                    //     },
-                    //     {step: 'all'}
-                    //   ]}
+                      tickwidth: 2
+                    },
+                    yaxis2: {
+                      overlaying: 'y',
+                      side: 'right',
+                      title: 'calories measure'
                     }
                   }}
                   config={{ displayModeBar: false }}
