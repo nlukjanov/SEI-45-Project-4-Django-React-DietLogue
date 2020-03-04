@@ -198,7 +198,7 @@ class MyAccount extends React.Component {
                   style={{ height: '100%', width: '100%' }}
                   data={[
                     {
-                      x: currentWeek,
+                      x: currentWeek.slice(0, 5),
                       y: this.getCurrentWeekValues('protein'),
                       type: 'scatter',
                       mode: 'lines+markers',
@@ -206,7 +206,7 @@ class MyAccount extends React.Component {
                       name: 'protein'
                     },
                     {
-                      x: currentWeek,
+                      x: currentWeek.slice(0, 5),
                       y: this.getCurrentWeekValues('calories'),
                       type: 'scatter',
                       mode: 'lines+markers',
@@ -215,7 +215,7 @@ class MyAccount extends React.Component {
                       yaxis: 'y2'
                     },
                     {
-                      x: currentWeek,
+                      x: currentWeek.slice(0, 5),
                       y: this.getCurrentWeekValues('carbs'),
                       type: 'scatter',
                       mode: 'lines+markers',
@@ -223,7 +223,7 @@ class MyAccount extends React.Component {
                       name: 'carbs'
                     },
                     {
-                      x: currentWeek,
+                      x: currentWeek.slice(0, 5),
                       y: this.getCurrentWeekValues('fat'),
                       type: 'scatter',
                       mode: 'lines+markers',
@@ -231,7 +231,7 @@ class MyAccount extends React.Component {
                       name: 'fat'
                     },
                     {
-                      x: currentWeek,
+                      x: currentWeek.slice(0, 5),
                       y: this.getCurrentWeekValues('sat_fat'),
                       type: 'scatter',
                       mode: 'lines+markers',
@@ -241,27 +241,25 @@ class MyAccount extends React.Component {
                   ]}
                   layout={{
                     title: 'You weekly consumption',
-                    margin: { t: 60, r: 50, l: 30, b: 30 },
+                    margin: { t: 60, r: 10, l: 30, b: 60 },
                     autosize: true,
                     showlegend: true,
-                    legend: {
-                      x: 1.5,
-                      xanchor: 'right',
-                      y: 1.5
-                    },
                     xaxis: {
-                      autorange: true,
-                      
+                      autorange: true
                     },
                     yaxis2: {
                       overlaying: 'y',
                       side: 'right',
-                      title: 'calories measure',
-                      
+                      title: 'calories measure'
+                    },
+                    legend: {
+                      x: 1.5,
+                      y: 0.5
                     }
                   }}
                   config={{ displayModeBar: false }}
                 />
+                ;
               </div>
               <hr />
               <div>
