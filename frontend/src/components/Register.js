@@ -3,15 +3,8 @@ import axios from 'axios'
 import { notify } from 'react-notify-toast'
 import headers from '../lib/headers'
 import DynamicSelect from './DynamicSelect'
-import 'bulma-calendar'
-import 'bulma-calendar/dist/css/bulma-calendar.min.css'
-
-import 'react-datepicker/dist/react-datepicker.css'
-
-//todo fix the height/weight dropdown error
 
 class Register extends React.Component {
-  
   state = {
     data: {
       username: '',
