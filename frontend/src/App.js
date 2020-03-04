@@ -4,6 +4,7 @@ import Notifications from 'react-notify-toast'
 import './App.css'
 import 'bulma'
 
+
 import Home from './components/Home'
 import Register from './components/Register'
 import Login from './components/Login'

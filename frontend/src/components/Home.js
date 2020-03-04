@@ -9,12 +9,14 @@ class Home extends React.Component {
         <section className='section'>
           <div className='container'>
             <div className='columns is-mobile is-centered'>
-              <div className='column is-6 is-offset-3'>
-                <div className=''>
-
+              <div className='column is-mobile'>
+                <div className='column is-mobile'>
+                  <figure>
+                    <img className='column is-mobile has-image-centered' src={require('../assets/logo3.png')} />
+                  </figure>
                 </div>
-                <div>Diet Log</div>
-                <div>LET'S START THE DIETLOGUE ABOUT NUTRITION!</div>
+
+                <div className='is-size-4 has-text-centered'>LET'S START THE DIETLOGUE ABOUT NUTRITION!</div>
               </div>
             </div>
             <Link className='button is-primary is-fullwidth' to='/register'>
