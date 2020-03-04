@@ -180,46 +180,45 @@ class MyAccount extends React.Component {
                   style={{ height: '100%', width: '100%' }}
                   data={[
                     {
-                      // x: [1, 2, 3, 4, 5, 6, 7],
                       x: currentWeek,
-                      y: [1, 2, 3, 4, 5, 6, 7],
+                      y: this.getCurrentWeekValues('protein'),
                       type: 'scatter',
                       mode: 'lines+markers',
                       marker: { color: 'red' },
                       name: 'protein'
                     },
-                    // {
-                    //   x: [1, 2, 3, 4, 5, 6, 7],
-                    //   y: [2, 6, 3, 5, 1, 6, 9],
-                    //   type: 'scatter',
-                    //   mode: 'lines+markers',
-                    //   marker: { color: 'yellow' },
-                    //   name: 'calories'
-                    // },
-                    // {
-                    //   x: [1, 2, 3, 4, 5, 6, 7],
-                    //   y: [2, 6, 3, 5, 1, 6, 9],
-                    //   type: 'scatter',
-                    //   mode: 'lines+markers',
-                    //   marker: { color: 'green' },
-                    //   name: 'carbs'
-                    // },
-                    // {
-                    //   x: [1, 2, 3, 4, 5, 6, 7],
-                    //   y: [2, 6, 3, 5, 1, 6, 9],
-                    //   type: 'scatter',
-                    //   mode: 'lines+markers',
-                    //   marker: { color: 'red' },
-                    //   name: 'fat'
-                    // },
-                    // {
-                    //   x: [1, 2, 3, 4, 8, 9, 0],
-                    //   y: [4, 2, 1, 7, 2, 3, 6],
-                    //   type: 'scatter',
-                    //   mode: 'lines+markers',
-                    //   marker: { color: 'blue' },
-                    //   name: 'sat_fat'
-                    // }
+                    {
+                      x: currentWeek,
+                      y: this.getCurrentWeekValues('calories'),
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'yellow' },
+                      name: 'calories'
+                    },
+                    {
+                      x: currentWeek,
+                      y: this.getCurrentWeekValues('carbs'),
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'green' },
+                      name: 'carbs'
+                    },
+                    {
+                      x: currentWeek,
+                      y: this.getCurrentWeekValues('fat'),
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'red' },
+                      name: 'fat'
+                    },
+                    {
+                      x: currentWeek,
+                      y: this.getCurrentWeekValues('sat_fat'),
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'blue' },
+                      name: 'sat_fat'
+                    }
                   ]}
                   layout={{
                     title: 'You weekly consumption',
