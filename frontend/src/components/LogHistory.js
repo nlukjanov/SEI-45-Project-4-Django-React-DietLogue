@@ -20,6 +20,7 @@ class LogHistory extends Component {
         (a, b) => new Date(b.date) - new Date(a.date)
       )
       this.setState({ logData: sortedLogs })
+      
     } catch (error) {
       this.props.history.push('/notfound')
     }
@@ -43,7 +44,7 @@ class LogHistory extends Component {
                   <th>Unit</th>
                   <th>Grams</th>
                   <th>Calories</th>
-                  <th>Proteins</th>
+                  <th>Protein</th>
                   <th>Carbs</th>
                   <th>Fiber</th>
                   <th>Fat</th>

@@ -46,6 +46,7 @@ TODO:
 - my account
   - layout
   - chart
+
 X secure route
 X replace requests with token from Auth
 X navbar burger

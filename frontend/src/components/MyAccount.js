@@ -5,6 +5,7 @@ import Authentication from './Authentication'
 import Plot from 'react-plotly.js'
 const moment = require('moment')
 
+
 const diet = {
   option1: {
     fat: 56,
@@ -48,10 +49,19 @@ const diet = {
   }
 }
 
+let currentWeek = []
+let currentTime = new Date
+for (let i = 1; i <=7; i++) {
+  let first = currentTime.getDate() - currentTime.getDay() + i
+  let day = new Date(currentTime.setDate(first)).toISOString().slice(0, 10)
+  currentWeek.push(day)
+}
+
 class MyAccount extends React.Component {
   state = {
     userData: {},
     todayLogEntries: [],
+    dailyLogEntries: [],
     dropDownSelection: 'calories',
     diet: ''
   }
@@ -63,8 +73,10 @@ class MyAccount extends React.Component {
           Authorization: `Bearer ${Authentication.getToken('token')}`
         }
       })
-      
-      this.setState({ userData: res.data }, () => this.setUserData())
+      this.setState({ userData: res.data }, () => {
+          this.setUserData()
+          this.setDailyLogEntries()
+        })
     } catch (error) {
       console.log(error)
     }
@@ -80,6 +92,21 @@ class MyAccount extends React.Component {
     //   if (this.state.userData.age)
     // }
     this.setState({ todayLogEntries })
+    console.log(todayLogEntries)
+  }
+
+  setDailyLogEntries = () => {
+    const dailyLogEntries = this.state.userData.logs.reduce((foods, entry) => {
+      const entryDate = entry.date
+      if (!foods[entryDate]) {
+        foods[entryDate] = []
+      }
+      foods[entryDate].push(entry.food)
+      return foods
+    }, {})
+    this.setState({ dailyLogEntries })
+    console.log(dailyLogEntries)
+    
   }
 
   calculateProgress = nutrient => {
@@ -90,14 +117,41 @@ class MyAccount extends React.Component {
     return foodNutrition.reduce((a, b) => Number(a) + Number(b), 0)
   }
 
+  
+
+
+  unpackNutrients = (date) => {
+    const dateFoodArr = Object.entries(this.state.dailyLogEntries)
+    const currentEntry = dateFoodArr.filter(dateFoodItem => dateFoodItem[0] === date)
+    return currentEntry
+  }
+
+  calculateDailyTotal = (date, nutrient) => {
+    
+    const nutrientEntries = this.unpackNutrients(date)
+    console.log(nutrientEntries.flat(2))
+    
+    const nutrients = nutrientEntries.flat(2).filter(entry => typeof entry !== 'string')
+    console.log(nutrients)
+
+    const dailyTotal = nutrients.reduce((a, b) => a + parseFloat(b[nutrient]), 0)
+    console.log(dailyTotal)
+                      
+    return dailyTotal
+  }
+
   handleChange = ({ target: { name, value, checked, type } }) => {
     const newValue = type === 'checkbox' ? checked : value
     this.setState({ [name]: newValue })
   }
 
   render() {
-    // if (!this.state.userData.logs) return null
+
+
     console.log(this.state)
+    // console.log(this.unpackEntries(this.state.dailyLogEntries))
+    // console.log(this.unpackNutrients('2020-03-03'))
+    console.log(this.calculateDailyTotal('2020-03-03', 'fat'))
     return (
       <section className='section'>
         <div className='container'>
@@ -112,6 +166,7 @@ class MyAccount extends React.Component {
           <Link className='button is-primary is-fullwidth' to='/logs/new'>
             Log Your Food
           </Link>
+
           <div className='columns'>
             <div className='column is-12'>
               <div className='mobile'>
@@ -120,29 +175,76 @@ class MyAccount extends React.Component {
                   style={{ height: '100%', width: '100%' }}
                   data={[
                     {
-                      x: [1, 2, 3, 4, 5, 6, 7],
-                      y: [2, 6, 3, 5, 1, 6, 9],
+                      // x: [1, 2, 3, 4, 5, 6, 7],
+                      x: currentWeek,
+                      y: [1, 2, 3, 4, 5, 6, 7],
                       type: 'scatter',
                       mode: 'lines+markers',
-                      marker: { color: 'red' }
+                      marker: { color: 'red' },
+                      name: 'protein'
                     },
-                    {
-                      x: [1, 2, 3, 4, 5, 6, 7],
-                      y: [4, 2, 1, 7, 2, 3, 6],
-                      type: 'scatter',
-                      mode: 'lines+markers',
-                      marker: { color: 'blue' }
-                    }
+                    // {
+                    //   x: [1, 2, 3, 4, 5, 6, 7],
+                    //   y: [2, 6, 3, 5, 1, 6, 9],
+                    //   type: 'scatter',
+                    //   mode: 'lines+markers',
+                    //   marker: { color: 'yellow' },
+                    //   name: 'calories'
+                    // },
+                    // {
+                    //   x: [1, 2, 3, 4, 5, 6, 7],
+                    //   y: [2, 6, 3, 5, 1, 6, 9],
+                    //   type: 'scatter',
+                    //   mode: 'lines+markers',
+                    //   marker: { color: 'green' },
+                    //   name: 'carbs'
+                    // },
+                    // {
+                    //   x: [1, 2, 3, 4, 5, 6, 7],
+                    //   y: [2, 6, 3, 5, 1, 6, 9],
+                    //   type: 'scatter',
+                    //   mode: 'lines+markers',
+                    //   marker: { color: 'red' },
+                    //   name: 'fat'
+                    // },
+                    // {
+                    //   x: [1, 2, 3, 4, 8, 9, 0],
+                    //   y: [4, 2, 1, 7, 2, 3, 6],
+                    //   type: 'scatter',
+                    //   mode: 'lines+markers',
+                    //   marker: { color: 'blue' },
+                    //   name: 'sat_fat'
+                    // }
                   ]}
                   layout={{
-                    title: 'You consumption',
+                    title: 'You weekly consumption',
                     margin: { t: 60, r: 10, l: 10, b: 30 },
                     autosize: true,
-                    showlegend: false
+                    showlegend: true,
+                    xaxis: {
+                      autorange: true,
+                      // range: [moment().day(1), moment().day(7)],
+                    //   rangeSelector: {buttons: [
+                    //     {
+                    //       count: 1,
+                    //       label: '1 week',
+                    //       step: 'week',
+                    //       stepmode: 'backward'
+                    //     },
+                    //     {
+                    //       count: 4, 
+                    //       label: '4 weeks',
+                    //       step: 'week',
+                    //       stepmode: 'backward'
+                    //     },
+                    //     {step: 'all'}
+                    //   ]}
+                    }
                   }}
                   config={{ displayModeBar: false }}
                 />
               </div>
+
               <div>Your Day At A Glance</div>
               <div className='field'>
                 <div className='select'>
@@ -175,7 +277,7 @@ class MyAccount extends React.Component {
                       <th>Unit</th>
                       <th>Grams</th>
                       <th>Calories</th>
-                      <th>Proteins</th>
+                      <th>Protein</th>
                       <th>Carbs</th>
                       <th>Fiber</th>
                       <th>Fat</th>
