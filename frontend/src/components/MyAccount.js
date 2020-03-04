@@ -117,22 +117,27 @@ class MyAccount extends React.Component {
     return foodNutrition.reduce((a, b) => Number(a) + Number(b), 0)
   }
 
-  calculateDailyTotal = nutrient => {
-    const foodNutrition = this.state.dailyLogEntries.map(entry => entry.food[nutrient])
-    const dailyTotal = foodNutrition.reduce((a, b) => Number(a) + Number(b), 0)
-    console.log(dailyTotal)
-    return dailyTotal
-  }
+  
 
-  // unpackEntries = (logEntries) => {
-  //   return Object.entries(logEntries)
-  // }
 
   unpackNutrients = (date) => {
     const dateFoodArr = Object.entries(this.state.dailyLogEntries)
     const currentEntry = dateFoodArr.filter(dateFoodItem => dateFoodItem[0] === date)
-    return currentEntry[0]
+    return currentEntry
+  }
+
+  calculateDailyTotal = (date, nutrient) => {
     
+    const nutrientEntries = this.unpackNutrients(date)
+    console.log(nutrientEntries.flat(2))
+    
+    const nutrients = nutrientEntries.flat(2).filter(entry => typeof entry !== 'string')
+    console.log(nutrients)
+
+    const dailyTotal = nutrients.reduce((a, b) => a + parseFloat(b[nutrient]), 0)
+    console.log(dailyTotal)
+                      
+    return dailyTotal
   }
 
   handleChange = ({ target: { name, value, checked, type } }) => {
@@ -145,7 +150,8 @@ class MyAccount extends React.Component {
 
     console.log(this.state)
     // console.log(this.unpackEntries(this.state.dailyLogEntries))
-    console.log(this.unpackNutrients('2020-03-03'))
+    // console.log(this.unpackNutrients('2020-03-03'))
+    console.log(this.calculateDailyTotal('2020-03-03', 'fat'))
     return (
       <section className='section'>
         <div className='container'>
@@ -217,7 +223,7 @@ class MyAccount extends React.Component {
                     showlegend: true,
                     xaxis: {
                       autorange: true,
-                      range: [moment().day(1), moment().day(7)],
+                      // range: [moment().day(1), moment().day(7)],
                     //   rangeSelector: {buttons: [
                     //     {
                     //       count: 1,
