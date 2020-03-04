@@ -11,4 +11,4 @@ class FoodSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Food
-        fields = ('id', 'name')
+        fields = ('id', 'name', 'measure', 'unit', 'grams')

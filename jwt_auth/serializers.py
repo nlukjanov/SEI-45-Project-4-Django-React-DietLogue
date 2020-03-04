@@ -18,14 +18,15 @@ class UserSerializer(serializers.ModelSerializer):
         if password != password_confirmation:
             raise serializers.ValidationError(
                 {'password_confirmation': 'Does Not Match'})
-        try:
-            validations.validate_password(password=password)
-        except ValidationError as err:
-            raise serializers.ValidationError({'password': err.messages})
+        # try:
+        #     validations.validate_password(password=password)
+        # except ValidationError as err:
+        #     raise serializers.ValidationError({'password': err.messages})
 
         data['password'] = make_password(password)
         return data
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'password', 'password_confirmation',)
+        fields = ('username', 'email', 'password', 'password_confirmation', 'first_name', 'last_name',
+                  'height', 'weight', 'gender', 'dob', 'profile_image',)

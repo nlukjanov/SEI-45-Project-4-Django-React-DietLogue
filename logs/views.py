@@ -29,6 +29,14 @@ class LogDetailView(APIView):
 
     permission_classes = (IsAuthenticatedOrReadOnly, )
 
+    def get(self, _request, pk):
+        try:
+            log = Log.objects.get(pk=pk)
+            serialized_log = LogSerializer(log)
+            return Response(serialized_log.data)
+        except Log.DoesNotExist:
+            return Response({'message': 'Not Found'}, status=HTTP_404_NOT_FOUND)
+
     def put(self, request, pk):
         try:
             log = Log.objects.get(pk=pk)

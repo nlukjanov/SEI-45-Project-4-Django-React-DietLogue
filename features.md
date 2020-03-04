@@ -20,9 +20,9 @@ User stories:
 
 
 Food log
-1. enter food (dropdown with real time search) ONLY SINGLE ENTRY
-2. portion (grams)
-3. date (date)
+X1. enter food (dropdown with real time search) ONLY SINGLE ENTRY
+X2. portion (grams)
+X3. date (date)
 
 then we can combine by day and display daily total (weekly, monthly)
 
@@ -31,12 +31,43 @@ We have a fixed (mvp) standard intake
 Add weight model and ability
 add floating plus button to add new log entry
 
-portion unit conditional on the type of food
+X portion unit conditional on the type of food - replaced with portion helper data, showing how much in grams
 
-add history button to navbar and history page with just all logs listed in descending order
-for that we will need get all logs view and the get single(for edit)
+X add history button to navbar and history page with just all logs listed in descending order
+X for that we will need get all logs view and the get single(for edit)
 
 
-add view to food model in order to get names and id for front end selector
-when component mounts (create or edit log) run api request to get table of all foods
-user selects name and selection gives us id.
+X add view to food model in order to get names and id for front end selector
+X when component mounts (create or edit log) run api request to get table of all foods
+X user selects name and selection gives us id.
+
+
+TODO:
+- my account
+  - layout
+  - chart
+
+X secure route
+X replace requests with token from Auth
+X navbar burger
+X logout functionality
+X table rows - links to log edit
+X add datetime field to log entry
+X log edit form
+X log history multiply by portion
+X register component extra details
+X change models to restrict empty entries
+- handle errors after models restriction
+X add standard diet values
+- add diet depending on age
+- styling:
+  - logo
+  - fonts
+  - slogan 
+  - style register
+  - style 
+- refactor and de-structure
+- remove console.logs
+- replace moment js with something lighter or built myself
+- refactor new and edit component to separate form
+X style table rows to show as link
