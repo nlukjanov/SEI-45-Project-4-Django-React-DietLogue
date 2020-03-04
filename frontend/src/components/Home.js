@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 class Home extends React.Component {
   render() {
     return (
@@ -9,9 +10,11 @@ class Home extends React.Component {
           <div className='container'>
             <div className='columns is-mobile is-centered'>
               <div className='column is-6 is-offset-3'>
-                <div className=''>Logo</div>
+                <div className=''>
+
+                </div>
                 <div>Diet Log</div>
-                <div>Slogan</div>
+                <div>LET'S START THE DIETLOGUE ABOUT NUTRITION!</div>
               </div>
             </div>
             <Link className='button is-primary is-fullwidth' to='/register'>
