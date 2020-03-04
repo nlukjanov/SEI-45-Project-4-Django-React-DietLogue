@@ -3,15 +3,8 @@ import axios from 'axios'
 import { notify } from 'react-notify-toast'
 import headers from '../lib/headers'
 import DynamicSelect from './DynamicSelect'
-import 'bulma-calendar'
-import 'bulma-calendar/dist/css/bulma-calendar.min.css'
-
-import 'react-datepicker/dist/react-datepicker.css'
-
-//todo fix the height/weight dropdown error
 
 class Register extends React.Component {
-  
   state = {
     data: {
       username: '',
@@ -64,13 +57,11 @@ class Register extends React.Component {
       notify.show('Account successfully created', 'success', 2000)
       this.props.history.push('/login/')
     } catch (error) {
-      console.log(error.response.data)
       this.setState({ errors: error.response.data })
     }
   }
 
   render() {
-    console.log(this.state)
     return (
       <>
         <section className='section'>

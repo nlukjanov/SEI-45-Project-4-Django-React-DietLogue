@@ -3,7 +3,7 @@ import axios from 'axios'
 import Authentication from './Authentication'
 import Select from 'react-select'
 import { notify } from 'react-notify-toast'
-const pluralize = require('pluralize')
+import HelperData from './HelperData'
 const moment = require('moment')
 
 class NewLog extends React.Component {
@@ -33,7 +33,11 @@ class NewLog extends React.Component {
         foodOptions.push(foodObject)
       })
       const currentEntry = res[1].data
-      this.setState({ foodOption: foodOptions, foodData: res[0].data, formData: currentEntry })
+      this.setState({
+        foodOption: foodOptions,
+        foodData: res[0].data,
+        formData: currentEntry
+      })
     } catch (error) {
       console.log(error)
     }
@@ -52,7 +56,6 @@ class NewLog extends React.Component {
   handleSubmit = async e => {
     e.preventDefault()
     const logId = this.props.match.params.id
-    console.log(this.state.formData)
     try {
       await axios.put(`/api/logs/${logId}/`, this.state.formData, {
         headers: {
@@ -62,7 +65,7 @@ class NewLog extends React.Component {
       notify.show('Log entry updated', 'success', 2000)
       this.props.history.push('/loghistory')
     } catch (error) {
-      console.log(error.res)
+      this.setState({ ...this.state, errors: error.response.data })
     }
   }
 
@@ -76,26 +79,16 @@ class NewLog extends React.Component {
 
   dataHelper = () => {
     if (!this.state.formData.food) return this.setState({ helperData: null })
-    console.log(this.state)
-    const measure = this.state.foodData.find(
+    const foodItem = this.state.foodData.find(
       x => x.id === this.state.formData.food
-    ).measure
-    const unit = this.state.foodData.find(
-      x => x.id === this.state.formData.food
-    ).unit
-    const grams = this.state.foodData.find(
-      x => x.id === this.state.formData.food
-    ).grams
-
-    const helperData = { measure, unit, grams }
-    this.setState({ helperData })
+    )
+    this.setState({ helperData: foodItem })
   }
 
   handlePortion = e => {
     const name = e.target.getAttribute('name')
 
     if (name === 'increase') {
-      console.log(this.state.formData.portion)
       const formData = {
         ...this.state.formData,
         portion: this.state.formData.portion + 1
@@ -114,10 +107,7 @@ class NewLog extends React.Component {
   }
 
   render() {
-    // if (!this.state.foodData) return null
-    // console.log(this.state.foodData[1])
-    // console.log(this.state.formData.food)
-    // console.log(this.state.foodData[this.state.formData.food].name)
+    const { helperData, formData } = this.state
     return (
       <section className='section'>
         <div className='container'>
@@ -166,21 +156,7 @@ class NewLog extends React.Component {
                   </div>
                 </div>
                 {this.state.helperData && (
-                  <div className='flex-container'>
-                    <small className='help'>
-                      {`${this.state.formData.portion}
-                      ${pluralize('portion', this.state.formData.portion)} = 
-                      ${Number(this.state.helperData.measure) *
-                        this.state.formData.portion}
-                      ${pluralize(
-                        this.state.helperData.unit,
-                        Number(this.state.helperData.measure) *
-                          this.state.formData.portion
-                      )} = 
-                      ${Number(this.state.helperData.grams) *
-                        this.state.formData.portion} grams`}
-                    </small>
-                  </div>
+                  <HelperData helperData={helperData} formData={formData} />
                 )}
               </div>
               <div className='field'>
@@ -198,7 +174,7 @@ class NewLog extends React.Component {
               <div className='field'>
                 <button
                   type='submit'
-                  className='button is-fullwidth is-warning'
+                  className='button is-fullwidth is-primary'
                 >
                   Add Entry
                 </button>

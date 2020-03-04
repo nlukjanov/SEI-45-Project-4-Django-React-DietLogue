@@ -5,8 +5,7 @@ import Authentication from './Authentication'
 import Plot from 'react-plotly.js'
 const moment = require('moment')
 
-
-const diet = {
+const dietOptions = {
   option1: {
     fat: 56,
     sat_fat: 16,
@@ -49,11 +48,11 @@ const diet = {
   }
 }
 
-let currentWeek = []
-let currentTime = new Date
-for (let i = 1; i <=7; i++) {
-  let first = currentTime.getDate() - currentTime.getDay() + i
-  let day = new Date(currentTime.setDate(first)).toISOString().slice(0, 10)
+const currentWeek = []
+const currentTime = new Date()
+for (let i = 1; i <= 7; i++) {
+  const first = currentTime.getDate() - currentTime.getDay() + i
+  const day = new Date(currentTime.setDate(first)).toISOString().slice(0, 10)
   currentWeek.push(day)
 }
 
@@ -74,9 +73,9 @@ class MyAccount extends React.Component {
         }
       })
       this.setState({ userData: res.data }, () => {
-          this.setUserData()
-          this.setDailyLogEntries()
-        })
+        this.setUserData()
+        this.setDailyLogEntries()
+      })
     } catch (error) {
       console.log(error)
     }
@@ -88,11 +87,35 @@ class MyAccount extends React.Component {
       const entryDate = moment(entry.date).format('YYYY-MM-DD')
       return today === entryDate
     })
-    // const diet = () => {
-    //   if (this.state.userData.age)
-    // }
-    this.setState({ todayLogEntries })
-    console.log(todayLogEntries)
+    const diet = () => {
+      const age = moment().diff(this.state.userData.dob, 'years')
+      if (this.state.userData.gender === 'M') {
+        if (age >= 9 && age <= 13) {
+          return dietOptions.option1
+        } else if (age >= 14 && age <= 18) {
+          return dietOptions.option4
+        } else if (age >= 19 && age <= 30) {
+          return dietOptions.option5
+        } else if (age >= 31 && age <= 50) {
+          return dietOptions.option4
+        } else if (age >= 51) {
+          return dietOptions.option3
+        }
+      } else if (this.state.userData.gender === 'F') {
+        if (age >= 9 && age <= 13) {
+          return dietOptions.option1
+        } else if (age >= 14 && age <= 18) {
+          return dietOptions.option2
+        } else if (age >= 19 && age <= 30) {
+          return dietOptions.option3
+        } else if (age >= 31 && age <= 50) {
+          return dietOptions.option2
+        } else if (age >= 51) {
+          return dietOptions.option1
+        }
+      }
+    }
+    this.setState({ todayLogEntries, diet: diet() })
   }
 
   setDailyLogEntries = () => {
@@ -105,42 +128,39 @@ class MyAccount extends React.Component {
       return foods
     }, {})
     this.setState({ dailyLogEntries })
-    console.log(dailyLogEntries)
-    
   }
 
   calculateProgress = nutrient => {
     const foodNutrition = this.state.todayLogEntries.map(entry => {
       return entry.food[nutrient] * entry.portion
     })
-    console.log(foodNutrition.reduce((a, b) => Number(a) + Number(b), 0))
     return foodNutrition.reduce((a, b) => Number(a) + Number(b), 0)
   }
 
-  
-
-
-  unpackNutrients = (date) => {
+  unpackNutrients = date => {
     const dateFoodArr = Object.entries(this.state.dailyLogEntries)
-    const currentEntry = dateFoodArr.filter(dateFoodItem => dateFoodItem[0] === date)
+    const currentEntry = dateFoodArr.filter(
+      dateFoodItem => dateFoodItem[0] === date
+    )
     return currentEntry
   }
 
   calculateDailyTotal = (date, nutrient) => {
-    
     const nutrientEntries = this.unpackNutrients(date)
-    console.log(nutrientEntries.flat(2))
-    
-    const nutrients = nutrientEntries.flat(2).filter(entry => typeof entry !== 'string')
-    console.log(nutrients)
 
-    const dailyTotal = nutrients.reduce((a, b) => a + parseFloat(b[nutrient]), 0)
-    console.log(dailyTotal)
-                      
+    const nutrients = nutrientEntries
+      .flat(2)
+      .filter(entry => typeof entry !== 'string')
+
+    const dailyTotal = nutrients.reduce(
+      (a, b) => a + parseFloat(b[nutrient]),
+      0
+    )
+
     return dailyTotal
   }
 
-  getCurrentWeekValues = (nutrient) => {
+  getCurrentWeekValues = nutrient => {
     return currentWeek.map(day => this.calculateDailyTotal(day, nutrient))
   }
 
@@ -150,22 +170,15 @@ class MyAccount extends React.Component {
   }
 
   render() {
-
-
-    console.log(this.state)
-    // console.log(this.unpackEntries(this.state.dailyLogEntries))
-    // console.log(this.unpackNutrients('2020-03-03'))
-    console.log(this.calculateDailyTotal('2020-03-03', 'fat'))
-    console.log(this.getCurrentWeekValues('protein'))
     return (
       <section className='section'>
         <div className='container'>
           <div className='columns is-mobile is-centered'>
             <div className='column is-6'>
-            <figure className="column is-mobile">
+              <figure className='column is-mobile'>
                 <img
-                  className="column is-3 is-mobile has-image-centered is-16x16"
-                  src={require("../assets/logo-notext.png")}
+                  className='column is-3 is-mobile has-image-centered is-16x16'
+                  src={require('../assets/logo-notext.png')}
                 />
               </figure>
             </div>
@@ -250,11 +263,13 @@ class MyAccount extends React.Component {
                   config={{ displayModeBar: false }}
                 />
               </div>
-              <hr/>
+              <hr />
               <div>
-                <h4 className="is-size-4 has-text-centered">Your day at a glance</h4>
+                <h4 className='is-size-4 has-text-centered'>
+                  Your day at a glance
+                </h4>
               </div>
-              <br/>
+              <br />
               <div className='field is-centered'>
                 <div className='select'>
                   <select
@@ -275,7 +290,7 @@ class MyAccount extends React.Component {
               <progress
                 className='progress is-primary'
                 value={this.calculateProgress(this.state.dropDownSelection)}
-                max={diet.option1[this.state.dropDownSelection]}
+                max={this.state.diet[this.state.dropDownSelection]}
               ></progress>
               <div className='table-container'>
                 <table className='table is-fullwidth'>
@@ -296,7 +311,6 @@ class MyAccount extends React.Component {
                   </thead>
                   <tbody>
                     {this.state.todayLogEntries.map(entry => {
-                      console.log(entry.food.sat_fat)
                       return (
                         <tr
                           className='link'

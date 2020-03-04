@@ -43,8 +43,8 @@ X user selects name and selection gives us id.
 
 
 TODO:
-- my account
-  - layout
+X my account
+  X layout
   - chart
 
 X secure route
@@ -57,9 +57,9 @@ X log edit form
 X log history multiply by portion
 X register component extra details
 X change models to restrict empty entries
-- handle errors after models restriction
-X add standard diet values
-- add diet depending on age
+X handle errors after models restriction
+X add standard diet values  
+X add diet depending on age
 - add baseline for healthy daily intake
 - footer
 - styling:
@@ -69,7 +69,7 @@ X add standard diet values
   - style register
   - style 
 - refactor and de-structure
-- remove console.logs
+X remove console.logs
 - replace moment js with something lighter or built myself
 - refactor new and edit component to separate form
 X style table rows to show as link

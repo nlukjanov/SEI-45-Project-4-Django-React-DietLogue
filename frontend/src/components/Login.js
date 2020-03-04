@@ -26,19 +26,19 @@ class Login extends React.Component {
       notify.show('Welcome Back!', 'success', 3000)
       this.props.history.push('/')
     } catch (error) {
-      console.log(error.response.data.message)
       this.setState({ error: error.response.data.message })
     }
   }
 
   render() {
-    console.log(this.state.data)
     return (
       <section className='section'>
         <div className='container'>
-          <div className='columns is-mobile is-centered'>
+          <div className='columns'>
             <div className='column is-6'>
-              <h1 className='title is-4'>Login Here</h1>
+              <h1 className='title is-5 is-mobile has-text-centered'>
+                Login Here
+              </h1>
               <form onSubmit={this.handleSubmit}>
                 <div className='field'>
                   <div className='control'>
@@ -61,9 +61,7 @@ class Login extends React.Component {
                     ></input>
                   </div>
                   {this.state.error && (
-                    <small className='help is-danger'>
-                      {this.state.error}
-                    </small>
+                    <small className='help is-danger'>{this.state.error}</small>
                   )}
                 </div>
                 <div className='field'>
