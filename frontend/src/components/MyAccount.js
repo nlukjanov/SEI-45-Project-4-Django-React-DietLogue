@@ -140,6 +140,10 @@ class MyAccount extends React.Component {
     return dailyTotal
   }
 
+  getCurrentWeekValues = (nutrient) => {
+    return currentWeek.map(day => this.calculateDailyTotal(day, nutrient))
+  }
+
   handleChange = ({ target: { name, value, checked, type } }) => {
     const newValue = type === 'checkbox' ? checked : value
     this.setState({ [name]: newValue })
@@ -152,6 +156,7 @@ class MyAccount extends React.Component {
     // console.log(this.unpackEntries(this.state.dailyLogEntries))
     // console.log(this.unpackNutrients('2020-03-03'))
     console.log(this.calculateDailyTotal('2020-03-03', 'fat'))
+    console.log(this.getCurrentWeekValues('protein'))
     return (
       <section className='section'>
         <div className='container'>
