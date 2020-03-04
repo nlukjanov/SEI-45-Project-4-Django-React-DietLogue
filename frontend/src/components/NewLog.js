@@ -55,7 +55,7 @@ class NewLog extends React.Component {
         }
       })
       notify.show('Log entry created', 'success', 2000)
-      this.props.history.push('/loghistory')
+      this.props.history.push('/myaccount')
     } catch (error) {
       console.log(error.response.data)
       this.setState({ ...this.state, errors: error.response.data })

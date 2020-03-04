@@ -5,8 +5,7 @@ import Authentication from './Authentication'
 import Plot from 'react-plotly.js'
 const moment = require('moment')
 
-
-const diet = {
+const dietOptions = {
   option1: {
     fat: 56,
     sat_fat: 16,
@@ -49,11 +48,11 @@ const diet = {
   }
 }
 
-let currentWeek = []
-let currentTime = new Date
-for (let i = 1; i <=7; i++) {
-  let first = currentTime.getDate() - currentTime.getDay() + i
-  let day = new Date(currentTime.setDate(first)).toISOString().slice(0, 10)
+const currentWeek = []
+const currentTime = new Date()
+for (let i = 1; i <= 7; i++) {
+  const first = currentTime.getDate() - currentTime.getDay() + i
+  const day = new Date(currentTime.setDate(first)).toISOString().slice(0, 10)
   currentWeek.push(day)
 }
 
@@ -74,9 +73,9 @@ class MyAccount extends React.Component {
         }
       })
       this.setState({ userData: res.data }, () => {
-          this.setUserData()
-          this.setDailyLogEntries()
-        })
+        this.setUserData()
+        this.setDailyLogEntries()
+      })
     } catch (error) {
       console.log(error)
     }
@@ -88,10 +87,35 @@ class MyAccount extends React.Component {
       const entryDate = moment(entry.date).format('YYYY-MM-DD')
       return today === entryDate
     })
-    // const diet = () => {
-    //   if (this.state.userData.age)
-    // }
-    this.setState({ todayLogEntries })
+    const diet = () => {
+      const age = moment().diff(this.state.userData.dob, 'years')
+      if (this.state.userData.gender === 'M') {
+        if (age >= 9 && age <= 13) {
+          return dietOptions.option1
+        } else if (age >= 14 && age <= 18) {
+          return dietOptions.option4
+        } else if (age >= 19 && age <= 30) {
+          return dietOptions.option5
+        } else if (age >= 31 && age <= 50) {
+          return dietOptions.option4
+        } else if (age >= 51) {
+          return dietOptions.option3
+        }
+      } else if (this.state.userData.gender === 'F') {
+        if (age >= 9 && age <= 13) {
+          return dietOptions.option1
+        } else if (age >= 14 && age <= 18) {
+          return dietOptions.option2
+        } else if (age >= 19 && age <= 30) {
+          return dietOptions.option3
+        } else if (age >= 31 && age <= 50) {
+          return dietOptions.option2
+        } else if (age >= 51) {
+          return dietOptions.option1
+        }
+      }
+    }
+    this.setState({ todayLogEntries, diet: diet() })
     console.log(todayLogEntries)
   }
 
@@ -106,7 +130,6 @@ class MyAccount extends React.Component {
     }, {})
     this.setState({ dailyLogEntries })
     console.log(dailyLogEntries)
-    
   }
 
   calculateProgress = nutrient => {
@@ -117,26 +140,29 @@ class MyAccount extends React.Component {
     return foodNutrition.reduce((a, b) => Number(a) + Number(b), 0)
   }
 
-  
-
-
-  unpackNutrients = (date) => {
+  unpackNutrients = date => {
     const dateFoodArr = Object.entries(this.state.dailyLogEntries)
-    const currentEntry = dateFoodArr.filter(dateFoodItem => dateFoodItem[0] === date)
+    const currentEntry = dateFoodArr.filter(
+      dateFoodItem => dateFoodItem[0] === date
+    )
     return currentEntry
   }
 
   calculateDailyTotal = (date, nutrient) => {
-    
     const nutrientEntries = this.unpackNutrients(date)
     console.log(nutrientEntries.flat(2))
-    
-    const nutrients = nutrientEntries.flat(2).filter(entry => typeof entry !== 'string')
+
+    const nutrients = nutrientEntries
+      .flat(2)
+      .filter(entry => typeof entry !== 'string')
     console.log(nutrients)
 
-    const dailyTotal = nutrients.reduce((a, b) => a + parseFloat(b[nutrient]), 0)
+    const dailyTotal = nutrients.reduce(
+      (a, b) => a + parseFloat(b[nutrient]),
+      0
+    )
     console.log(dailyTotal)
-                      
+
     return dailyTotal
   }
 
@@ -146,8 +172,6 @@ class MyAccount extends React.Component {
   }
 
   render() {
-
-
     console.log(this.state)
     // console.log(this.unpackEntries(this.state.dailyLogEntries))
     // console.log(this.unpackNutrients('2020-03-03'))
@@ -182,7 +206,7 @@ class MyAccount extends React.Component {
                       mode: 'lines+markers',
                       marker: { color: 'red' },
                       name: 'protein'
-                    },
+                    }
                     // {
                     //   x: [1, 2, 3, 4, 5, 6, 7],
                     //   y: [2, 6, 3, 5, 1, 6, 9],
@@ -222,30 +246,30 @@ class MyAccount extends React.Component {
                     autosize: true,
                     showlegend: true,
                     xaxis: {
-                      autorange: true,
+                      autorange: true
                       // range: [moment().day(1), moment().day(7)],
-                    //   rangeSelector: {buttons: [
-                    //     {
-                    //       count: 1,
-                    //       label: '1 week',
-                    //       step: 'week',
-                    //       stepmode: 'backward'
-                    //     },
-                    //     {
-                    //       count: 4, 
-                    //       label: '4 weeks',
-                    //       step: 'week',
-                    //       stepmode: 'backward'
-                    //     },
-                    //     {step: 'all'}
-                    //   ]}
+                      //   rangeSelector: {buttons: [
+                      //     {
+                      //       count: 1,
+                      //       label: '1 week',
+                      //       step: 'week',
+                      //       stepmode: 'backward'
+                      //     },
+                      //     {
+                      //       count: 4,
+                      //       label: '4 weeks',
+                      //       step: 'week',
+                      //       stepmode: 'backward'
+                      //     },
+                      //     {step: 'all'}
+                      //   ]}
                     }
                   }}
                   config={{ displayModeBar: false }}
                 />
               </div>
 
-              <div>Your Day At A Glance</div>
+              <div className='has-text-centered'>Your Day At A Glance</div>
               <div className='field'>
                 <div className='select'>
                   <select
@@ -265,7 +289,7 @@ class MyAccount extends React.Component {
               <progress
                 className='progress is-primary'
                 value={this.calculateProgress(this.state.dropDownSelection)}
-                max={diet.option1[this.state.dropDownSelection]}
+                max={this.state.diet[this.state.dropDownSelection]}
               ></progress>
               <div className='table-container'>
                 <table className='table is-fullwidth'>
