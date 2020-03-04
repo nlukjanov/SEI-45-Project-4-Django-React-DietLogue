@@ -56,8 +56,8 @@ X log edit form
 X log history multiply by portion
 X register component extra details
 X change models to restrict empty entries
-- handle errors after models restriction
-X add standard diet values
+X handle errors after models restriction
+X add standard diet values  
 - add diet depending on age
 - styling:
   - logo
