@@ -28,3 +28,11 @@
   color: blue;
   text-decoration: underline;
 }
+
+.helper-container {
+  display: flex;
+  justify-content: space-between;
+}
+.helper-data {
+  padding: 0 10px;
+}

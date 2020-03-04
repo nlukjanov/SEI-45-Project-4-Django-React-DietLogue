@@ -3,6 +3,7 @@ import axios from 'axios'
 import Authentication from './Authentication'
 import Select from 'react-select'
 import { notify } from 'react-notify-toast'
+import HelperData from './HelperData'
 const pluralize = require('pluralize')
 const moment = require('moment')
 
@@ -33,7 +34,11 @@ class NewLog extends React.Component {
         foodOptions.push(foodObject)
       })
       const currentEntry = res[1].data
-      this.setState({ foodOption: foodOptions, foodData: res[0].data, formData: currentEntry })
+      this.setState({
+        foodOption: foodOptions,
+        foodData: res[0].data,
+        formData: currentEntry
+      })
     } catch (error) {
       console.log(error)
     }
@@ -76,19 +81,10 @@ class NewLog extends React.Component {
 
   dataHelper = () => {
     if (!this.state.formData.food) return this.setState({ helperData: null })
-    console.log(this.state)
-    const measure = this.state.foodData.find(
+    const foodItem = this.state.foodData.find(
       x => x.id === this.state.formData.food
-    ).measure
-    const unit = this.state.foodData.find(
-      x => x.id === this.state.formData.food
-    ).unit
-    const grams = this.state.foodData.find(
-      x => x.id === this.state.formData.food
-    ).grams
-
-    const helperData = { measure, unit, grams }
-    this.setState({ helperData })
+    )
+    this.setState({ helperData: foodItem })
   }
 
   handlePortion = e => {
@@ -118,6 +114,8 @@ class NewLog extends React.Component {
     // console.log(this.state.foodData[1])
     // console.log(this.state.formData.food)
     // console.log(this.state.foodData[this.state.formData.food].name)
+
+    const { helperData, formData } = this.state
     return (
       <section className='section'>
         <div className='container'>
@@ -166,21 +164,7 @@ class NewLog extends React.Component {
                   </div>
                 </div>
                 {this.state.helperData && (
-                  <div className='flex-container'>
-                    <small className='help'>
-                      {`${this.state.formData.portion}
-                      ${pluralize('portion', this.state.formData.portion)} = 
-                      ${Number(this.state.helperData.measure) *
-                        this.state.formData.portion}
-                      ${pluralize(
-                        this.state.helperData.unit,
-                        Number(this.state.helperData.measure) *
-                          this.state.formData.portion
-                      )} = 
-                      ${Number(this.state.helperData.grams) *
-                        this.state.formData.portion} grams`}
-                    </small>
-                  </div>
+                  <HelperData helperData={helperData} formData={formData} />
                 )}
               </div>
               <div className='field'>
@@ -198,7 +182,7 @@ class NewLog extends React.Component {
               <div className='field'>
                 <button
                   type='submit'
-                  className='button is-fullwidth is-warning'
+                  className='button is-fullwidth is-primary'
                 >
                   Add Entry
                 </button>
