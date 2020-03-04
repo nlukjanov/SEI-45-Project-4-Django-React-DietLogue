@@ -4,7 +4,6 @@ import Authentication from './Authentication'
 import Select from 'react-select'
 import { notify } from 'react-notify-toast'
 import HelperData from './HelperData'
-const pluralize = require('pluralize')
 const moment = require('moment')
 
 class NewLog extends React.Component {

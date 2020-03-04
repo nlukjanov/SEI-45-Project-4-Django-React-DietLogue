@@ -31,9 +31,16 @@ class Navbar extends React.Component {
       <nav className='navbar is-dark'>
         <div className='container'>
           <div className='navbar-brand'>
-            <Link className='navbar-item' to='/'>
-              Home
-            </Link>
+            {Authentication.isAuthenticated() && (
+              <Link className='navbar-item' to='/myaccount'>
+                Home
+              </Link>
+            )}
+            {!Authentication.isAuthenticated() && (
+              <Link className='navbar-item' to='/'>
+                Home
+              </Link>
+            )}
             <p
               className={`navbar-burger ${navbarOpen ? 'is-active' : ''}`}
               onClick={this.toggleNavbar}
@@ -48,12 +55,11 @@ class Navbar extends React.Component {
             onClick={this.toggleNavbar}
           >
             <div className='navbar-end'>
-              {Authentication.isAuthenticated() &&
-                (
-                  <Link className='navbar-item' to='/logs/new'>
-                    New Log Entry
-                  </Link>
-                )}
+              {Authentication.isAuthenticated() && (
+                <Link className='navbar-item' to='/logs/new'>
+                  New Log Entry
+                </Link>
+              )}
               {!Authentication.isAuthenticated() && (
                 <Link className='navbar-item' to='/register'>
                   Register
@@ -74,12 +80,11 @@ class Navbar extends React.Component {
                   Log History
                 </Link>
               )}
-              {Authentication.isAuthenticated() &&
-                (
-                  <a onClick={this.handleLogout} className='navbar-item'>
-                    Logout
-                  </a>
-                )}
+              {Authentication.isAuthenticated() && (
+                <a onClick={this.handleLogout} className='navbar-item'>
+                  Logout
+                </a>
+              )}
             </div>
           </div>
         </div>
