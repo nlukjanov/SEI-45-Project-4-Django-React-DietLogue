@@ -116,7 +116,6 @@ class MyAccount extends React.Component {
       }
     }
     this.setState({ todayLogEntries, diet: diet() })
-    console.log(todayLogEntries)
   }
 
   setDailyLogEntries = () => {
@@ -129,14 +128,12 @@ class MyAccount extends React.Component {
       return foods
     }, {})
     this.setState({ dailyLogEntries })
-    console.log(dailyLogEntries)
   }
 
   calculateProgress = nutrient => {
     const foodNutrition = this.state.todayLogEntries.map(entry => {
       return entry.food[nutrient] * entry.portion
     })
-    console.log(foodNutrition.reduce((a, b) => Number(a) + Number(b), 0))
     return foodNutrition.reduce((a, b) => Number(a) + Number(b), 0)
   }
 
@@ -150,18 +147,15 @@ class MyAccount extends React.Component {
 
   calculateDailyTotal = (date, nutrient) => {
     const nutrientEntries = this.unpackNutrients(date)
-    console.log(nutrientEntries.flat(2))
 
     const nutrients = nutrientEntries
       .flat(2)
       .filter(entry => typeof entry !== 'string')
-    console.log(nutrients)
 
     const dailyTotal = nutrients.reduce(
       (a, b) => a + parseFloat(b[nutrient]),
       0
     )
-    console.log(dailyTotal)
 
     return dailyTotal
   }
@@ -172,10 +166,6 @@ class MyAccount extends React.Component {
   }
 
   render() {
-    console.log(this.state)
-    // console.log(this.unpackEntries(this.state.dailyLogEntries))
-    // console.log(this.unpackNutrients('2020-03-03'))
-    console.log(this.calculateDailyTotal('2020-03-03', 'fat'))
     return (
       <section className='section'>
         <div className='container'>
@@ -310,7 +300,6 @@ class MyAccount extends React.Component {
                   </thead>
                   <tbody>
                     {this.state.todayLogEntries.map(entry => {
-                      console.log(entry.food.sat_fat)
                       return (
                         <tr
                           className='link'

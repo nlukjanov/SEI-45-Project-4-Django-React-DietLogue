@@ -57,7 +57,6 @@ class NewLog extends React.Component {
   handleSubmit = async e => {
     e.preventDefault()
     const logId = this.props.match.params.id
-    console.log(this.state.formData)
     try {
       await axios.put(`/api/logs/${logId}/`, this.state.formData, {
         headers: {
@@ -67,7 +66,7 @@ class NewLog extends React.Component {
       notify.show('Log entry updated', 'success', 2000)
       this.props.history.push('/loghistory')
     } catch (error) {
-      console.log(error.res)
+      this.setState({ ...this.state, errors: error.response.data })
     }
   }
 
@@ -91,7 +90,6 @@ class NewLog extends React.Component {
     const name = e.target.getAttribute('name')
 
     if (name === 'increase') {
-      console.log(this.state.formData.portion)
       const formData = {
         ...this.state.formData,
         portion: this.state.formData.portion + 1
@@ -110,11 +108,6 @@ class NewLog extends React.Component {
   }
 
   render() {
-    // if (!this.state.foodData) return null
-    // console.log(this.state.foodData[1])
-    // console.log(this.state.formData.food)
-    // console.log(this.state.foodData[this.state.formData.food].name)
-
     const { helperData, formData } = this.state
     return (
       <section className='section'>

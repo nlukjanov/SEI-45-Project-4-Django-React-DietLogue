@@ -26,13 +26,11 @@ class Login extends React.Component {
       notify.show('Welcome Back!', 'success', 3000)
       this.props.history.push('/')
     } catch (error) {
-      console.log(error.response.data.message)
       this.setState({ error: error.response.data.message })
     }
   }
 
   render() {
-    console.log(this.state.data)
     return (
       <section className='section'>
         <div className='container'>

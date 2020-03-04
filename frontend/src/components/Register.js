@@ -64,13 +64,11 @@ class Register extends React.Component {
       notify.show('Account successfully created', 'success', 2000)
       this.props.history.push('/login/')
     } catch (error) {
-      console.log(error.response.data)
       this.setState({ errors: error.response.data })
     }
   }
 
   render() {
-    console.log(this.state)
     return (
       <>
         <section className='section'>

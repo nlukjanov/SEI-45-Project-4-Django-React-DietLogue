@@ -50,7 +50,6 @@ class NewLog extends React.Component {
 
   handleSubmit = async e => {
     e.preventDefault()
-    console.log(this.state.formData)
     try {
       await axios.post('/api/logs/', this.state.formData, {
         headers: {
@@ -60,7 +59,6 @@ class NewLog extends React.Component {
       notify.show('Log entry created', 'success', 2000)
       this.props.history.push('/myaccount')
     } catch (error) {
-      console.log(error.response.data)
       this.setState({ ...this.state, errors: error.response.data })
     }
   }
@@ -85,7 +83,6 @@ class NewLog extends React.Component {
     const name = e.target.getAttribute('name')
 
     if (name === 'increase') {
-      console.log(this.state.formData.portion)
       const formData = {
         ...this.state.formData,
         portion: this.state.formData.portion + 1
@@ -104,10 +101,6 @@ class NewLog extends React.Component {
   }
 
   render() {
-    // if (!this.state.foodData) return null
-    console.log(this.state)
-    // console.log(this.state.formData.food)
-    // console.log(this.state.foodData[this.state.formData.food].name)
     const { helperData, formData } = this.state
     return (
       <section className='section'>

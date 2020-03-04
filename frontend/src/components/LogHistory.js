@@ -20,15 +20,13 @@ class LogHistory extends Component {
         (a, b) => new Date(b.date) - new Date(a.date)
       )
       this.setState({ logData: sortedLogs })
-      
     } catch (error) {
       this.props.history.push('/notfound')
     }
   }
 
   render() {
-    console.log(this.state)
-    const logData = this.state.logData
+    const { logData } = this.state
     return (
       <section className='section'>
         <div className='container'>
@@ -54,7 +52,13 @@ class LogHistory extends Component {
               <tbody>
                 {logData.map(entry => {
                   return (
-                    <tr className='link' key={entry.id} onClick={() => this.props.history.push(`/logs/${entry.id}/edit`)}>
+                    <tr
+                      className='link'
+                      key={entry.id}
+                      onClick={() =>
+                        this.props.history.push(`/logs/${entry.id}/edit`)
+                      }
+                    >
                       <td>{moment(entry.date).format('DD/MM/YYYY')}</td>
                       <td>{entry.food.name}</td>
                       <td>{entry.portion}</td>
