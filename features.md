@@ -60,6 +60,8 @@ X change models to restrict empty entries
 X handle errors after models restriction
 X add standard diet values  
 X add diet depending on age
+- add baseline for healthy daily intake
+- footer
 - styling:
   - logo
   - fonts

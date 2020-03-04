@@ -160,6 +160,10 @@ class MyAccount extends React.Component {
     return dailyTotal
   }
 
+  getCurrentWeekValues = nutrient => {
+    return currentWeek.map(day => this.calculateDailyTotal(day, nutrient))
+  }
+
   handleChange = ({ target: { name, value, checked, type } }) => {
     const newValue = type === 'checkbox' ? checked : value
     this.setState({ [name]: newValue })
@@ -171,11 +175,16 @@ class MyAccount extends React.Component {
         <div className='container'>
           <div className='columns is-mobile is-centered'>
             <div className='column is-6'>
-              <div className=''>Logo</div>
+              <figure className='column is-mobile'>
+                <img
+                  className='column is-3 is-mobile has-image-centered is-16x16'
+                  src={require('../assets/logo-notext.png')}
+                />
+              </figure>
             </div>
-            <div className='column is-6'>
+            {/* <div className='column is-6'>
               <div>Diet Log</div>
-            </div>
+            </div> */}
           </div>
           <Link className='button is-primary is-fullwidth' to='/logs/new'>
             Log Your Food
@@ -189,83 +198,79 @@ class MyAccount extends React.Component {
                   style={{ height: '100%', width: '100%' }}
                   data={[
                     {
-                      // x: [1, 2, 3, 4, 5, 6, 7],
                       x: currentWeek,
-                      y: [1, 2, 3, 4, 5, 6, 7],
+                      y: this.getCurrentWeekValues('protein'),
                       type: 'scatter',
                       mode: 'lines+markers',
                       marker: { color: 'red' },
                       name: 'protein'
+                    },
+                    {
+                      x: currentWeek,
+                      y: this.getCurrentWeekValues('calories'),
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'yellow' },
+                      name: 'calories',
+                      yaxis: 'y2'
+                    },
+                    {
+                      x: currentWeek,
+                      y: this.getCurrentWeekValues('carbs'),
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'green' },
+                      name: 'carbs'
+                    },
+                    {
+                      x: currentWeek,
+                      y: this.getCurrentWeekValues('fat'),
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'red' },
+                      name: 'fat'
+                    },
+                    {
+                      x: currentWeek,
+                      y: this.getCurrentWeekValues('sat_fat'),
+                      type: 'scatter',
+                      mode: 'lines+markers',
+                      marker: { color: 'blue' },
+                      name: 'sat_fat'
                     }
-                    // {
-                    //   x: [1, 2, 3, 4, 5, 6, 7],
-                    //   y: [2, 6, 3, 5, 1, 6, 9],
-                    //   type: 'scatter',
-                    //   mode: 'lines+markers',
-                    //   marker: { color: 'yellow' },
-                    //   name: 'calories'
-                    // },
-                    // {
-                    //   x: [1, 2, 3, 4, 5, 6, 7],
-                    //   y: [2, 6, 3, 5, 1, 6, 9],
-                    //   type: 'scatter',
-                    //   mode: 'lines+markers',
-                    //   marker: { color: 'green' },
-                    //   name: 'carbs'
-                    // },
-                    // {
-                    //   x: [1, 2, 3, 4, 5, 6, 7],
-                    //   y: [2, 6, 3, 5, 1, 6, 9],
-                    //   type: 'scatter',
-                    //   mode: 'lines+markers',
-                    //   marker: { color: 'red' },
-                    //   name: 'fat'
-                    // },
-                    // {
-                    //   x: [1, 2, 3, 4, 8, 9, 0],
-                    //   y: [4, 2, 1, 7, 2, 3, 6],
-                    //   type: 'scatter',
-                    //   mode: 'lines+markers',
-                    //   marker: { color: 'blue' },
-                    //   name: 'sat_fat'
-                    // }
                   ]}
                   layout={{
                     title: 'You weekly consumption',
-                    margin: { t: 60, r: 10, l: 10, b: 30 },
+                    margin: { t: 60, r: 10, l: 30, b: 30 },
                     autosize: true,
                     showlegend: true,
                     xaxis: {
-                      autorange: true
-                      // range: [moment().day(1), moment().day(7)],
-                      //   rangeSelector: {buttons: [
-                      //     {
-                      //       count: 1,
-                      //       label: '1 week',
-                      //       step: 'week',
-                      //       stepmode: 'backward'
-                      //     },
-                      //     {
-                      //       count: 4,
-                      //       label: '4 weeks',
-                      //       step: 'week',
-                      //       stepmode: 'backward'
-                      //     },
-                      //     {step: 'all'}
-                      //   ]}
+                      autorange: true,
+                      tickwidth: 2
+                    },
+                    yaxis2: {
+                      overlaying: 'y',
+                      side: 'right',
+                      title: 'calories measure'
                     }
                   }}
                   config={{ displayModeBar: false }}
                 />
               </div>
-
-              <div className='has-text-centered'>Your Day At A Glance</div>
-              <div className='field'>
+              <hr />
+              <div>
+                <h4 className='is-size-4 has-text-centered'>
+                  Your day at a glance
+                </h4>
+              </div>
+              <br />
+              <div className='field is-centered'>
                 <div className='select'>
                   <select
                     name='dropDownSelection'
                     onChange={this.handleChange}
                     value={this.state.dropDownSelection}
+                    className='is-centered'
                   >
                     <option value='calories'>Calories</option>
                     <option value='protein'>Protein</option>
