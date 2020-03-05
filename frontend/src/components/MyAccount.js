@@ -151,7 +151,7 @@ class MyAccount extends React.Component {
 
   calculateDailyTotal = (date, nutrient) => {
     const nutrientEntries = this.unpackNutrients(date)
-
+    
     const nutrients = nutrientEntries
       .flat(2)
       .filter(entry => typeof entry !== 'string')
@@ -174,6 +174,7 @@ class MyAccount extends React.Component {
   }
 
   render() {
+    console.log(this.calculateDailyTotal('2020-03-04', 'fat'))
     return (
       <section className='section'>
         <div className='container'>
