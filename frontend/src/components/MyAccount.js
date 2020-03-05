@@ -128,7 +128,7 @@ class MyAccount extends React.Component {
       if (!foods[entryDate]) {
         foods[entryDate] = []
       }
-      foods[entryDate].push(entry.food)
+      foods[entryDate].push(entry)
       return foods
     }, {})
     this.setState({ dailyLogEntries })
@@ -143,23 +143,21 @@ class MyAccount extends React.Component {
 
   unpackNutrients = date => {
     const dateFoodArr = Object.entries(this.state.dailyLogEntries)
-    const currentEntry = dateFoodArr.filter(
-      dateFoodItem => dateFoodItem[0] === date
-    )
-    return currentEntry
+    console.log(dateFoodArr, 'datefoodarr')
+    const currentEntry = dateFoodArr.filter(dateFoodItem => (dateFoodItem.flat(2))[0] === date)
+    return currentEntry.flat(2)
   }
 
   calculateDailyTotal = (date, nutrient) => {
     const nutrientEntries = this.unpackNutrients(date)
-    
+    console.log(nutrientEntries, 'nutriententries')
     const nutrients = nutrientEntries
-      .flat(2)
       .filter(entry => typeof entry !== 'string')
-
-    const dailyTotal = nutrients.reduce(
-      (a, b) => a + parseFloat(b[nutrient]),
-      0
-    )
+    console.log(nutrients, 'nutrients')
+    const dailyNutrients = nutrients.map(foodItem => Number(foodItem.food[nutrient]) * Number(foodItem.portion)
+    ) 
+    const dailyTotal = dailyNutrients.reduce(
+      (a, b) => parseFloat(a) + parseFloat(b),0)
 
     return dailyTotal
   }
@@ -174,7 +172,7 @@ class MyAccount extends React.Component {
   }
 
   render() {
-    console.log(this.calculateDailyTotal('2020-03-04', 'fat'))
+    console.log(this.calculateDailyTotal('2020-03-03', 'fat'))
     return (
       <section className='section'>
         <div className='container'>
