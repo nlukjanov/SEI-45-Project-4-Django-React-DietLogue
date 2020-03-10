@@ -31,18 +31,14 @@ We have a fixed (mvp) standard intake
 Add weight model and ability
 add floating plus button to add new log entry
 
-X portion unit conditional on the type of food - replaced with portion helper data, showing how much in grams
-
-X add history button to navbar and history page with just all logs listed in descending order
 X for that we will need get all logs view and the get single(for edit)
 
-
-X add view to food model in order to get names and id for front end selector
-X when component mounts (create or edit log) run api request to get table of all foods
-X user selects name and selection gives us id.
-
-
 TODO:
+X user selects name and selection gives us id.
+X when component mounts (create or edit log) run api request to get table of all foods
+X add view to food model in order to get names and id for front end selector
+X add history button to navbar and history page with just all logs listed in descending order
+X portion unit conditional on the type of food - replaced with portion helper data, showing how much in grams
 X my account
   X layout
   - chart
@@ -62,12 +58,11 @@ X add standard diet values
 X add diet depending on age
 - add baseline for healthy daily intake
 - footer
-- styling:
-  - logo
+X styling:
+  X logo
   - fonts
-  - slogan 
-  - style register
-  - style 
+  X slogan 
+  X style register
 - refactor and de-structure
 X remove console.logs
 - replace moment js with something lighter or built myself

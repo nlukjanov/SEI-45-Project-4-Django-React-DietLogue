@@ -1,76 +1,256 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #4: A Django + React App
-​
+# SEI-45-Project-3-MERN
+
+# **Project 4: Dietlogue** <img align="right" src="https://camo.githubusercontent.com/6ce15b81c1f06d716d753a61f5db22375fa684da/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67"/>
+
 ## Overview
-​
-**You’ve come a long way, and it's time to show it.** This will be your most advanced project to date. It is __IMPORTANT__ to note that when we say _advanced_, the project doesn't necessarily need to have lots more functionality.
-​
-**Remember:** simple code is stable code, so always favour refactoring and bug fixing over adding more functionality.
-​
-With this in mind, you need to be smart about how you plan, limit your project scope to be achievable (in terms of functionality) and focus on quality rather than quantity.
-​
-**Solo or Group?**
-You are free to work alone or in a group. Both ways have their pros and cons. Remember if you are working in a team that you are all on the same page and working towards the same goal.
-​
-Make sure you review your project proposal with your instructor so you can make sure it's **something you can accomplish in the limited time we have**. You will have some time after the project to add extra functionality before your Meet & Hire!
-​
----
-​
-## Technical Requirements
-​
-You must:
-​
-* **Build a full-stack application** by making your own backend and your own front-end
-* **Use a Python Django API** using Django REST Framework to serve your data from a Postgres database
-* **Consume your API with a separate front-end** built with React
-* **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models
-* **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut
-* **Have a visually impressive design** to kick your portfolio up a notch and have something to wow future clients & employers. **ALLOW** time for this.
-* **Be deployed online** so it's publicly accessible.
-* **You May** use the React Hooks syntax on your front end, but the resposiblity of this will be largely on yourself.
-​
----
-​
-## Necessary Deliverables
-​
-* A **working app** hosted on the internet
-* A **link to your hosted working app** in the URL section of your Github repo
-* A **git repository hosted on Github**, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project
-* **A `readme.md` file** with:
-    * An embedded screenshot of the app
-    * Explanations of the **technologies** used
-    * A couple paragraphs about the **general approach you took**
-    * **Installation instructions** for any dependencies
-    * Link to your **user stories/wireframes** – sketches of major views / interfaces in your application
-    * Link to your **pitch deck/presentation** – documentation of your wireframes, user stories, and proposed architecture
-    * Descriptions of any **unsolved problems** or **major hurdles** you had to overcome
-​
----
-​
-## Suggested Ways to Get Started
-​
-* **Don’t get too caught up in too many awesome features** – simple is always better. Build something impressive that does one thing well.
-* **Design first.** Planning with user stories & wireframes before writing code means you won't get distracted changing your mind – you'll know what to build, and you can spend your time wisely by just building it.
-* **Don’t hesitate to write throwaway code** to solve short term problems.
-* **Read the docs for whatever technologies / frameworks / API’s you use**.
-* **Write your code DRY** and **build your APIs RESTful**.
-* **Be consistent with your code style.** You're working in teams, but you're only making one app per team. Make sure it looks like a unified effort.
-* **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
-* **Keep user stories small and well-defined**, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
-* **Write code another developer wouldn't have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
-* **Make it all well-formatted.** Are you indenting, consistently? Can we find the start and end of every div, curly brace, etc?
-* **Comment your code.** Will someone understand what is going on in each block or function? Even if it's obvious, explaining the what & why means someone else can pick it up and get it.
-* **Write pseudocode before you write actual code.** Thinking through the logic of something helps.
-​
----
-​
-## Project Feedback + Evaluation
-​
-* __Project Workflow__: Did you complete the user stories, wireframes, task tracking, and/or ERDs, as specified above? Did you use source control as expected for the phase of the program you’re in (detailed above)?
-​
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
-​
-* __Creativity__: Did you added a personal spin or creative element into your project submission? Did you deliver something of value to the end user (not just a login button and an index page)?
-​
-* __Code Quality__: Did you follow code style guidance and best practices covered in class, such as spacing, modularity, and semantic naming? Did you comment your code as your instructors as we have in class?
-​
-* __Problem Solving__: Are you able to defend why you implemented your solution in a certain way? Can you demonstrated that you thought through alternative implementations? _(Note that this part of your feedback evaluation will take place during your one-on-one code review with your instructors, after you've completed the project.)_
+
+Dietlogue - is a food tracker app. Users can create an account and log food they eat. The data is displayed in their account in the form of weekly chart and daily records. Logs can be edited and back dated.
+
+This was my forth (and last) project as part of the General Assembly Software Engineering Immersive course.
+The goal was to build a full stack web application using Python+Django framework and React frontend.
+
+Timeframe: 6 days.
+
+Launch on [Heroku](https://diet-log.herokuapp.com/). Check out the GitHub [Repo](https://github.com/nlukjanov/SEI-45-Project-4-Django-React).
+
+## Brief
+
+- **Build a full-stack application** by making your own backend and your own front-end
+- **Use a Python Django API** using Django REST Framework to serve your data from a Postgres database
+- **Consume your API with a separate front-end** built with React
+- **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models
+- **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut
+- **Have a visually impressive design** to kick your portfolio up a notch and have something to wow future clients & employers. **ALLOW** time for this.
+- **Be deployed online** so it's publicly accessible.
+- **You May** use the React Hooks syntax on your front end, but the responsibility of this will be largely on yourself.
+
+## Technologies Used
+
+- React
+- JavaScript (ES6)
+- HTML5
+- SCSS
+- Bulma CSS Framework
+- Git
+- GitHub
+- JWT
+- Moment.js
+- Yarn
+- Python
+- Django
+- Django Rest Framework
+- Heroku
+- Trello
+
+## Approach Taken
+
+I decided to join forces with another classmate and work on the project together as it was another good opportunity to practice team work. She had an idea of the project and after brief discussion we have agreed on what exactly we would like to build and how it should look like.
+
+We started with building our database relationship using Quick DBD software (https://www.quickdatabasediagrams.com/):
+![database1](/readme-images/quickdbd.png)
+
+After that I have built wireframes based on our discussion.
+
+![wireframes1](/readme-images/home-mobile.png)
+![wireframes2](/readme-images/register.png)
+![wireframes3](/readme-images/login.png)
+![wireframes4](/readme-images/my-account-mobile.png)
+![wireframes5](/readme-images/my-account-web.png)
+![wireframes6](/readme-images/log-history.png)
+
+
+We decided to work on the backend doing pair programming and put just a list of frontend tasks to work separately on different parts.
+```
+TODO:
+X register form
+X login form
+- use cloudinary for user image upload
+X user selects name and selection gives us id.
+X when component mounts (create or edit log) run api request to get table of all foods
+X add view to food model in order to get names and id for front end selector
+X add history button to navbar and history page with just all logs listed in descending order
+X portion unit conditional on the type of food - replaced with portion helper data, showing how much in grams
+X my account
+  X layout
+  - chart
+
+X secure route
+X replace requests with token from Auth
+X navbar burger
+X logout functionality
+X table rows - links to log edit
+X add datetime field to log entry
+X log edit form
+X log history multiply by portion
+X register component extra details
+X change models to restrict empty entries
+X handle errors after models restriction
+X add standard diet values  
+X add diet depending on age
+- add baseline for healthy daily intake
+- footer
+X styling:
+  X logo
+  - fonts
+  X slogan 
+  X style register
+- refactor and de-structure
+X remove console.logs
+- replace moment js with something lighter or built myself
+- refactor new and edit component to separate form
+X style table rows to show as link
+```
+
+### Functionality
+
+Next step was to build backend. We decided to create an ancillary food database that we would populate later with food details. This way we could expand functionality for users to be able to add their own food items.
+
+```Python
+class Food(models.Model):
+    name = models.CharField(max_length=200)
+    measure = models.DecimalField(max_digits=8, decimal_places=2)
+    unit = models.CharField(max_length=200)
+    grams = models.DecimalField(max_digits=8, decimal_places=2)
+    calories = models.DecimalField(max_digits=8, decimal_places=2)
+    protein = models.DecimalField(max_digits=8, decimal_places=2)
+    carbs = models.DecimalField(max_digits=8, decimal_places=2)
+    fiber = models.DecimalField(max_digits=8, decimal_places=2)
+    fat = models.DecimalField(max_digits=8, decimal_places=2)
+    sat_fat = models.DecimalField(max_digits=8, decimal_places=2)
+
+    def __str__(self):
+        return self.name
+```
+
+The log models is relatively simple having just food id, portion, owner and date. Originally instead of date we have put automatic created_at field, but then we thought that user should have an option to choose the date to fill details for previous days.
+
+```Python
+class Log(models.Model):
+    food = models.ForeignKey(Food, related_name='food', on_delete=models.CASCADE)
+    portion = models.PositiveSmallIntegerField()
+    owner = models.ForeignKey(User, related_name='logs', on_delete=models.CASCADE)
+    date = models.DateField()
+```
+
+#### User
+
+We expanded built-in Django user model to include our custom fields
+```Python
+class User(AbstractUser):
+    GENDER_CHOICES = (
+        ('M', 'Male'),
+        ('F', 'Female'),
+    )
+    height = models.PositiveSmallIntegerField()
+    weight = models.FloatField()
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
+    dob = models.DateField(max_length=8)
+    profile_image = models.CharField(max_length=500, blank=True)
+```
+
+#### Create new log
+After setting up the frontend we went working on separate component. I have started working on create new log component. I have used React Select component for food selection pulling the data from our food database. After that I created a helper function to show a hint data for selected product.
+
+```JavaScript
+dataHelper = () => {
+  if (!this.state.formData.food) return this.setState({ helperData: null })
+  const foodItem = this.state.foodData.find(
+    x => x.id === this.state.formData.food
+  )
+  this.setState({ helperData: foodItem })
+}
+```
+
+![new-log1](/readme-images/new-log.png)
+![new-log2](/readme-images/helper.png)
+
+#### My account
+I have built out my account layout, while Xuan was working on chart implementation. I have added dropdown to select a nutrient and progress bar to show daily progress. Also we decide to implement recommended daily allowance based age and gender. Therefore I had to put quite big if-else statement.
+
+```JavaScript
+setUserData = () => {
+    const todayLogEntries = this.state.userData.logs.filter(entry => {
+      const today = moment(new Date()).format('YYYY-MM-DD')
+      const entryDate = moment(entry.date).format('YYYY-MM-DD')
+      return today === entryDate
+    })
+    const diet = () => {
+      const age = moment().diff(this.state.userData.dob, 'years')
+      if (this.state.userData.gender === 'M') {
+        if (age >= 9 && age <= 13) {
+          return dietOptions.option1
+        } else if (age >= 14 && age <= 18) {
+          return dietOptions.option4
+        } else if (age >= 19 && age <= 30) {
+          return dietOptions.option5
+        } else if (age >= 31 && age <= 50) {
+          return dietOptions.option4
+        } else if (age >= 51) {
+          return dietOptions.option3
+        } else {
+          return dietOptions.option3
+        }
+      } else if (this.state.userData.gender === 'F') {
+        if (age >= 9 && age <= 13) {
+          return dietOptions.option1
+        } else if (age >= 14 && age <= 18) {
+          return dietOptions.option2
+        } else if (age >= 19 && age <= 30) {
+          return dietOptions.option3
+        } else if (age >= 31 && age <= 50) {
+          return dietOptions.option2
+        } else if (age >= 51) {
+          return dietOptions.option1
+        } else {
+          return dietOptions.option3
+        }
+      }
+    }
+    this.setState({ todayLogEntries, diet: diet() })
+  }
+```
+
+#### Log history
+For log history I decided simply to use a table with all record. Table looked nice on mobile with ability to scroll horizontally and keep the layout neat. To make every row a link leading to an edit form I tried to use react-router <Link>, however it throw and error and did not work. I googled a lit bit and decided that best way would be just use onClick function and redirect to edit form.
+
+```html
+<tr
+  className='link'
+  key={entry.id}
+  onClick={() =>
+    this.props.history.push(`/logs/${entry.id}/edit`)
+  }
+>
+```
+
+#### Journal
+I have also created a journal model, for user to be able to record their diet notes, but it was not added to the final MVP product.
+
+## Bugs
+
+There are no major bugs. I could not populate React Select form on Edit form, the data is being pulled, but the food items is represented by id and not text. I tried few different things, but could not make it work with React Select. Maybe worth refactoring and using built-in HTML select tag.
+On the chart Y axis has zero for future dates, that makes chart look not fully correct
+
+## Wins and Blockers
+
+Wins:
+
+- Working MVP level full stack app
+- Great experience in working with another type of workflow
+- Practice in pair programming and team work
+- More practice in planning ahead due to the need to setup proper database structure and relationships
+- Getting my self familiar with Model-View-Template pattern
+- Nice looking chart
+
+Blockers:
+
+- I have spent to much time to populate React Select component on edit form and still could not figure it out
+- We did not implement user edit profile, which I think should be part of mvp
+
+## Future Features
+
+- Put base line on the chart with accordance to the RDA
+- Add ability to edit user profile
+- Diet journal
+- Add BMI calculation
+- Add meals to the food database
