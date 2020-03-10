@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -60,7 +61,9 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'frontend')],
+        'DIRS': [os.path.join(BASE_DIR, 'frontend')
+                 ]
+        ,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -142,10 +145,8 @@ REST_FRAMEWORK = {
 AUTH_USER_MODEL = 'users.User'
 CORS_ORIGIN_ALLOW_ALL = True
 
-ROOT_URLCONF = 'project.urls' #check if you have this already, if not add it in
-
-STATIC_URL = '/static/'
-
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'frontend', "build", "static"), 
 )
+
+django_heroku.settings(locals())    
