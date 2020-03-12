@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Authentication from './Authentication'
 import Plot from 'react-plotly.js'
@@ -72,6 +71,7 @@ class MyAccount extends React.Component {
           Authorization: `Bearer ${Authentication.getToken('token')}`
         }
       })
+      console.log('res', res.data)
       this.setState({ userData: res.data }, () => {
         this.setUserData()
         this.setDailyLogEntries()
@@ -143,17 +143,14 @@ class MyAccount extends React.Component {
 
   unpackNutrients = date => {
     const dateFoodArr = Object.entries(this.state.dailyLogEntries)
-    console.log(dateFoodArr, 'datefoodarr')
     const currentEntry = dateFoodArr.filter(dateFoodItem => (dateFoodItem.flat(2))[0] === date)
     return currentEntry.flat(2)
   }
 
   calculateDailyTotal = (date, nutrient) => {
     const nutrientEntries = this.unpackNutrients(date)
-    console.log(nutrientEntries, 'nutriententries')
     const nutrients = nutrientEntries
       .filter(entry => typeof entry !== 'string')
-    console.log(nutrients, 'nutrients')
     const dailyNutrients = nutrients.map(foodItem => Number(foodItem.food[nutrient]) * Number(foodItem.portion)
     ) 
     const dailyTotal = dailyNutrients.reduce(
@@ -172,7 +169,7 @@ class MyAccount extends React.Component {
   }
 
   render() {
-    console.log(this.calculateDailyTotal('2020-03-03', 'fat'))
+    console.log(this.state)
     return (
       <section className='section'>
         <div className='container'>
