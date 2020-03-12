@@ -66,7 +66,7 @@ class MyAccount extends React.Component {
 
   async componentDidMount() {
     try {
-      const res = await axios.get('/api/myaccount', {
+      const res = await axios.get('/api/myaccount/', {
         headers: {
           Authorization: `Bearer ${Authentication.getToken('token')}`
         }
