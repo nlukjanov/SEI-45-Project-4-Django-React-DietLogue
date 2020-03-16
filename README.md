@@ -11,7 +11,7 @@ The goal was to build a full stack web application using Python+Django framework
 
 Timeframe: 6 days.
 
-Launch on [Heroku](https://diet-log.herokuapp.com/). Check out the GitHub [Repo](https://github.com/nlukjanov/SEI-45-Project-4-Django-React).
+Launch on [Heroku](https://dietlogue.herokuapp.com/). Check out the GitHub [Repo](https://github.com/nlukjanov/SEI-45-Project-4-Django-React).
 
 ## Brief
 
