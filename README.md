@@ -24,7 +24,7 @@ Launch on [Heroku](https://dietlogue.herokuapp.com/). Check out the GitHub [Repo
 - **Be deployed online** so it's publicly accessible.
 - **You May** use the React Hooks syntax on your front end, but the responsibility of this will be largely on yourself.
 
-## Technologies Used
+## Technologies used
 
 - React
 - JavaScript (ES6)
@@ -42,7 +42,7 @@ Launch on [Heroku](https://dietlogue.herokuapp.com/). Check out the GitHub [Repo
 - Heroku
 - Trello
 
-## Approach Taken
+## Approach taken
 
 I decided to join forces with another classmate and work on the project together as it was another good opportunity to practice team work. She had an idea of the project and after brief discussion we have agreed on what exactly we would like to build and how it should look like.
 
@@ -231,7 +231,11 @@ I have also created a journal model, for user to be able to record their diet no
 There are no major bugs. I could not populate React Select form on Edit form, the data is being pulled, but the food items is represented by id and not text. I tried few different things, but could not make it work with React Select. Maybe worth refactoring and using built-in HTML select tag.
 On the chart Y axis has zero for future dates, that makes chart look not fully correct
 
-## Wins and Blockers
+
+## Key learnings
+Working with SQL databases requires good planning in advance. Working with someone helps look at some problems from the different perspective. Using git for collaborative work is very convenient. After using JavaScript working with Django might feel a bit weird, as you type in commands and a lot of things are done behind the scenes. It is important to understand the work flow of the framework. I had some previous experience with Ruby on Rails that has similar work flow, so it was a bit easier to pick up. Cleaning data for food table took some time. I like doing full-stack projects where I can build both backend and frontend. When I was doing frontend it was nice to have the ability adjust backend to my needs where necessary.
+
+## Wins and blockers
 
 Wins:
 
@@ -247,7 +251,7 @@ Blockers:
 - I have spent to much time to populate React Select component on edit form and still could not figure it out
 - We did not implement user edit profile, which I think should be part of mvp
 
-## Future Features
+## Future features
 
 - Put base line on the chart with accordance to the RDA
 - Add ability to edit user profile
