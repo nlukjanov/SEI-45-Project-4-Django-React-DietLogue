@@ -12,7 +12,7 @@
     "http-proxy-middleware": "^1.0.0",
     "js-cookie": "^2.2.1",
     "moment": "^2.24.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "plotly.js": "^1.52.3",
     "pluralize": "^8.0.0",
     "react": "^16.13.0",
